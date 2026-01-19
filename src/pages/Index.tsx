@@ -1380,6 +1380,18 @@ export default function Index() {
           </div>
         </div>
       )}
+
+      {/* КНОПКА TELEGRAM БОТА */}
+      <a
+        href="https://t.me/apgreid_support_bot"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-40 w-16 h-16 bg-gradient-to-br from-sky-500 to-blue-600 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-all duration-300 hover:shadow-sky-500/50 group animate-pulse-glow"
+        title="Задать вопрос боту"
+      >
+        <Icon name="MessageCircle" size={28} className="text-white group-hover:scale-110 transition-transform" />
+        <span className="absolute -top-2 -right-2 w-5 h-5 bg-emerald-500 rounded-full border-2 border-slate-950 animate-pulse"></span>
+      </a>
     </div>
   );
 }
