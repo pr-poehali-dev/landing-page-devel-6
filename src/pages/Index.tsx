@@ -1384,7 +1384,7 @@ export default function Index() {
       {/* КНОПКА TELEGRAM БОТА */}
       <div className="fixed bottom-6 right-6 z-40 flex items-center gap-4">
         <div className="hidden md:block bg-gradient-to-r from-purple-900/90 to-amber-900/90 backdrop-blur-sm px-6 py-3 rounded-full border border-purple-500/30 shadow-xl animate-fade-in">
-          <p className="text-white text-sm font-medium">Есть вопросы? Спроси помощницу! 💜</p>
+          <p className="text-white text-sm font-medium">Есть вопросы? Спроси помошницу! 💜</p>
         </div>
         
         <a
