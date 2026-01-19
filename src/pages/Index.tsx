@@ -39,7 +39,7 @@ export default function Index() {
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-white/70 hover:text-emerald-400 transition-all duration-300 hover:scale-110"
             >
-              <Icon name="MessageCircle" size={16} />
+              <Icon name="MessageCircle" size={16} className="icon-hover" />
               <span>WhatsApp</span>
             </a>
             <a 
@@ -48,7 +48,7 @@ export default function Index() {
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-white/70 hover:text-sky-400 transition-all duration-300 hover:scale-110"
             >
-              <Icon name="Send" size={16} />
+              <Icon name="Send" size={16} className="icon-hover" />
               <span>Telegram</span>
             </a>
             <a 
@@ -57,7 +57,7 @@ export default function Index() {
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-white/70 hover:text-pink-400 transition-all duration-300 hover:scale-110"
             >
-              <Icon name="Instagram" size={16} />
+              <Icon name="Instagram" size={16} className="icon-hover" />
               <span>Instagram</span>
             </a>
           </div>
@@ -136,15 +136,15 @@ export default function Index() {
 
               <div className="space-y-4 text-lg text-white/80">
                 <div className="flex items-start gap-3">
-                  <Icon name="Sparkles" className="text-purple-400 flex-shrink-0 mt-1" size={24} />
+                  <Icon name="Sparkles" className="text-purple-400 flex-shrink-0 mt-1 animate-pulse-glow" size={24} />
                   <span>Восстановление тела, разума, пространства</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Icon name="Users" className="text-amber-400 flex-shrink-0 mt-1" size={24} />
+                  <Icon name="Users" className="text-amber-400 flex-shrink-0 mt-1 icon-hover" size={24} />
                   <span>Игровой формат + живое сообщество</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Icon name="Zap" className="text-turquoise-400 flex-shrink-0 mt-1" size={24} />
+                  <Icon name="Zap" className="text-turquoise-400 flex-shrink-0 mt-1 animate-pulse-glow" size={24} />
                   <span>Твой персональный аватар трансформируется с тобой</span>
                 </div>
               </div>
@@ -156,7 +156,7 @@ export default function Index() {
                   className="bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 text-lg px-8 py-6 shadow-2xl shadow-purple-500/40 transition-all duration-300 hover:scale-105 border-none"
                 >
                   ВЫБРАТЬ СВОЙ ПАКЕТ
-                  <Icon name="ArrowRight" size={20} className="ml-2" />
+                  <Icon name="ArrowRight" size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
                 <Button 
                   onClick={() => scrollToSection('about')} 
@@ -170,11 +170,11 @@ export default function Index() {
 
               <div className="flex items-center gap-6 pt-6 text-sm text-white/60">
                 <div className="flex items-center gap-2">
-                  <Icon name="Calendar" size={18} className="text-amber-400" />
+                  <Icon name="Calendar" size={18} className="text-amber-400 animate-bounce-gentle" />
                   <span>Старт: 9 февраля 2026</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Icon name="Heart" size={18} className="text-purple-400" />
+                  <Icon name="Heart" size={18} className="text-purple-400 animate-float" />
                   <span>500+ женщин трансформировались</span>
                 </div>
               </div>
@@ -193,7 +193,7 @@ export default function Index() {
                   <p className="text-sm text-white/80 mb-2">Трансформация твоего аватара:</p>
                   <div className="flex items-center gap-3">
                     <span className="px-3 py-1 bg-slate-800/80 backdrop-blur-sm rounded-full text-xs">Level 1</span>
-                    <Icon name="ArrowRight" size={16} className="text-purple-400" />
+                    <Icon name="ArrowRight" size={16} className="text-purple-400 group-hover:translate-x-1 transition-transform" />
                     <span className="px-3 py-1 bg-purple-600/80 backdrop-blur-sm rounded-full text-xs">Level 4 ЛЕГЕНДАРНЫЙ</span>
                   </div>
                 </div>
@@ -309,7 +309,7 @@ export default function Index() {
             <div className="p-8 rounded-3xl bg-gradient-to-br from-purple-500/10 via-amber-500/10 to-turquoise-500/10 border border-purple-500/20 backdrop-blur-sm space-y-6">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-500/20 to-amber-500/20 flex items-center justify-center">
-                  <Icon name="Gamepad2" className="text-purple-400" size={24} />
+                  <Icon name="Gamepad2" className="text-purple-400 animate-wiggle" size={24} />
                 </div>
                 <h3 className="text-2xl font-bold">Как работает</h3>
               </div>
@@ -323,7 +323,16 @@ export default function Index() {
                   { icon: "Award", text: "Лидерборд создаёт здоровую конкуренцию" }
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3 text-white/90">
-                    <Icon name={item.icon} className="text-amber-400 flex-shrink-0 mt-0.5" size={20} />
+                    <Icon 
+                      name={item.icon} 
+                      className={`text-amber-400 flex-shrink-0 mt-0.5 ${
+                        item.icon === 'User' ? 'icon-hover' :
+                        item.icon === 'Target' ? 'animate-wiggle' :
+                        item.icon === 'Trophy' || item.icon === 'Award' ? 'animate-float' :
+                        item.icon === 'Sparkles' ? 'animate-pulse-glow' : ''
+                      }`}
+                      size={20} 
+                    />
                     <span>{item.text}</span>
                   </li>
                 ))}
@@ -368,24 +377,24 @@ export default function Index() {
                     НЕДЕЛЯ 1: ОЧИЩЕНИЕ
                   </div>
                   <div className="flex items-center gap-2 text-white/60 mb-6">
-                    <Icon name="Calendar" size={18} />
+                    <Icon name="Calendar" size={18} className="animate-bounce-gentle" />
                     <span>9-15 февраля</span>
                   </div>
                   <div className="space-y-2 mb-6">
                     <div className="flex items-center gap-2">
-                      <Icon name="Search" className="text-purple-400" size={18} />
+                      <Icon name="Search" className="text-purple-400 icon-hover" size={18} />
                       <span className="text-sm">Самоанализ</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Icon name="Sparkles" className="text-purple-400" size={18} />
+                      <Icon name="Sparkles" className="text-purple-400 animate-pulse-glow" size={18} />
                       <span className="text-sm">Очищение тела, ума, пространства</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Icon name="Trash2" className="text-purple-400" size={18} />
+                      <Icon name="Trash2" className="text-purple-400 icon-hover" size={18} />
                       <span className="text-sm">Избавление от ненужного хлама</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Icon name="Moon" className="text-purple-400" size={18} />
+                      <Icon name="Moon" className="text-purple-400 animate-float" size={18} />
                       <span className="text-sm">Убывающая луна помогает отпустить</span>
                     </div>
                   </div>
@@ -394,18 +403,18 @@ export default function Index() {
                 <div className="lg:col-span-2 space-y-4">
                   <div className="p-6 rounded-2xl bg-slate-800/50 border border-white/10">
                     <div className="flex items-center gap-3 mb-2">
-                      <Icon name="User" className="text-purple-400" size={20} />
+                      <Icon name="User" className="text-purple-400 icon-hover" size={20} />
                       <span className="font-semibold">Твой аватар:</span>
                     </div>
                     <div className="flex items-center gap-3 text-white/80">
                       <span className="px-3 py-1 bg-slate-700 rounded-full text-sm">Level 1</span>
-                      <Icon name="ArrowRight" className="text-purple-400" size={16} />
+                      <Icon name="ArrowRight" className="text-purple-400 group-hover:translate-x-1 transition-transform" size={16} />
                       <span className="px-3 py-1 bg-purple-600 rounded-full text-sm">Level 2</span>
                     </div>
                   </div>
                   <div className="p-6 rounded-2xl bg-slate-800/50 border border-white/10">
                     <div className="flex items-center gap-3 mb-2">
-                      <Icon name="Heart" className="text-amber-400" size={20} />
+                      <Icon name="Heart" className="text-amber-400 animate-float" size={20} />
                       <span className="font-semibold">Твоё состояние:</span>
                     </div>
                     <p className="text-white/80">От усталости к лёгкости</p>
@@ -426,24 +435,24 @@ export default function Index() {
                     НЕДЕЛЯ 2: ПРОБУЖДЕНИЕ
                   </div>
                   <div className="flex items-center gap-2 text-white/60 mb-6">
-                    <Icon name="Calendar" size={18} />
+                    <Icon name="Calendar" size={18} className="animate-bounce-gentle" />
                     <span>16-22 февраля</span>
                   </div>
                   <div className="space-y-2 mb-6">
                     <div className="flex items-center gap-2">
-                      <Icon name="Zap" className="text-amber-400" size={18} />
+                      <Icon name="Zap" className="text-amber-400 animate-pulse-glow" size={18} />
                       <span className="text-sm">Пробуждение интуиции и энергии</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Icon name="Flame" className="text-amber-400" size={18} />
+                      <Icon name="Flame" className="text-amber-400 animate-pulse-glow" size={18} />
                       <span className="text-sm">Создание состояния "Горящий Глаз"</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Icon name="Target" className="text-amber-400" size={18} />
+                      <Icon name="Target" className="text-amber-400 animate-wiggle" size={18} />
                       <span className="text-sm">Намерения и вектор на 2026 год</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Icon name="Sparkles" className="text-amber-400" size={18} />
+                      <Icon name="Sparkles" className="text-amber-400 animate-pulse-glow" size={18} />
                       <span className="text-sm">Энергия Года Красной Огненной Лошади</span>
                     </div>
                   </div>
@@ -452,7 +461,7 @@ export default function Index() {
                 <div className="lg:col-span-2 space-y-4">
                   <div className="p-6 rounded-2xl bg-slate-800/50 border border-white/10">
                     <div className="flex items-center gap-3 mb-2">
-                      <Icon name="User" className="text-amber-400" size={20} />
+                      <Icon name="User" className="text-amber-400 icon-hover" size={20} />
                       <span className="font-semibold">Твой аватар:</span>
                     </div>
                     <div className="flex items-center gap-3 text-white/80 flex-wrap">
@@ -477,7 +486,7 @@ export default function Index() {
             {/* ФИНАЛ */}
             <div className="relative p-8 rounded-3xl bg-gradient-to-br from-turquoise-500/10 to-slate-800/50 border border-turquoise-500/20 backdrop-blur-sm">
               <div className="absolute -left-4 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-turquoise-600 border-4 border-slate-900 flex items-center justify-center">
-                <Icon name="Star" size={16} />
+                <Icon name="Star" size={16} className="animate-pulse-glow" />
               </div>
               
               <div>
@@ -494,7 +503,15 @@ export default function Index() {
                   ].map((item, index) => (
                     <div key={index} className="p-4 rounded-2xl bg-slate-800/50 border border-white/10 flex flex-col items-center text-center gap-3">
                       <div className="w-12 h-12 rounded-full bg-turquoise-600/20 flex items-center justify-center">
-                        <Icon name={item.icon} className="text-turquoise-400" size={20} />
+                        <Icon 
+                          name={item.icon} 
+                          className={`text-turquoise-400 ${
+                            item.icon === 'Trophy' ? 'animate-float' :
+                            item.icon === 'Sparkles' ? 'animate-pulse-glow' :
+                            item.icon === 'Sunrise' ? 'animate-float' : ''
+                          }`}
+                          size={20} 
+                        />
                       </div>
                       <p className="text-sm text-white/80">{item.text}</p>
                     </div>
@@ -529,11 +546,11 @@ export default function Index() {
                 <p className="text-sm text-white/60 mb-3">Трансформация за 14 дней:</p>
                 <div className="flex items-center justify-center gap-2 flex-wrap">
                   <span className="px-3 py-1 bg-slate-700 rounded-full text-xs">L1</span>
-                  <Icon name="ArrowRight" size={14} className="text-orange-400" />
+                  <Icon name="ArrowRight" size={14} className="text-orange-400 group-hover:translate-x-1 transition-transform" />
                   <span className="px-3 py-1 bg-orange-600/50 rounded-full text-xs">L2</span>
-                  <Icon name="ArrowRight" size={14} className="text-orange-400" />
+                  <Icon name="ArrowRight" size={14} className="text-orange-400 group-hover:translate-x-1 transition-transform" />
                   <span className="px-3 py-1 bg-orange-600 rounded-full text-xs">L3</span>
-                  <Icon name="ArrowRight" size={14} className="text-orange-400" />
+                  <Icon name="ArrowRight" size={14} className="text-orange-400 group-hover:translate-x-1 transition-transform" />
                   <span className="px-3 py-1 bg-gradient-to-r from-orange-600 to-red-600 rounded-full text-xs font-bold">L4 ЛЕГЕНДАРНЫЙ</span>
                 </div>
               </div>
@@ -560,11 +577,11 @@ export default function Index() {
                 <p className="text-sm text-white/60 mb-3">Трансформация за 14 дней:</p>
                 <div className="flex items-center justify-center gap-2 flex-wrap">
                   <span className="px-3 py-1 bg-slate-700 rounded-full text-xs">L1</span>
-                  <Icon name="ArrowRight" size={14} className="text-purple-400" />
+                  <Icon name="ArrowRight" size={14} className="text-purple-400 group-hover:translate-x-1 transition-transform" />
                   <span className="px-3 py-1 bg-purple-600/50 rounded-full text-xs">L2</span>
-                  <Icon name="ArrowRight" size={14} className="text-purple-400" />
+                  <Icon name="ArrowRight" size={14} className="text-purple-400 group-hover:translate-x-1 transition-transform" />
                   <span className="px-3 py-1 bg-purple-600 rounded-full text-xs">L3</span>
-                  <Icon name="ArrowRight" size={14} className="text-purple-400" />
+                  <Icon name="ArrowRight" size={14} className="text-purple-400 group-hover:translate-x-1 transition-transform" />
                   <span className="px-3 py-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-xs font-bold">L4 ЛЕГЕНДАРНЫЙ</span>
                 </div>
               </div>
@@ -591,11 +608,11 @@ export default function Index() {
                 <p className="text-sm text-white/60 mb-3">Трансформация за 14 дней:</p>
                 <div className="flex items-center justify-center gap-2 flex-wrap">
                   <span className="px-3 py-1 bg-slate-700 rounded-full text-xs">L1</span>
-                  <Icon name="ArrowRight" size={14} className="text-emerald-400" />
+                  <Icon name="ArrowRight" size={14} className="text-emerald-400 group-hover:translate-x-1 transition-transform" />
                   <span className="px-3 py-1 bg-emerald-600/50 rounded-full text-xs">L2</span>
-                  <Icon name="ArrowRight" size={14} className="text-emerald-400" />
+                  <Icon name="ArrowRight" size={14} className="text-emerald-400 group-hover:translate-x-1 transition-transform" />
                   <span className="px-3 py-1 bg-emerald-600 rounded-full text-xs">L3</span>
-                  <Icon name="ArrowRight" size={14} className="text-emerald-400" />
+                  <Icon name="ArrowRight" size={14} className="text-emerald-400 group-hover:translate-x-1 transition-transform" />
                   <span className="px-3 py-1 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full text-xs font-bold">L4 ЛЕГЕНДАРНЫЙ</span>
                 </div>
               </div>
@@ -622,11 +639,11 @@ export default function Index() {
                 <p className="text-sm text-white/60 mb-3">Трансформация за 14 дней:</p>
                 <div className="flex items-center justify-center gap-2 flex-wrap">
                   <span className="px-3 py-1 bg-slate-700 rounded-full text-xs">L1</span>
-                  <Icon name="ArrowRight" size={14} className="text-amber-400" />
+                  <Icon name="ArrowRight" size={14} className="text-amber-400 group-hover:translate-x-1 transition-transform" />
                   <span className="px-3 py-1 bg-amber-600/50 rounded-full text-xs">L2</span>
-                  <Icon name="ArrowRight" size={14} className="text-amber-400" />
+                  <Icon name="ArrowRight" size={14} className="text-amber-400 group-hover:translate-x-1 transition-transform" />
                   <span className="px-3 py-1 bg-amber-600 rounded-full text-xs">L3</span>
-                  <Icon name="ArrowRight" size={14} className="text-amber-400" />
+                  <Icon name="ArrowRight" size={14} className="text-amber-400 group-hover:translate-x-1 transition-transform" />
                   <span className="px-3 py-1 bg-gradient-to-r from-amber-600 to-yellow-600 rounded-full text-xs font-bold">L4 ЛЕГЕНДАРНЫЙ</span>
                 </div>
               </div>
@@ -702,19 +719,19 @@ export default function Index() {
                   <h3 className="text-2xl font-bold mb-4 text-red-400">ГОД КРАСНОЙ ОГНЕННОЙ ЛОШАДИ (2026)</h3>
                   <div className="space-y-3">
                     <div className="flex items-start gap-3">
-                      <Icon name="Flame" className="text-red-400 flex-shrink-0 mt-1" size={20} />
+                      <Icon name="Flame" className="text-red-400 flex-shrink-0 mt-1 animate-pulse-glow" size={20} />
                       <span className="text-white/80">Происходит раз в 60 лет (следующий в 2086)</span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <Icon name="Zap" className="text-orange-400 flex-shrink-0 mt-1" size={20} />
+                      <Icon name="Zap" className="text-orange-400 flex-shrink-0 mt-1 animate-pulse-glow" size={20} />
                       <span className="text-white/80">Энергия стартов, новых начинаний</span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <Icon name="Heart" className="text-pink-400 flex-shrink-0 mt-1" size={20} />
+                      <Icon name="Heart" className="text-pink-400 flex-shrink-0 mt-1 animate-float" size={20} />
                       <span className="text-white/80">ОСОБЕННО мощно для женщин</span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <Icon name="Sparkles" className="text-amber-400 flex-shrink-0 mt-1" size={20} />
+                      <Icon name="Sparkles" className="text-amber-400 flex-shrink-0 mt-1 animate-pulse-glow" size={20} />
                       <span className="text-white/80">Идеальное время переосмыслить себя и свою жизнь</span>
                     </div>
                   </div>
@@ -760,7 +777,16 @@ export default function Index() {
                 key={index}
                 className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-purple-500/30 transition-all duration-300 group"
               >
-                <Icon name={item.icon} className={`${item.color} mb-4`} size={32} />
+                <Icon 
+                  name={item.icon} 
+                  className={`${item.color} mb-4 ${
+                    item.icon === 'Flame' || item.icon === 'Zap' || item.icon === 'Sparkles' ? 'animate-pulse-glow' :
+                    item.icon === 'Heart' || item.icon === 'Award' || item.icon === 'Crown' || item.icon === 'Gift' ? 'animate-float' :
+                    item.icon === 'Users' ? 'icon-hover' :
+                    item.icon === 'Target' ? 'animate-wiggle' : ''
+                  }`} 
+                  size={32} 
+                />
                 <h3 className="text-lg font-bold mb-3">{item.title}</h3>
                 <p className="text-white/70 text-sm leading-relaxed">{item.desc}</p>
               </div>
@@ -872,7 +898,7 @@ export default function Index() {
                 className="bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 text-lg px-12 py-6 shadow-2xl shadow-purple-500/40 transition-all duration-300 hover:scale-105 border-none"
               >
                 Я ТУТ!
-                <Icon name="ArrowRight" size={20} className="ml-2" />
+                <Icon name="ArrowRight" size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
           </div>
@@ -950,7 +976,7 @@ export default function Index() {
                   "Персональные перспективы развития на 2026"
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3 text-white/80 text-sm">
-                    <Icon name="Star" className="text-amber-400 flex-shrink-0 mt-0.5" size={18} />
+                    <Icon name="Star" className="text-amber-400 flex-shrink-0 mt-0.5 animate-pulse-glow" size={18} />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -987,7 +1013,7 @@ export default function Index() {
                   "Дарья рядом с тобой"
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3 text-white/80 text-sm">
-                    <Icon name="Crown" className="text-purple-400 flex-shrink-0 mt-0.5" size={18} />
+                    <Icon name="Crown" className="text-purple-400 flex-shrink-0 mt-0.5 animate-float" size={18} />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -1086,7 +1112,17 @@ export default function Index() {
                     { icon: "Gamepad2", text: "Увидишь всё визуально через прокачку своего аватара" }
                   ].map((item, index) => (
                     <div key={index} className="flex items-start gap-4 p-4 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
-                      <Icon name={item.icon} className="text-amber-400 flex-shrink-0 mt-1" size={24} />
+                      <Icon 
+                        name={item.icon} 
+                        className={`text-amber-400 flex-shrink-0 mt-1 ${
+                          item.icon === 'Zap' ? 'animate-pulse-glow' :
+                          item.icon === 'Heart' ? 'animate-float' :
+                          item.icon === 'Eye' || item.icon === 'Users' ? 'icon-hover' :
+                          item.icon === 'Sunrise' ? 'animate-float' :
+                          item.icon === 'Gamepad2' ? 'animate-wiggle' : ''
+                        }`}
+                        size={24} 
+                      />
                       <span className="text-white/90 text-left">{item.text}</span>
                     </div>
                   ))}
@@ -1131,14 +1167,14 @@ export default function Index() {
                       rel="noopener noreferrer"
                       className="px-6 py-3 rounded-lg bg-sky-500/20 border border-sky-500/30 hover:bg-sky-500/30 transition-all flex items-center gap-2"
                     >
-                      <Icon name="Send" size={18} />
+                      <Icon name="Send" size={18} className="icon-hover" />
                       <span>НАПИСАТЬ В TELEGRAM</span>
                     </a>
                     <a 
                       href="tel:+79147047392" 
                       className="px-6 py-3 rounded-lg bg-emerald-500/20 border border-emerald-500/30 hover:bg-emerald-500/30 transition-all flex items-center gap-2"
                     >
-                      <Icon name="Phone" size={18} />
+                      <Icon name="Phone" size={18} className="icon-hover" />
                       <span>ПОЗВОНИТЬ ДАРЬЕ</span>
                     </a>
                   </div>
@@ -1180,19 +1216,19 @@ export default function Index() {
               <h4 className="text-lg font-bold mb-4">Контакты</h4>
               <div className="space-y-3 text-sm">
                 <a href="tel:+79147047392" className="flex items-center gap-2 text-white/60 hover:text-emerald-400 transition-colors">
-                  <Icon name="Phone" size={16} />
+                  <Icon name="Phone" size={16} className="icon-hover" />
                   <span>+7 914 704 7392</span>
                 </a>
                 <a href="https://t.me/darya_tsybulskaya22" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white/60 hover:text-sky-400 transition-colors">
-                  <Icon name="Send" size={16} />
+                  <Icon name="Send" size={16} className="icon-hover" />
                   <span>@darya_tsybulskaya22</span>
                 </a>
                 <a href="https://instagram.com/darya_tsybulskaya22" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white/60 hover:text-pink-400 transition-colors">
-                  <Icon name="Instagram" size={16} />
+                  <Icon name="Instagram" size={16} className="icon-hover" />
                   <span>darya_tsybulskaya22</span>
                 </a>
                 <a href="mailto:contact@upgrade2026.ru" className="flex items-center gap-2 text-white/60 hover:text-purple-400 transition-colors">
-                  <Icon name="Mail" size={16} />
+                  <Icon name="Mail" size={16} className="icon-hover" />
                   <span>contact@upgrade2026.ru</span>
                 </a>
               </div>
@@ -1208,7 +1244,7 @@ export default function Index() {
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-sky-500/20 hover:border-sky-500/30 transition-all"
                 >
-                  <Icon name="Send" size={18} />
+                  <Icon name="Send" size={18} className="icon-hover" />
                 </a>
                 <a 
                   href="https://instagram.com/darya_tsybulskaya22" 
@@ -1216,7 +1252,7 @@ export default function Index() {
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-pink-500/20 hover:border-pink-500/30 transition-all"
                 >
-                  <Icon name="Instagram" size={18} />
+                  <Icon name="Instagram" size={18} className="icon-hover" />
                 </a>
                 <a 
                   href="https://wa.me/79149666617" 
@@ -1224,7 +1260,7 @@ export default function Index() {
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-emerald-500/20 hover:border-emerald-500/30 transition-all"
                 >
-                  <Icon name="MessageCircle" size={18} />
+                  <Icon name="MessageCircle" size={18} className="icon-hover" />
                 </a>
               </div>
               <p className="text-xs text-white/40 mt-6">
