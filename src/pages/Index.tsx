@@ -5,6 +5,8 @@ import { Button } from '@/components/ui/button';
 export default function Index() {
   const [scrollY, setScrollY] = useState(0);
   const [showPopup, setShowPopup] = useState(false);
+  const [checkedItems, setCheckedItems] = useState<boolean[]>(Array(9).fill(false));
+  const [showCheckResult, setShowCheckResult] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -213,27 +215,53 @@ export default function Index() {
             <p className="text-xl text-white/60">Пройди чек-лист</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-4 mb-16">
-            {[
-              "Энергетическая и психологическая усталость",
-              "Апатия, раздражение, \"ничего не хочется\"",
-              "Живёшь в \"дне сурка\" — одни и те же дни",
-              "Редко испытываешь радость и вдохновение",
-              "Физическая тяжесть, потеря лёгкости в теле",
-              "\"Спасательный круг\" после праздников",
-              "Нет ощущения собственной ценности",
-              "Чувство внутренней опасности и неуверенности",
-              "Потеря смысла в том, что раньше вдохновляло"
-            ].map((problem, index) => (
-              <div 
-                key={index}
-                className="flex items-start gap-4 p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-purple-500/30 transition-all duration-300 group"
-                style={{animationDelay: `${index * 0.1}s`}}
+          <div className="relative">
+            <div className="grid md:grid-cols-2 gap-4 mb-16">
+              {[
+                "Энергетическая и психологическая усталость",
+                "Апатия, раздражение, \"ничего не хочется\"",
+                "Живёшь в \"дне сурка\" — одни и те же дни",
+                "Редко испытываешь радость и вдохновение",
+                "Физическая тяжесть, потеря лёгкости в теле",
+                "\"Спасательный круг\" после праздников",
+                "Нет ощущения собственной ценности",
+                "Чувство внутренней опасности и неуверенности",
+                "Потеря смысла в том, что раньше вдохновляло"
+              ].map((problem, index) => (
+                <div 
+                  key={index}
+                  className="flex items-start gap-4 p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-purple-500/30 transition-all duration-300 group cursor-pointer"
+                  style={{animationDelay: `${index * 0.1}s`}}
+                  onClick={() => {
+                    const newChecked = [...checkedItems];
+                    newChecked[index] = !newChecked[index];
+                    setCheckedItems(newChecked);
+                  }}
+                >
+                  <div className={`w-6 h-6 rounded border-2 flex-shrink-0 mt-0.5 transition-all flex items-center justify-center ${
+                    checkedItems[index] 
+                      ? 'border-purple-400 bg-purple-600' 
+                      : 'border-white/30 group-hover:border-purple-400'
+                  }`}>
+                    {checkedItems[index] && (
+                      <Icon name="Check" className="text-white" size={16} />
+                    )}
+                  </div>
+                  <p className="text-white/80 group-hover:text-white transition-colors">{problem}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Кнопка Проверить */}
+            <div className="flex justify-end mb-8">
+              <Button
+                onClick={() => setShowCheckResult(true)}
+                size="lg"
+                className="bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 border-none shadow-lg shadow-purple-500/30 transition-all duration-300 hover:scale-105"
               >
-                <div className="w-6 h-6 rounded border-2 border-white/30 group-hover:border-purple-400 flex-shrink-0 mt-0.5 transition-colors"></div>
-                <p className="text-white/80 group-hover:text-white transition-colors">{problem}</p>
-              </div>
-            ))}
+                Проверить
+              </Button>
+            </div>
           </div>
 
           <div className="max-w-3xl mx-auto text-center space-y-6 p-10 rounded-3xl bg-gradient-to-br from-purple-500/10 to-amber-500/10 border border-purple-500/20 backdrop-blur-sm">
@@ -1314,6 +1342,40 @@ export default function Index() {
                   Пока просто смотрю
                 </Button>
               </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* МОДАЛЬНОЕ ОКНО РЕЗУЛЬТАТА ЧЕК-ЛИСТА */}
+      {showCheckResult && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
+          <div className="relative max-w-lg w-full p-10 rounded-3xl bg-gradient-to-br from-emerald-900 to-purple-900 border border-emerald-500/30 shadow-2xl">
+            <button 
+              onClick={() => setShowCheckResult(false)}
+              className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all"
+            >
+              <Icon name="X" size={16} />
+            </button>
+
+            <div className="text-center">
+              <div className="w-20 h-20 mx-auto mb-6 rounded-full bg-emerald-500/20 flex items-center justify-center">
+                <Icon name="CheckCircle2" className="text-emerald-400 animate-pulse-glow" size={48} />
+              </div>
+              
+              <h3 className="text-2xl font-bold mb-4">Нужна ли тебе эта программа?</h3>
+              <p className="text-3xl font-bold text-emerald-400 mb-8">БЕЗ СОМНЕНИЙ — НУЖНА!</p>
+              
+              <Button 
+                onClick={() => {
+                  setShowCheckResult(false);
+                  scrollToSection('packages');
+                }}
+                size="lg"
+                className="bg-gradient-to-r from-emerald-600 to-purple-600 hover:from-emerald-700 hover:to-purple-700 border-none shadow-lg w-full"
+              >
+                Выбрать пакет
+              </Button>
             </div>
           </div>
         </div>
