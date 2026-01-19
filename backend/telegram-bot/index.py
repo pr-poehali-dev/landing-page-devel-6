@@ -112,7 +112,8 @@ def get_ai_response(user_message: str) -> str:
         else:
             return "Извините, не смогла обработать запрос. Напишите мне напрямую: @dashapoddubnaya 💜"
             
-    except Exception:
+    except Exception as e:
+        print(f"[ERROR] OpenAI API error: {str(e)}")
         return "Что-то пошло не так. Свяжитесь со мной в Telegram: @dashapoddubnaya"
 
 
@@ -142,8 +143,10 @@ def handler(event: Dict[str, Any], context) -> Dict[str, Any]:
     
     try:
         body = json.loads(event.get('body', '{}'))
+        print(f"[DEBUG] Received update: {json.dumps(body)}")
         
         if 'message' not in body:
+            print("[DEBUG] No message in update, skipping")
             return {
                 'statusCode': 200,
                 'headers': {'Content-Type': 'application/json'},
@@ -154,6 +157,7 @@ def handler(event: Dict[str, Any], context) -> Dict[str, Any]:
         message = body['message']
         chat_id = message['chat']['id']
         user_text = message.get('text', '')
+        print(f"[DEBUG] User {chat_id} sent: {user_text}")
         
         if user_text.startswith('/start'):
             response_text = """Привет! 👋 
@@ -172,6 +176,7 @@ def handler(event: Dict[str, Any], context) -> Dict[str, Any]:
         
         bot_token = os.environ.get('TELEGRAM_BOT_TOKEN')
         if not bot_token:
+            print("[ERROR] Bot token not found in environment")
             return {
                 'statusCode': 500,
                 'headers': {'Content-Type': 'application/json'},
@@ -179,7 +184,8 @@ def handler(event: Dict[str, Any], context) -> Dict[str, Any]:
                 'isBase64Encoded': False
             }
         
-        requests.post(
+        print(f"[DEBUG] Sending response to {chat_id}: {response_text[:100]}...")
+        send_response = requests.post(
             f'https://api.telegram.org/bot{bot_token}/sendMessage',
             json={
                 'chat_id': chat_id,
@@ -188,6 +194,7 @@ def handler(event: Dict[str, Any], context) -> Dict[str, Any]:
             },
             timeout=5
         )
+        print(f"[DEBUG] Telegram API response: {send_response.status_code} - {send_response.text}")
         
         return {
             'statusCode': 200,
@@ -197,6 +204,9 @@ def handler(event: Dict[str, Any], context) -> Dict[str, Any]:
         }
         
     except Exception as e:
+        print(f"[ERROR] Handler exception: {str(e)}")
+        import traceback
+        print(f"[ERROR] Traceback: {traceback.format_exc()}")
         return {
             'statusCode': 500,
             'headers': {'Content-Type': 'application/json'},
