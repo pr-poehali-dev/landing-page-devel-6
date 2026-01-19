@@ -492,27 +492,588 @@ export default function Index() {
         </div>
       </section>
 
-      {/* CTA PLACEHOLDER */}
-      <section id="packages" className="relative py-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-            Готова к <span className="bg-gradient-to-r from-purple-400 to-amber-400 bg-clip-text text-transparent">трансформации?</span>
-          </h2>
-          <p className="text-xl text-white/70 mb-8">Следующие блоки с пакетами, отзывами и контактами уже на подходе!</p>
-          <Button 
-            size="lg"
-            className="bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 text-lg px-12 py-6 shadow-2xl shadow-purple-500/40 transition-all duration-300 hover:scale-105 border-none"
-          >
-            ВЫБРАТЬ ПАКЕТ
-            <Icon name="ArrowRight" size={20} className="ml-2" />
-          </Button>
+      {/* БЛОК 5: ЧЕТЫРЕ АВАТАРА */}
+      <section id="avatars" className="relative py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+              Выбери <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-turquoise-400 bg-clip-text text-transparent">своего аватара</span>
+            </h2>
+            <p className="text-xl text-white/60">Твой персональный путь трансформации за 14 дней</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Аватар 1: Огненная Феникс */}
+            <div className="group p-8 rounded-3xl bg-gradient-to-br from-orange-500/10 via-red-500/10 to-slate-800/50 border border-orange-500/20 backdrop-blur-sm hover:border-orange-500/40 transition-all duration-500">
+              <div className="text-center mb-6">
+                <div className="text-6xl mb-4">🔥</div>
+                <h3 className="text-2xl font-bold mb-3 text-orange-400">ОГНЕННАЯ ФЕНИКС</h3>
+                <p className="text-white/80 italic">"Для тех, кто прошёл выгорание и готов воскреситься."</p>
+              </div>
+              
+              <div className="mb-6">
+                <p className="text-sm text-white/60 mb-3">Трансформация за 14 дней:</p>
+                <div className="flex items-center justify-center gap-2 flex-wrap">
+                  <span className="px-3 py-1 bg-slate-700 rounded-full text-xs">L1</span>
+                  <Icon name="ArrowRight" size={14} className="text-orange-400" />
+                  <span className="px-3 py-1 bg-orange-600/50 rounded-full text-xs">L2</span>
+                  <Icon name="ArrowRight" size={14} className="text-orange-400" />
+                  <span className="px-3 py-1 bg-orange-600 rounded-full text-xs">L3</span>
+                  <Icon name="ArrowRight" size={14} className="text-orange-400" />
+                  <span className="px-3 py-1 bg-gradient-to-r from-orange-600 to-red-600 rounded-full text-xs font-bold">L4 ЛЕГЕНДАРНЫЙ</span>
+                </div>
+              </div>
+
+              <p className="text-center text-lg font-semibold text-orange-300 mb-6">"Из пепла в пламя"</p>
+
+              <Button 
+                variant="outline"
+                className="w-full bg-orange-500/10 border-orange-500/30 hover:bg-orange-500/20 transition-all"
+              >
+                Узнать больше об этом архетипе
+              </Button>
+            </div>
+
+            {/* Аватар 2: Королева Перемен */}
+            <div className="group p-8 rounded-3xl bg-gradient-to-br from-purple-500/10 via-pink-500/10 to-slate-800/50 border border-purple-500/20 backdrop-blur-sm hover:border-purple-500/40 transition-all duration-500">
+              <div className="text-center mb-6">
+                <div className="text-6xl mb-4">👑</div>
+                <h3 className="text-2xl font-bold mb-3 text-purple-400">КОРОЛЕВА ПЕРЕМЕН</h3>
+                <p className="text-white/80 italic">"Для тех, кто готов стать главной героиней своей жизни."</p>
+              </div>
+              
+              <div className="mb-6">
+                <p className="text-sm text-white/60 mb-3">Трансформация за 14 дней:</p>
+                <div className="flex items-center justify-center gap-2 flex-wrap">
+                  <span className="px-3 py-1 bg-slate-700 rounded-full text-xs">L1</span>
+                  <Icon name="ArrowRight" size={14} className="text-purple-400" />
+                  <span className="px-3 py-1 bg-purple-600/50 rounded-full text-xs">L2</span>
+                  <Icon name="ArrowRight" size={14} className="text-purple-400" />
+                  <span className="px-3 py-1 bg-purple-600 rounded-full text-xs">L3</span>
+                  <Icon name="ArrowRight" size={14} className="text-purple-400" />
+                  <span className="px-3 py-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-xs font-bold">L4 ЛЕГЕНДАРНЫЙ</span>
+                </div>
+              </div>
+
+              <p className="text-center text-lg font-semibold text-purple-300 mb-6">"От замужества к королевству"</p>
+
+              <Button 
+                variant="outline"
+                className="w-full bg-purple-500/10 border-purple-500/30 hover:bg-purple-500/20 transition-all"
+              >
+                Узнать больше об этом архетипе
+              </Button>
+            </div>
+
+            {/* Аватар 3: Богиня Восстановления */}
+            <div className="group p-8 rounded-3xl bg-gradient-to-br from-emerald-500/10 via-teal-500/10 to-slate-800/50 border border-emerald-500/20 backdrop-blur-sm hover:border-emerald-500/40 transition-all duration-500">
+              <div className="text-center mb-6">
+                <div className="text-6xl mb-4">✨</div>
+                <h3 className="text-2xl font-bold mb-3 text-emerald-400">БОГИНЯ ВОССТАНОВЛЕНИЯ</h3>
+                <p className="text-white/80 italic">"Для тех, кто ищет гармонию между материальным и духовным."</p>
+              </div>
+              
+              <div className="mb-6">
+                <p className="text-sm text-white/60 mb-3">Трансформация за 14 дней:</p>
+                <div className="flex items-center justify-center gap-2 flex-wrap">
+                  <span className="px-3 py-1 bg-slate-700 rounded-full text-xs">L1</span>
+                  <Icon name="ArrowRight" size={14} className="text-emerald-400" />
+                  <span className="px-3 py-1 bg-emerald-600/50 rounded-full text-xs">L2</span>
+                  <Icon name="ArrowRight" size={14} className="text-emerald-400" />
+                  <span className="px-3 py-1 bg-emerald-600 rounded-full text-xs">L3</span>
+                  <Icon name="ArrowRight" size={14} className="text-emerald-400" />
+                  <span className="px-3 py-1 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full text-xs font-bold">L4 ЛЕГЕНДАРНЫЙ</span>
+                </div>
+              </div>
+
+              <p className="text-center text-lg font-semibold text-emerald-300 mb-6">"От рассеяния к целостности"</p>
+
+              <Button 
+                variant="outline"
+                className="w-full bg-emerald-500/10 border-emerald-500/30 hover:bg-emerald-500/20 transition-all"
+              >
+                Узнать больше об этом архетипе
+              </Button>
+            </div>
+
+            {/* Аватар 4: Воительница Света */}
+            <div className="group p-8 rounded-3xl bg-gradient-to-br from-amber-500/10 via-yellow-500/10 to-slate-800/50 border border-amber-500/20 backdrop-blur-sm hover:border-amber-500/40 transition-all duration-500">
+              <div className="text-center mb-6">
+                <div className="text-6xl mb-4">🌟</div>
+                <h3 className="text-2xl font-bold mb-3 text-amber-400">ВОИТЕЛЬНИЦА СВЕТА</h3>
+                <p className="text-white/80 italic">"Для тех, кто готов встать и действовать."</p>
+              </div>
+              
+              <div className="mb-6">
+                <p className="text-sm text-white/60 mb-3">Трансформация за 14 дней:</p>
+                <div className="flex items-center justify-center gap-2 flex-wrap">
+                  <span className="px-3 py-1 bg-slate-700 rounded-full text-xs">L1</span>
+                  <Icon name="ArrowRight" size={14} className="text-amber-400" />
+                  <span className="px-3 py-1 bg-amber-600/50 rounded-full text-xs">L2</span>
+                  <Icon name="ArrowRight" size={14} className="text-amber-400" />
+                  <span className="px-3 py-1 bg-amber-600 rounded-full text-xs">L3</span>
+                  <Icon name="ArrowRight" size={14} className="text-amber-400" />
+                  <span className="px-3 py-1 bg-gradient-to-r from-amber-600 to-yellow-600 rounded-full text-xs font-bold">L4 ЛЕГЕНДАРНЫЙ</span>
+                </div>
+              </div>
+
+              <p className="text-center text-lg font-semibold text-amber-300 mb-6">"От сомнений к уверенности"</p>
+
+              <Button 
+                variant="outline"
+                className="w-full bg-amber-500/10 border-amber-500/30 hover:bg-amber-500/20 transition-all"
+              >
+                Узнать больше об этом архетипе
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* FOOTER PLACEHOLDER */}
+      {/* БЛОК 6: ПОЧЕМУ ИМЕННО СЕЙЧАС */}
+      <section className="relative py-20 bg-gradient-to-b from-slate-900 to-slate-950">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+              Почему именно <span className="bg-gradient-to-r from-purple-400 to-amber-400 bg-clip-text text-transparent">9 февраля?</span>
+            </h2>
+            <p className="text-xl text-white/60">(Это не просто дата — это МОМЕНТ)</p>
+          </div>
+
+          <div className="space-y-8">
+            {/* Убывающая луна */}
+            <div className="p-8 rounded-3xl bg-gradient-to-br from-indigo-500/10 to-slate-800/50 border border-indigo-500/20 backdrop-blur-sm">
+              <div className="flex items-start gap-6">
+                <div className="text-5xl">🌙</div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-4 text-indigo-300">4-я четверть убывающей луны (9-16 февраля)</h3>
+                  <p className="text-white/80 mb-4">→ ЛУЧШЕЕ время для:</p>
+                  <ul className="space-y-2">
+                    {["Самоанализа", "Очищения тела и ума", "Освобождения от старого"].map((item, index) => (
+                      <li key={index} className="flex items-center gap-3">
+                        <Icon name="Check" className="text-indigo-400 flex-shrink-0" size={20} />
+                        <span className="text-white/80">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Новолуние */}
+            <div className="p-8 rounded-3xl bg-gradient-to-br from-slate-600/10 to-slate-800/50 border border-slate-500/20 backdrop-blur-sm">
+              <div className="flex items-start gap-6">
+                <div className="text-5xl">🌑</div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-4 text-slate-300">НОВОЛУНИЕ 17 февраля</h3>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-3">
+                      <Icon name="ArrowRight" className="text-slate-400 flex-shrink-0" size={20} />
+                      <span className="text-white/80">Новый лунный год начинается</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Icon name="ArrowRight" className="text-slate-400 flex-shrink-0" size={20} />
+                      <span className="text-white/80">Новая энергия, новый цикл</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Год Лошади */}
+            <div className="p-8 rounded-3xl bg-gradient-to-br from-red-500/10 via-orange-500/10 to-slate-800/50 border border-red-500/20 backdrop-blur-sm">
+              <div className="flex items-start gap-6">
+                <div className="text-5xl">🐴</div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-4 text-red-400">ГОД КРАСНОЙ ОГНЕННОЙ ЛОШАДИ (2026)</h3>
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-3">
+                      <Icon name="Flame" className="text-red-400 flex-shrink-0 mt-1" size={20} />
+                      <span className="text-white/80">Происходит раз в 60 лет (следующий в 2086)</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Icon name="Zap" className="text-orange-400 flex-shrink-0 mt-1" size={20} />
+                      <span className="text-white/80">Энергия стартов, новых начинаний</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Icon name="Heart" className="text-pink-400 flex-shrink-0 mt-1" size={20} />
+                      <span className="text-white/80">ОСОБЕННО мощно для женщин</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Icon name="Sparkles" className="text-amber-400 flex-shrink-0 mt-1" size={20} />
+                      <span className="text-white/80">Идеальное время переосмыслить себя и свою жизнь</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Вывод */}
+          <div className="mt-12 p-10 rounded-3xl bg-gradient-to-br from-purple-600/20 via-amber-600/20 to-red-600/20 border border-purple-500/30 backdrop-blur-sm text-center">
+            <p className="text-2xl font-bold mb-4">Это уникальное время. Оно не вернётся.</p>
+            <p className="text-xl text-white/90 leading-relaxed">
+              И именно сейчас твоё тело, луна и год синхронизируются<br />
+              для твоего <span className="text-amber-400 font-semibold">АПГРЕЙДА</span>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* БЛОК 7: ЧТО ТЫ ПОЛУЧИШЬ */}
+      <section className="relative py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+              За 14 дней <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-turquoise-400 bg-clip-text text-transparent">ты получишь</span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { icon: "Flame", color: "text-orange-400", title: "СОСТОЯНИЕ \"ГОРЯЩИЙ ГЛАЗ\"", desc: "Вернётся ощущение ЖИВОСТИ, вкус к жизни, искра в глазах, которую ты потеряла." },
+              { icon: "Zap", color: "text-purple-400", title: "ФИЗИЧЕСКОЕ ВОССТАНОВЛЕНИЕ", desc: "Лёгкость в теле, энергию, избавление от физической тяжести и усталости." },
+              { icon: "Brain", color: "text-turquoise-400", title: "МЕНТАЛЬНУЮ ЯСНОСТЬ", desc: "Избавление от мозгового тумана, чёткость в мыслях, освобождение от ненужных забот." },
+              { icon: "Home", color: "text-emerald-400", title: "ОЧИЩЕНИЕ ПРОСТРАНСТВА", desc: "Избавление от хлама (как физического, так и энергетического), ощущение безопасности дома." },
+              { icon: "Users", color: "text-pink-400", title: "ЖИВОЕ СООБЩЕСТВО", desc: "Поддержка 20-50 женщин, которые понимают, знакомства и дружба, которые останутся с тобой." },
+              { icon: "Target", color: "text-amber-400", title: "ЯСНЫЕ НАМЕРЕНИЯ НА 2026", desc: "Вектор движения, понимание, куда идти, чего хочешь достичь в новом году." },
+              { icon: "TrendingUp", color: "text-blue-400", title: "ВИДИМЫЙ ПРОГРЕСС", desc: "Твой аватар трансформируется вместе с тобой, ты видишь результат визуально каждый день." },
+              { icon: "Gift", color: "text-red-400", title: "ПРИЗ ПО ЗАВЕРШЕНИЮ", desc: "Подарок от Дарьи (зависит от пакета)." },
+              { icon: "Award", color: "text-yellow-400", title: "ИНДИВИДУАЛЬНЫЙ АНАЛИЗ", desc: "Нумерология, астрология, Хьюман Дизайн, Икигай (Только в пакетах Премиум и VIP)." },
+              { icon: "Crown", color: "text-purple-400", title: "ЛИЧНОЕ СОПРОВОЖДЕНИЕ", desc: "2 недели после завершения квеста Дарья поддерживает лично тебя (только VIP)." }
+            ].map((item, index) => (
+              <div 
+                key={index}
+                className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-purple-500/30 transition-all duration-300 group"
+              >
+                <Icon name={item.icon} className={`${item.color} mb-4`} size={32} />
+                <h3 className="text-lg font-bold mb-3">{item.title}</h3>
+                <p className="text-white/70 text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* БЛОК 8: АВТОРИТЕТ (История Дарьи) */}
+      <section className="relative py-20 bg-gradient-to-b from-slate-950 to-slate-900">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+              Я прошла этот путь <span className="bg-gradient-to-r from-purple-400 to-amber-400 bg-clip-text text-transparent">сама</span>
+            </h2>
+            <p className="text-xl text-white/60">Теперь помогаю другим</p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Фото Дарьи */}
+            <div className="relative">
+              <div className="rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+                <img 
+                  src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/23be08b3-1923-4c50-b0d0-64d89656714d.jpg"
+                  alt="Дарья Цыбульская"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="mt-6 text-center">
+                <h3 className="text-2xl font-bold mb-2">Дарья Цыбульская, 47 лет</h3>
+                <p className="text-white/60">Юрист по образованию, мама двух сыновей.<br />Живу во Владивостоке, Дальний Восток.</p>
+              </div>
+            </div>
+
+            {/* История */}
+            <div className="space-y-8">
+              {/* Было */}
+              <div className="p-6 rounded-2xl bg-red-500/10 border border-red-500/20 backdrop-blur-sm">
+                <h4 className="text-xl font-bold mb-4 flex items-center gap-3">
+                  <Icon name="XCircle" className="text-red-400" size={24} />
+                  <span>БЫЛО</span>
+                </h4>
+                <ul className="space-y-2">
+                  {[
+                    "Токсичные отношения с мужем (развод)",
+                    "Сложная финансовая ситуация",
+                    "Психологический кризис (\"Я не хочу жить\")",
+                    "Опустошение, выгорание",
+                    "Категоричная, жёсткая, недовольная женщина"
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-start gap-3 text-white/80">
+                      <span className="text-red-400">✗</span>
+                      <span className="text-sm">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Стало */}
+              <div className="p-6 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 backdrop-blur-sm">
+                <h4 className="text-xl font-bold mb-4 flex items-center gap-3">
+                  <Icon name="CheckCircle2" className="text-emerald-400" size={24} />
+                  <span>СТАЛО</span>
+                </h4>
+                <ul className="space-y-2">
+                  {[
+                    "Восстановила отношения с бывшим мужем (дружба)",
+                    "Вышла из финансовой ямы",
+                    "Обрела энергичность, радость, вкус жизни",
+                    "Трансформировалась в понимающую, созидающую, радостную женщину, которая любит себя и людей"
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-start gap-3 text-white/80">
+                      <span className="text-emerald-400">✓</span>
+                      <span className="text-sm">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Опыт */}
+              <div className="p-6 rounded-2xl bg-purple-500/10 border border-purple-500/20 backdrop-blur-sm">
+                <h4 className="text-xl font-bold mb-4">МОЙ ОПЫТ</h4>
+                <ul className="space-y-2 text-sm text-white/80">
+                  <li>• Соорганизатор сообщества "PROЖИЗНЬ" на Дальнем Востоке</li>
+                  <li>• Куратор тренерских команд (11 потоков 4-дневной программы)</li>
+                  <li>• СоТренер 9 потоков лидерской программы "Контекст"</li>
+                  <li>• <strong className="text-purple-400">700+ людей</strong> прошли трансформацию с моим участием</li>
+                  <li>• Куратор 5 социальных проектов в Владивостоке</li>
+                  <li>• 4 года опыта персонального и группового коачинга</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Миссия */}
+          <div className="mt-12 p-10 rounded-3xl bg-gradient-to-br from-purple-600/20 via-amber-600/20 to-turquoise-600/20 border border-purple-500/30 backdrop-blur-sm">
+            <h4 className="text-2xl font-bold mb-6 text-center">МОЯ МИССИЯ</h4>
+            <div className="space-y-4 text-white/90 leading-relaxed">
+              <p>"Поддерживать и направлять женщин в поднятии энергии, яркости и уникальности (состояние 'Горящий Глаз').</p>
+              <p>Это не имеет возраста и стоимости.</p>
+              <p>Это самое важное — чувствовать себя, жизнь и внутреннюю свободу. От этого напрямую зависят деньги, отношения и реализация.</p>
+              <p>Я научилась быть сама себе психологом. Я легко и с улыбкой отношусь к жизни. И я знаю, что и тебе это по силам.</p>
+              <p className="text-xl font-semibold text-amber-400">Если ты дочитала до этого предложения, то ты точно на верном пути. Тебе точно сюда."</p>
+            </div>
+            <div className="text-center mt-8">
+              <Button 
+                onClick={() => scrollToSection('packages')}
+                size="lg"
+                className="bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 text-lg px-12 py-6 shadow-2xl shadow-purple-500/40 transition-all duration-300 hover:scale-105 border-none"
+              >
+                Я ТУТ!
+                <Icon name="ArrowRight" size={20} className="ml-2" />
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* БЛОК 9: ПАКЕТЫ И ЦЕНЫ */}
+      <section id="packages" className="relative py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+              Выбери <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-turquoise-400 bg-clip-text text-transparent">свой пакет</span>
+            </h2>
+            <p className="text-xl text-white/60">Инвестиция в себя — лучшее решение 2026 года</p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* СТАНДАРТ */}
+            <div className="p-8 rounded-3xl bg-gradient-to-br from-slate-700/20 to-slate-800/50 border border-white/20 backdrop-blur-sm hover:border-white/40 transition-all duration-500">
+              <div className="text-center mb-6">
+                <div className="text-4xl mb-3">📦</div>
+                <h3 className="text-2xl font-bold mb-2">СТАНДАРТ</h3>
+                <div className="text-4xl font-bold text-white mb-2">4 900 ₽</div>
+              </div>
+
+              <ul className="space-y-3 mb-8">
+                {[
+                  "Полное участие во всех процессах квеста",
+                  "Ежедневные практические задания",
+                  "Лидерборд + прокачка аватара",
+                  "Живое сообщество",
+                  "Онлайн-встреча в ZOOM",
+                  "Встреча на Двери Возможностей",
+                  "Приз по завершению"
+                ].map((item, index) => (
+                  <li key={index} className="flex items-start gap-3 text-white/80 text-sm">
+                    <Icon name="Check" className="text-emerald-400 flex-shrink-0 mt-0.5" size={18} />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <Button 
+                className="w-full bg-white/10 hover:bg-white/20 border border-white/20 transition-all"
+                size="lg"
+              >
+                ВЫБРАТЬ ПАКЕТ
+              </Button>
+            </div>
+
+            {/* ПРЕМИУМ */}
+            <div className="relative p-8 rounded-3xl bg-gradient-to-br from-purple-600/20 via-amber-600/20 to-purple-600/20 border-2 border-amber-500/50 backdrop-blur-sm hover:border-amber-500/70 transition-all duration-500 scale-105">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-amber-600 to-orange-600 rounded-full text-sm font-bold">
+                РЕКОМЕНДУЕМ
+              </div>
+              
+              <div className="text-center mb-6">
+                <div className="text-4xl mb-3">👑</div>
+                <h3 className="text-2xl font-bold mb-2">ПРЕМИУМ</h3>
+                <div className="text-4xl font-bold text-amber-400 mb-2">6 900 ₽</div>
+                <p className="text-sm text-emerald-400">💰 Экономия: 2000 ₽</p>
+              </div>
+
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start gap-3 text-white/80 text-sm">
+                  <Icon name="Check" className="text-amber-400 flex-shrink-0 mt-0.5" size={18} />
+                  <span className="font-semibold">ВСЁ из Стандарта</span>
+                </li>
+                <li className="text-sm font-semibold text-amber-400 mt-4 mb-2">+ ИНДИВИДУАЛЬНЫЙ АНАЛИЗ:</li>
+                {[
+                  "Нумерология",
+                  "Астрология",
+                  "Хьюман Дизайн",
+                  "Икигай",
+                  "Персональные перспективы развития на 2026"
+                ].map((item, index) => (
+                  <li key={index} className="flex items-start gap-3 text-white/80 text-sm">
+                    <Icon name="Star" className="text-amber-400 flex-shrink-0 mt-0.5" size={18} />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <Button 
+                className="w-full bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 border-none shadow-lg shadow-amber-500/30 transition-all"
+                size="lg"
+              >
+                ВЫБРАТЬ ПАКЕТ
+              </Button>
+            </div>
+
+            {/* VIP */}
+            <div className="p-8 rounded-3xl bg-gradient-to-br from-purple-600/20 via-pink-600/20 to-purple-600/20 border-2 border-purple-500/50 backdrop-blur-sm hover:border-purple-500/70 transition-all duration-500">
+              <div className="text-center mb-6">
+                <div className="text-4xl mb-3">💎</div>
+                <h3 className="text-2xl font-bold mb-2">VIP</h3>
+                <div className="text-sm text-white/60 mb-2">ВСЁ ВКЛЮЧЕНО</div>
+                <div className="text-4xl font-bold text-purple-400 mb-2">9 900 ₽</div>
+                <p className="text-sm text-emerald-400">💰 Экономия: 3000 ₽</p>
+              </div>
+
+              <ul className="space-y-3 mb-8">
+                <li className="flex items-start gap-3 text-white/80 text-sm">
+                  <Icon name="Check" className="text-purple-400 flex-shrink-0 mt-0.5" size={18} />
+                  <span className="font-semibold">ВСЁ из Премиума</span>
+                </li>
+                <li className="text-sm font-semibold text-purple-400 mt-4 mb-2">+ ЛИЧНОЕ СОПРОВОЖДЕНИЕ:</li>
+                {[
+                  "2 недели после завершения",
+                  "Персональная поддержка",
+                  "1-на-1 консультации",
+                  "Дарья рядом с тобой"
+                ].map((item, index) => (
+                  <li key={index} className="flex items-start gap-3 text-white/80 text-sm">
+                    <Icon name="Crown" className="text-purple-400 flex-shrink-0 mt-0.5" size={18} />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <Button 
+                className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 border-none shadow-lg shadow-purple-500/30 transition-all"
+                size="lg"
+              >
+                ВЫБРАТЬ ПАКЕТ
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* БЛОК 10: FAQ */}
+      <section className="relative py-20 bg-gradient-to-b from-slate-950 to-slate-900">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+              Частые <span className="bg-gradient-to-r from-purple-400 to-amber-400 bg-clip-text text-transparent">вопросы</span>
+            </h2>
+          </div>
+
+          <div className="space-y-6">
+            {[
+              {
+                q: "Сколько времени в день нужно уделять?",
+                a: "20 минут утром + 20 минут вечером = 40 минут в день. Это меньше, чем 1 серия в Netflix."
+              },
+              {
+                q: "Я не верю в свой успех. Получится ли у меня?",
+                a: "Я прошла это сама, когда казалось, что не получится. 700+ людей прошли с моим участием. Если ты дочитала до этого — ты уже на верном пути."
+              },
+              {
+                q: "Что если я пропущу день?",
+                a: "Ничего страшного. Это не строгий курс. Но суть квеста в ежедневном процессе. Если пропустила — просто продолжи завтра."
+              },
+              {
+                q: "Это только для женщин?",
+                a: "Да, это специально для женщин 35+. Контекст, практики, архетипы аватаров — всё подобрано именно для женской трансформации."
+              },
+              {
+                q: "Что если я не верю в астрологию?",
+                a: "Астрология здесь контекст, а не суть. Суть — это практические ежедневные задания. Они работают вне зависимости от веры."
+              },
+              {
+                q: "Можно ли участвовать, если я в другом часовом поясе?",
+                a: "Да, всё асинхронно. Задания присылаются в Telegram-чат, ты выполняешь в удобное для тебя время."
+              },
+              {
+                q: "Что входит в \"приз по завершению\"?",
+                a: "Это либо сертификат + подарок (Стандарт), либо специальный подарок + сертификат (Премиум/VIP). Точный список объявим в квесте."
+              },
+              {
+                q: "Если я куплю VIP, мне хватит 2 недель сопровождения?",
+                a: "Это стартовая поддержка для закрепления результатов. Многие участницы продолжают работать с Дарьей дальше (это отдельная опция)."
+              }
+            ].map((item, index) => (
+              <div 
+                key={index}
+                className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-purple-500/30 transition-all duration-300"
+              >
+                <h3 className="text-lg font-bold mb-3 text-purple-300">{item.q}</h3>
+                <p className="text-white/80 leading-relaxed">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FOOTER */}
       <footer id="reviews" className="relative py-12 bg-slate-950 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white/60">
-          <p>© 2026 АПГРЕЙД. Дарья Поддубная. Все права защищены.</p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+              <h4 className="text-lg font-bold mb-4 text-purple-400">АПГРЕЙД 2026</h4>
+              <p className="text-white/60 text-sm">Квест-челлендж для женщин 35+. Из усталости в горящий глаз за 14 дней.</p>
+            </div>
+            <div>
+              <h4 className="text-lg font-bold mb-4">Контакты</h4>
+              <div className="space-y-2 text-sm">
+                <a href="https://wa.me/79149666617" className="block text-white/60 hover:text-emerald-400 transition-colors">WhatsApp</a>
+                <a href="https://t.me/dashapoddubnaya" className="block text-white/60 hover:text-sky-400 transition-colors">Telegram</a>
+                <a href="https://instagram.com/dashapoddubnaya" className="block text-white/60 hover:text-pink-400 transition-colors">Instagram</a>
+              </div>
+            </div>
+            <div>
+              <h4 className="text-lg font-bold mb-4">Навигация</h4>
+              <div className="space-y-2 text-sm">
+                <button onClick={() => scrollToSection('about')} className="block text-white/60 hover:text-white transition-colors">О квесте</button>
+                <button onClick={() => scrollToSection('program')} className="block text-white/60 hover:text-white transition-colors">Программа</button>
+                <button onClick={() => scrollToSection('packages')} className="block text-white/60 hover:text-white transition-colors">Пакеты</button>
+              </div>
+            </div>
+          </div>
+          <div className="text-center text-white/60 text-sm pt-8 border-t border-white/10">
+            <p>© 2026 АПГРЕЙД. Дарья Цыбульская. Все права защищены.</p>
+          </div>
         </div>
       </footer>
     </div>
