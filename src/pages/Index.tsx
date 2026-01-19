@@ -208,9 +208,9 @@ export default function Index() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-              Ты это <span className="bg-gradient-to-r from-purple-400 to-amber-400 bg-clip-text text-transparent">знаешь?</span>
+              Что тебе <span className="bg-gradient-to-r from-purple-400 to-amber-400 bg-clip-text text-transparent">знакомо?</span>
             </h2>
-            <p className="text-xl text-white/60">Узнаёшь себя хотя бы в 3-х пунктах?</p>
+            <p className="text-xl text-white/60">Пройди чек-лист</p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-4 mb-16">
