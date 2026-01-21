@@ -33,7 +33,9 @@ export default function FooterWithPopup({ scrollToSection, showPopup, setShowPop
                     { icon: "Heart", text: "Избавишься от усталости и тяжести" },
                     { icon: "Eye", text: "Обретёшь ясность и новые намерения" },
                     { icon: "Users", text: "Встретишь сообщество единомышленниц" },
-                    { icon: "Sunrise", text: "Пройдёшь в новый цикл жизни через \"Дверь Возможностей\"" },
+                    { icon: "HeartHandshake", text: "Улучшишь отношения с близкими" },
+                    { icon: "TrendingUp", text: "Повысишь уровень своей уверенности и ценности" },
+                    { icon: "Sunrise", text: "Войдешь ярко в новый важный цикл жизни 2026 года" },
                     { icon: "Gamepad2", text: "Увидишь всё визуально через прокачку своего аватара" }
                   ].map((item, index) => (
                     <div key={index} className="flex items-start gap-4 p-4 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10">
@@ -42,7 +44,8 @@ export default function FooterWithPopup({ scrollToSection, showPopup, setShowPop
                         className={`text-amber-400 flex-shrink-0 mt-1 ${
                           item.icon === 'Zap' ? 'animate-pulse-glow' :
                           item.icon === 'Heart' ? 'animate-float' :
-                          item.icon === 'Eye' || item.icon === 'Users' ? 'icon-hover' :
+                          item.icon === 'Eye' || item.icon === 'Users' || item.icon === 'HeartHandshake' ? 'icon-hover' :
+                          item.icon === 'TrendingUp' ? 'animate-wiggle' :
                           item.icon === 'Sunrise' ? 'animate-float' :
                           item.icon === 'Gamepad2' ? 'animate-wiggle' : ''
                         }`}
@@ -58,7 +61,7 @@ export default function FooterWithPopup({ scrollToSection, showPopup, setShowPop
                     Это не просто программа. <span className="text-purple-400">Это ИГРА твоей трансформации.</span>
                   </p>
                   <p className="text-xl text-white/80">
-                    А ты уже пришла сюда с отклик — значит, ты уже на старте.
+                    А ты уже пришла сюда с откликом — значит, ты уже на старте.
                   </p>
                   <p className="text-2xl font-bold text-amber-400">
                     Выбери свой пакет и присоединяйся.
