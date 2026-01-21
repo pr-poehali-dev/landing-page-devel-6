@@ -17,6 +17,8 @@ export default function MainSections({
   showCheckResult, 
   setShowCheckResult 
 }: MainSectionsProps) {
+  const [showModal, setShowModal] = React.useState(false);
+
   return (
     <>
       {/* ПРОБЛЕМА: ЗЕРКАЛО */}
@@ -50,6 +52,9 @@ export default function MainSections({
                     const newChecked = [...checkedItems];
                     newChecked[index] = !newChecked[index];
                     setCheckedItems(newChecked);
+                    if (index === 0 && newChecked[index]) {
+                      setShowModal(true);
+                    }
                   }}
                 >
                   <div className={`w-6 h-6 rounded border-2 flex-shrink-0 mt-0.5 transition-all flex items-center justify-center ${
@@ -89,6 +94,70 @@ export default function MainSections({
           </div>
         </div>
       </section>
+
+      {/* МОДАЛЬНОЕ ОКНО */}
+      {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
+          <div className="relative max-w-2xl w-full p-8 rounded-3xl bg-gradient-to-br from-slate-900 to-purple-900 border border-purple-500/30 shadow-2xl">
+            <button 
+              onClick={() => setShowModal(false)}
+              className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all"
+            >
+              <Icon name="X" size={16} />
+            </button>
+
+            <div className="mb-6">
+              <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">
+                Энергетическая и психологическая усталость
+              </h3>
+              
+              <div className="space-y-4 text-white/80 leading-relaxed">
+                <p>
+                  Ты просыпаешься, но не чувствуешь, что проснулась.
+                </p>
+                <p>
+                  Весь день как через стекло — даже любимое кажется тусклым. Ты работаешь, общаешься, улыбаешься, но внутри пусто. Как батарейка, которая разрядилась, но никто не позволяет ей отдохнуть.
+                </p>
+                <p className="text-amber-400 font-semibold">
+                  Это усталость не от работы. Это усталость ОТ ЖИЗНИ.
+                </p>
+                <p>
+                  Энергетическая усталость означает, что твоя внутренняя батарейка истощена. Ты отдаёшь, но не получаешь обратно. Психологическая усталость — это когда ум не может больше бороться со своими же мыслями.
+                </p>
+                
+                <div className="pt-4">
+                  <p className="font-semibold text-white mb-3">За эти 14 дней ты:</p>
+                  <ul className="space-y-2">
+                    <li className="flex items-start gap-2">
+                      <span className="text-purple-400">✨</span>
+                      <span>Научишься восстанавливать энергию каждый день</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-purple-400">✨</span>
+                      <span>Поймёшь, что иссушает твою батарейку</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-purple-400">✨</span>
+                      <span>Вернёшь тот самый здоровый жар изнутри</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <p className="text-turquoise-400 font-semibold pt-4">
+                  Это начало. Это первый шаг к восстановлению.
+                </p>
+              </div>
+            </div>
+
+            <Button 
+              onClick={() => setShowModal(false)}
+              className="w-full bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 border-none shadow-lg"
+            >
+              Понятно
+            </Button>
+          </div>
+        </div>
+      )}
 
       {/* РЕШЕНИЕ */}
       <section id="program" className="relative py-20">
