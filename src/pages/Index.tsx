@@ -261,7 +261,7 @@ export default function Index() {
                 <div className="w-12 h-12 rounded-2xl bg-red-500/20 flex items-center justify-center">
                   <Icon name="X" className="text-red-400" size={24} />
                 </div>
-                <h3 className="text-2xl font-bold">Что это НЕ</h3>
+                <h3 className="text-3xl font-bold bg-gradient-to-r from-red-400 via-red-500 to-red-600 bg-clip-text text-transparent">ЭТО НЕ</h3>
               </div>
               <ul className="space-y-4">
                 {[
@@ -284,7 +284,7 @@ export default function Index() {
                 <div className="w-12 h-12 rounded-2xl bg-emerald-500/20 flex items-center justify-center">
                   <Icon name="CheckCircle2" className="text-emerald-400" size={24} />
                 </div>
-                <h3 className="text-2xl font-bold">Что это ЕСТЬ</h3>
+                <h3 className="text-3xl font-bold bg-gradient-to-r from-emerald-400 via-emerald-500 to-emerald-600 bg-clip-text text-transparent">ЭТО</h3>
               </div>
               <ul className="space-y-4">
                 {[
@@ -292,7 +292,7 @@ export default function Index() {
                   "Ежедневные простые, но эффективные задания",
                   "20 мин утром + 20 мин вечером — это всё",
                   "Игровой формат с лидербордом и аватарами",
-                  "Живое взаимодействие с Дарьей и участницами"
+                  "Живое взаимодействие с Дарьей и участницами в чате"
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3 text-white/90">
                     <Icon name="Check" className="text-emerald-400 flex-shrink-0 mt-0.5" size={20} />
@@ -308,16 +308,16 @@ export default function Index() {
                 <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-500/20 to-amber-500/20 flex items-center justify-center">
                   <Icon name="Gamepad2" className="text-purple-400 animate-wiggle" size={24} />
                 </div>
-                <h3 className="text-2xl font-bold">Как работает</h3>
+                <h3 className="text-3xl font-bold bg-gradient-to-r from-purple-400 via-amber-400 to-turquoise-400 bg-clip-text text-transparent">КАК РАБОТАЕТ</h3>
               </div>
               <ul className="space-y-4">
                 {[
                   { icon: "User", text: "Выбираешь АВАТАР (по отклику)" },
                   { icon: "Target", text: "Ежедневные ЗАДАНИЯ (по теме дня)" },
                   { icon: "Trophy", text: "Выполняешь → получаешь БАЛЛЫ" },
-                  { icon: "Sparkles", text: "Твой аватар ТРАНСФОРМИРУЕТСЯ вместе с тобой" },
+                  { icon: "Sparkles", text: "Твой аватар ТРАНСФОРМИРУЕТСЯ вместе с ТОБОЙ" },
                   { icon: "TrendingUp", text: "Ты видишь свой прогресс ВИЗУАЛЬНО" },
-                  { icon: "Award", text: "Лидерборд создаёт здоровую конкуренцию" }
+                  { icon: "Award", text: "Идешь к своей ПОБЕДЕ - получаешь ПРИЗ" }
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3 text-white/90">
                     <Icon 
