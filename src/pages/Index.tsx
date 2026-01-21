@@ -66,7 +66,7 @@ export default function Index() {
 
           {/* Main Header */}
           <div className="flex items-center justify-between py-4">
-            <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 via-amber-400 to-turquoise-400 bg-clip-text text-transparent" style={{textShadow: '0 0 20px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.8), 2px 2px 4px rgba(0,0,0,1)'}}>
+            <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">
               АПГРЕЙД 2026
             </div>
 
@@ -209,8 +209,8 @@ export default function Index() {
       <section id="about" className="relative py-20 bg-gradient-to-b from-slate-900 to-slate-950">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{textShadow: '0 0 20px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.8), 2px 2px 4px rgba(0,0,0,1)'}}>
-              Что тебе <span className="bg-gradient-to-r from-purple-400 to-amber-400 bg-clip-text text-transparent" style={{textShadow: '0 0 20px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.8), 2px 2px 4px rgba(0,0,0,1)'}}>знакомо?</span>
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+              Что тебе <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">знакомо?</span>
             </h2>
             <p className="text-xl text-white/60">Пройди чек-лист</p>
           </div>
@@ -280,8 +280,8 @@ export default function Index() {
       <section id="program" className="relative py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6 drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]">
-              АПГРЕЙД 2026: <span className="bg-gradient-to-r from-amber-400 to-turquoise-400 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]">Не курс. Не теория. ПРОЦЕСС.</span>
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+              АПГРЕЙД 2026: <span className="bg-gradient-to-r from-amber-400 via-turquoise-400 to-white bg-clip-text text-transparent">Не курс. Не теория. ПРОЦЕСС.</span>
             </h2>
           </div>
 
@@ -386,8 +386,8 @@ export default function Index() {
       <section className="relative py-20 bg-gradient-to-b from-slate-950 to-slate-900">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{textShadow: '0 0 20px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.8), 2px 2px 4px rgba(0,0,0,1)'}}>
-              <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-turquoise-400 bg-clip-text text-transparent" style={{textShadow: '0 0 20px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.8), 2px 2px 4px rgba(0,0,0,1)'}}>Таймлайн квеста</span>
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">Таймлайн квеста</span>
             </h2>
             <p className="text-xl text-white/60">Две недели — два этапа трансформации</p>
           </div>
@@ -555,8 +555,8 @@ export default function Index() {
       <section id="avatars" className="relative py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{textShadow: '0 0 20px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.8), 2px 2px 4px rgba(0,0,0,1)'}}>
-              Выбери <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-turquoise-400 bg-clip-text text-transparent" style={{textShadow: '0 0 20px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.8), 2px 2px 4px rgba(0,0,0,1)'}}>своего аватара</span>
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+              Выбери <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">своего аватара</span>
             </h2>
             <p className="text-xl text-white/60">Твой персональный путь трансформации за 14 дней</p>
           </div>
@@ -693,8 +693,8 @@ export default function Index() {
       <section className="relative py-20 bg-gradient-to-b from-slate-900 to-slate-950">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{textShadow: '0 0 20px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.8), 2px 2px 4px rgba(0,0,0,1)'}}>
-              Почему именно <span className="bg-gradient-to-r from-purple-400 to-amber-400 bg-clip-text text-transparent" style={{textShadow: '0 0 20px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.8), 2px 2px 4px rgba(0,0,0,1)'}}>9 февраля?</span>
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+              Почему именно <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">9 февраля?</span>
             </h2>
             <p className="text-xl text-white/60">(Это не просто дата — это МОМЕНТ)</p>
           </div>
@@ -783,8 +783,8 @@ export default function Index() {
       <section className="relative py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{textShadow: '0 0 20px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.8), 2px 2px 4px rgba(0,0,0,1)'}}>
-              За 14 дней <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-turquoise-400 bg-clip-text text-transparent" style={{textShadow: '0 0 20px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.8), 2px 2px 4px rgba(0,0,0,1)'}}>ты получишь</span>
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+              За 14 дней <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">ты получишь</span>
             </h2>
           </div>
 
@@ -827,8 +827,8 @@ export default function Index() {
       <section className="relative py-20 bg-gradient-to-b from-slate-950 to-slate-900">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{textShadow: '0 0 20px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.8), 2px 2px 4px rgba(0,0,0,1)'}}>
-              Я прошла этот путь <span className="bg-gradient-to-r from-purple-400 to-amber-400 bg-clip-text text-transparent" style={{textShadow: '0 0 20px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.8), 2px 2px 4px rgba(0,0,0,1)'}}>сама</span>
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+              Я прошла этот путь <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">сама</span>
             </h2>
             <p className="text-xl text-white/60">Теперь помогаю другим</p>
           </div>
