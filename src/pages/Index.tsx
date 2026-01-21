@@ -280,8 +280,8 @@ export default function Index() {
       <section id="program" className="relative py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-              АПГРЕЙД: <span className="bg-gradient-to-r from-amber-400 to-turquoise-400 bg-clip-text text-transparent">Не курс. Не теория. ПРОЦЕСС.</span>
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6 drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]">
+              АПГРЕЙД 2026: <span className="bg-gradient-to-r from-amber-400 to-turquoise-400 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]">Не курс. Не теория. ПРОЦЕСС.</span>
             </h2>
           </div>
 
@@ -838,14 +838,14 @@ export default function Index() {
             <div className="relative">
               <div className="rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
                 <img 
-                  src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/23be08b3-1923-4c50-b0d0-64d89656714d.jpg"
+                  src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/7bb4cf62-980a-4732-bc77-0398b3258b4c.jpg"
                   alt="Дарья Цыбульская"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="mt-6 text-center">
-                <h3 className="text-2xl font-bold mb-2">Дарья Цыбульская, 47 лет</h3>
-                <p className="text-white/60">Юрист по образованию, мама двух сыновей.<br />Живу во Владивостоке, Дальний Восток.</p>
+                <h3 className="text-2xl font-bold mb-2 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">Дарья Цыбульская, 47 лет</h3>
+                <p className="text-white/90 drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">Юрист по образованию, мама двух сыновей.<br />Живу во Владивостоке, Дальний Восток.</p>
               </div>
             </div>
 
