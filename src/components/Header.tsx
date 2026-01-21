@@ -9,37 +9,6 @@ export default function Header({ scrollToSection }: HeaderProps) {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-slate-950/80 border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Quick Contacts Bar */}
-        <div className="py-2 border-b border-white/5 flex items-center justify-center gap-6 text-sm">
-          <a 
-            href="https://wa.me/79149666617" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-white/70 hover:text-emerald-400 transition-all duration-300 hover:scale-110"
-          >
-            <Icon name="MessageCircle" size={16} className="icon-hover" />
-            <span>WhatsApp</span>
-          </a>
-          <a 
-            href="https://t.me/dashapoddubnaya" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-white/70 hover:text-sky-400 transition-all duration-300 hover:scale-110"
-          >
-            <Icon name="Send" size={16} className="icon-hover" />
-            <span>Telegram</span>
-          </a>
-          <a 
-            href="https://instagram.com/dashapoddubnaya" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-white/70 hover:text-pink-400 transition-all duration-300 hover:scale-110"
-          >
-            <Icon name="Instagram" size={16} className="icon-hover" />
-            <span>Instagram</span>
-          </a>
-        </div>
-
         {/* Main Header */}
         <div className="flex items-center justify-between py-4">
           <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">
