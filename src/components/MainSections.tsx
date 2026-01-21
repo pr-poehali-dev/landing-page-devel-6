@@ -48,13 +48,14 @@ export default function MainSections({
                   key={index}
                   className="flex items-start gap-4 p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-purple-500/30 transition-all duration-300 group cursor-pointer"
                   style={{animationDelay: `${index * 0.1}s`}}
-                  onClick={() => {
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    if (index === 0) {
+                      setShowModal(true);
+                    }
                     const newChecked = [...checkedItems];
                     newChecked[index] = !newChecked[index];
                     setCheckedItems(newChecked);
-                    if (index === 0 && newChecked[index]) {
-                      setShowModal(true);
-                    }
                   }}
                 >
                   <div className={`w-6 h-6 rounded border-2 flex-shrink-0 mt-0.5 transition-all flex items-center justify-center ${
