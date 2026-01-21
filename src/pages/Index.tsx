@@ -658,8 +658,10 @@ export default function Index() {
 
           {/* КАК ВЫБРАТЬ АВАТАРА */}
           <div className="mt-16 max-w-4xl mx-auto p-10 rounded-3xl bg-gradient-to-br from-purple-600/20 via-amber-600/20 to-turquoise-600/20 border border-purple-500/30 backdrop-blur-sm">
-            <h3 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">
-              КАК ВЫБРАТЬ СВОЙ АВАТАР?
+            <h3 className="text-3xl font-bold text-center mb-8">
+              <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">
+                КАК ВЫБРАТЬ СВОЙ АВАТАР?
+              </span>
             </h3>
             
             <div className="space-y-6 text-white/90 text-lg leading-relaxed">
