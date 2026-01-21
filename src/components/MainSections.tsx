@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
 
@@ -10,6 +10,45 @@ interface MainSectionsProps {
   setShowCheckResult: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
+const problemsData = [
+  {
+    title: "Энергетическая и психологическая усталость",
+    description: "Это состояние, когда ты просыпаешься уже уставшей, и к вечеру силы на нуле. Ты чувствуешь, что работаешь на автопилоте, а энергии хватает только на самое необходимое. Твой внутренний аккумулятор разряжен, и ты не знаешь, как его зарядить."
+  },
+  {
+    title: "Апатия, раздражение, \"ничего не хочется\"",
+    description: "Тебе сложно найти радость в том, что раньше приносило удовольствие. Всё кажется серым и одинаковым. Мелочи раздражают, а мотивация делать что-то новое на нуле. Это не лень — это сигнал, что твоя система перегружена."
+  },
+  {
+    title: "Живёшь в \"дне сурка\" — одни и те же дни",
+    description: "Каждый день похож на предыдущий: работа, дом, обязанности. Ты застряла в рутине, и времени на себя почти не остаётся. Жизнь проходит мимо, а ты чувствуешь, что топчешься на месте. Хочется перемен, но не знаешь, с чего начать."
+  },
+  {
+    title: "Редко испытываешь радость и вдохновение",
+    description: "Раньше ты загоралась идеями, мечтала, строила планы. Сейчас эта искра погасла. Ты реже улыбаешься, реже чувствуешь восторг. Жизнь стала функциональной, а не вдохновляющей. Ты скучаешь по той себе, которая была полна энергии."
+  },
+  {
+    title: "Физическая тяжесть, потеря лёгкости в теле",
+    description: "Твоё тело чувствует тяжесть. Лишний вес, отёки, напряжение в мышцах, проблемы со сном. Ты словно носишь на себе груз, который мешает двигаться свободно. Хочется вернуть лёгкость, но не знаешь, как это сделать."
+  },
+  {
+    title: "\"Спасательный круг\" после праздников",
+    description: "После новогодних праздников, застолий и отдыха ты чувствуешь, что набрала вес и потеряла форму. Одежда сидит иначе, отражение в зеркале не радует. Хочется быстро вернуться в форму, но мотивация на нуле."
+  },
+  {
+    title: "Нет ощущения собственной ценности",
+    description: "Ты чувствуешь, что живёшь для других: работа, семья, обязанности. Твои желания и потребности отходят на второй план. Ты забыла, что ты важна сама по себе, а не только как мама, жена, сотрудница. Хочется вернуть ощущение собственной ценности."
+  },
+  {
+    title: "Чувство внутренней опасности и неуверенности",
+    description: "Внутри поселилась тревога. Ты не чувствуешь себя в безопасности — ни эмоционально, ни физически. Мир кажется нестабильным, будущее — неопределённым. Хочется обрести опору внутри себя, но не знаешь, как это сделать."
+  },
+  {
+    title: "Потеря смысла в том, что раньше вдохновляло",
+    description: "То, что раньше наполняло жизнь смыслом, сейчас кажется пустым. Цели, которые ты ставила, больше не вдохновляют. Ты в точке, когда нужно переосмыслить свою жизнь и найти новый вектор движения. Это не конец — это начало нового этапа."
+  }
+];
+
 export default function MainSections({ 
   scrollToSection, 
   checkedItems, 
@@ -17,6 +56,23 @@ export default function MainSections({
   showCheckResult, 
   setShowCheckResult 
 }: MainSectionsProps) {
+  const [selectedProblem, setSelectedProblem] = useState<number | null>(null);
+
+  const handleProblemClick = (index: number) => {
+    setSelectedProblem(index);
+  };
+
+  const closeModal = () => {
+    setSelectedProblem(null);
+  };
+
+  const toggleCheck = (index: number, e: React.MouseEvent) => {
+    e.stopPropagation();
+    const newChecked = [...checkedItems];
+    newChecked[index] = !newChecked[index];
+    setCheckedItems(newChecked);
+  };
+
   return (
     <>
       {/* ПРОБЛЕМА: ЗЕРКАЛО */}
@@ -31,40 +87,91 @@ export default function MainSections({
 
           <div className="relative">
             <div className="grid md:grid-cols-2 gap-4 mb-16">
-              {[
-                "Энергетическая и психологическая усталость",
-                "Апатия, раздражение, \"ничего не хочется\"",
-                "Живёшь в \"дне сурка\" — одни и те же дни",
-                "Редко испытываешь радость и вдохновение",
-                "Физическая тяжесть, потеря лёгкости в теле",
-                "\"Спасательный круг\" после праздников",
-                "Нет ощущения собственной ценности",
-                "Чувство внутренней опасности и неуверенности",
-                "Потеря смысла в том, что раньше вдохновляло"
-              ].map((problem, index) => (
+              {problemsData.map((problem, index) => (
                 <div 
                   key={index}
                   className="flex items-start gap-4 p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-purple-500/30 transition-all duration-300 group cursor-pointer"
                   style={{animationDelay: `${index * 0.1}s`}}
-                  onClick={() => {
-                    const newChecked = [...checkedItems];
-                    newChecked[index] = !newChecked[index];
-                    setCheckedItems(newChecked);
-                  }}
+                  onClick={() => handleProblemClick(index)}
                 >
-                  <div className={`w-6 h-6 rounded border-2 flex-shrink-0 mt-0.5 transition-all flex items-center justify-center ${
-                    checkedItems[index] 
-                      ? 'border-purple-400 bg-purple-600' 
-                      : 'border-white/30 group-hover:border-purple-400'
-                  }`}>
+                  <div 
+                    className={`w-6 h-6 rounded border-2 flex-shrink-0 mt-0.5 transition-all flex items-center justify-center ${
+                      checkedItems[index] 
+                        ? 'border-purple-400 bg-purple-600' 
+                        : 'border-white/30 group-hover:border-purple-400'
+                    }`}
+                    onClick={(e) => toggleCheck(index, e)}
+                  >
                     {checkedItems[index] && (
                       <Icon name="Check" className="text-white" size={16} />
                     )}
                   </div>
-                  <p className="text-white/80 group-hover:text-white transition-colors">{problem}</p>
+                  <p className="text-white/80 group-hover:text-white transition-colors">{problem.title}</p>
                 </div>
               ))}
             </div>
+
+            {/* Modal окно с описанием */}
+            {selectedProblem !== null && (
+              <div 
+                className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-fade-in"
+                onClick={closeModal}
+              >
+                <div 
+                  className="relative max-w-2xl w-full p-8 rounded-3xl bg-gradient-to-br from-slate-900 to-slate-800 border border-purple-500/30 shadow-2xl shadow-purple-500/20 animate-scale-in"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <button
+                    onClick={closeModal}
+                    className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-white/10 transition-colors"
+                  >
+                    <Icon name="X" size={20} className="text-white/70" />
+                  </button>
+
+                  <div className="space-y-6">
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 rounded-full bg-purple-600/20 flex items-center justify-center flex-shrink-0">
+                        <Icon name="Info" className="text-purple-400" size={24} />
+                      </div>
+                      <div>
+                        <h3 className="text-2xl font-bold mb-4 text-white">
+                          {problemsData[selectedProblem].title}
+                        </h3>
+                        <p className="text-lg text-white/80 leading-relaxed">
+                          {problemsData[selectedProblem].description}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center justify-between pt-6 border-t border-white/10">
+                      <div 
+                        className="flex items-center gap-3 cursor-pointer hover:scale-105 transition-transform"
+                        onClick={(e) => toggleCheck(selectedProblem, e)}
+                      >
+                        <div className={`w-6 h-6 rounded border-2 transition-all flex items-center justify-center ${
+                          checkedItems[selectedProblem] 
+                            ? 'border-purple-400 bg-purple-600' 
+                            : 'border-white/30 hover:border-purple-400'
+                        }`}>
+                          {checkedItems[selectedProblem] && (
+                            <Icon name="Check" className="text-white" size={16} />
+                          )}
+                        </div>
+                        <span className="text-white/70">Отметить как знакомое</span>
+                      </div>
+
+                      <Button
+                        onClick={closeModal}
+                        className="bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 border-none"
+                      >
+                        Понятно
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
 
             {/* Кнопка Проверить */}
             <div className="flex justify-end mb-8">
