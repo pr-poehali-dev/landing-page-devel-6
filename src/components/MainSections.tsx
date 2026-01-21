@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
 
@@ -17,7 +17,16 @@ export default function MainSections({
   showCheckResult, 
   setShowCheckResult 
 }: MainSectionsProps) {
-  const [showModal, setShowModal] = React.useState(false);
+  const [showModal, setShowModal] = useState(false);
+
+  const handleItemClick = (index: number) => {
+    if (index === 0) {
+      setShowModal(true);
+    }
+    const newChecked = [...checkedItems];
+    newChecked[index] = !newChecked[index];
+    setCheckedItems(newChecked);
+  };
 
   return (
     <>
@@ -48,16 +57,7 @@ export default function MainSections({
                   key={index}
                   className="flex items-start gap-4 p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-purple-500/30 transition-all duration-300 group cursor-pointer"
                   style={{animationDelay: `${index * 0.1}s`}}
-                  onClick={() => {
-                    console.log('Клик на пункт', index);
-                    if (index === 0) {
-                      console.log('Открываю модалку');
-                      setShowModal(true);
-                    }
-                    const newChecked = [...checkedItems];
-                    newChecked[index] = !newChecked[index];
-                    setCheckedItems(newChecked);
-                  }}
+                  onClick={() => handleItemClick(index)}
                 >
                   <div className={`w-6 h-6 rounded border-2 flex-shrink-0 mt-0.5 transition-all flex items-center justify-center ${
                     checkedItems[index] 
@@ -99,7 +99,8 @@ export default function MainSections({
 
       {/* МОДАЛЬНОЕ ОКНО */}
       {showModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+          style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0 }}>
           <div className="relative max-w-2xl w-full p-8 rounded-3xl bg-gradient-to-br from-slate-900 to-purple-900 border border-purple-500/30 shadow-2xl">
             <button 
               onClick={() => setShowModal(false)}
