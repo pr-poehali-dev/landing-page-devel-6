@@ -655,6 +655,44 @@ export default function Index() {
               </Button>
             </div>
           </div>
+
+          {/* КАК ВЫБРАТЬ АВАТАРА */}
+          <div className="mt-16 max-w-4xl mx-auto p-10 rounded-3xl bg-gradient-to-br from-purple-600/20 via-amber-600/20 to-turquoise-600/20 border border-purple-500/30 backdrop-blur-sm">
+            <h3 className="text-3xl font-bold text-center mb-8 bg-gradient-to-r from-purple-400 via-amber-400 to-turquoise-400 bg-clip-text text-transparent">
+              КАК ВЫБРАТЬ СВОЙ АВАТАР?
+            </h3>
+            
+            <div className="space-y-6 text-white/90 text-lg leading-relaxed">
+              <p className="text-2xl font-semibold text-amber-400 text-center">
+                Доверься первому порыву.
+              </p>
+              
+              <p className="text-center">
+                Смотри на описание и прислушивайся к интуиции. Какой аватар "говорит" с тобой? Какое описание заставило твоё сердце биться чаще?
+              </p>
+              
+              <div className="mt-8 space-y-4">
+                <p className="font-semibold text-purple-300 text-xl">Помни:</p>
+                <ul className="space-y-3">
+                  {[
+                    "Нет \"правильного\" или \"неправильного\" аватара",
+                    "Каждый архетип — это зеркало твоего пути",
+                    "Твой аватар будет прокачиваться ВМЕСТЕ с ТОБОЙ за эти 14 дней",
+                    "Выбор аватара — это выбор, какую версию себя ты хочешь встретить"
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <Icon name="Sparkles" className="text-amber-400 flex-shrink-0 mt-1 animate-pulse-glow" size={20} />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              
+              <p className="text-2xl font-bold text-center mt-8 bg-gradient-to-r from-orange-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent">
+                Выбери аватара и начни свою трансформацию! 🔥👑✨
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
