@@ -1109,7 +1109,7 @@ export default function Index() {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/20 to-amber-600/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
               <div className="relative p-8 rounded-3xl bg-gradient-to-br from-slate-900/90 to-slate-950/90 border-2 border-yellow-500/50 backdrop-blur-sm hover:border-yellow-400 transition-all duration-300">
-                <div className="text-6xl mb-4 text-center">🥇</div>
+                <div className="text-7xl mb-4 text-center animate-bounce">👑</div>
                 
                 <h2 className="text-2xl font-bold mb-2 text-center bg-gradient-to-r from-yellow-400 to-amber-500 bg-clip-text text-transparent">
                   ПЕРВОЕ МЕСТО
@@ -1128,8 +1128,8 @@ export default function Index() {
                     выполнила каждое задание, и твой аватар светит на максимум.
                   </p>
                   <p>
-                    Манифест Королевы — это не просто диплом. Это твоё официальное признание. 
-                    Печать того, что ты больше не служанка в чужой жизни. Ты — королева своей.
+                    Манифест Королевы — это не просто награда. Это твоё официальное признание. 
+                    Печать того, что ты больше не заложница чужой жизни. Ты — королева своей.
                   </p>
                   <p className="text-white font-semibold">
                     💎 Это твой трон. Заработай его.
@@ -1142,17 +1142,17 @@ export default function Index() {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-slate-400/20 to-gray-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
               <div className="relative p-8 rounded-3xl bg-gradient-to-br from-slate-900/90 to-slate-950/90 border-2 border-slate-400/50 backdrop-blur-sm hover:border-slate-300 transition-all duration-300">
-                <div className="text-6xl mb-4 text-center">🥈</div>
+                <div className="text-7xl mb-4 text-center animate-pulse">👑</div>
                 
                 <h2 className="text-2xl font-bold mb-2 text-center bg-gradient-to-r from-slate-300 to-gray-400 bg-clip-text text-transparent">
                   ВТОРОЕ МЕСТО
                 </h2>
                 <h3 className="text-xl font-bold mb-4 text-center text-white">
-                  Свидетельство о Героизме
+                  Свидетельство Героини
                 </h3>
                 
                 <p className="text-lg italic text-slate-300/80 mb-6 text-center">
-                  "Ты прошла весь путь и вышла сильнее"
+                  "Ты прошла весь путь и стала смелее"
                 </p>
                 
                 <div className="space-y-4 text-white/70">
@@ -1175,7 +1175,7 @@ export default function Index() {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
               <div className="relative p-8 rounded-3xl bg-gradient-to-br from-slate-900/90 to-slate-950/90 border-2 border-cyan-500/50 backdrop-blur-sm hover:border-cyan-400 transition-all duration-300">
-                <div className="text-6xl mb-4 text-center">🥉</div>
+                <div className="text-7xl mb-4 text-center animate-pulse">👑</div>
                 
                 <h2 className="text-2xl font-bold mb-2 text-center bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                   ТРЕТЬЕ МЕСТО
@@ -1218,19 +1218,19 @@ export default function Index() {
               <div className="flex items-start gap-3">
                 <span className="text-2xl">✅</span>
                 <div>
-                  <span className="font-semibold text-white">ЧЕСТНОСТЬ</span> — ты честна с собой и с сообществом
+                  <span className="font-semibold text-white">ЧЕСТНОСТЬ</span> — ты честна с собой и с участницами квеста
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-2xl">✅</span>
                 <div>
-                  <span className="font-semibold text-white">ВОВЛЕЧЕНИЕ</span> — ты выполняешь задания и участвуешь активно
+                  <span className="font-semibold text-white">ВОВЛЕЧЕНИЕ</span> — ты выполняешь задания, участвуешь активно в чате, даешь обратную связь
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-2xl">✅</span>
                 <div>
-                  <span className="font-semibold text-white">ТРАНСФОРМАЦИЯ</span> — твой аватар прокачивается, и это видно
+                  <span className="font-semibold text-white">ТРАНСФОРМАЦИЯ</span> — твой аватар прокачивается вместе с тобой, и это видно
                 </div>
               </div>
             </div>
