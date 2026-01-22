@@ -7,6 +7,7 @@ export default function Index() {
   const [showPopup, setShowPopup] = useState(false);
   const [checkedItems, setCheckedItems] = useState<boolean[]>(Array(9).fill(false));
   const [showCheckResult, setShowCheckResult] = useState(false);
+  const [showPhoenixModal, setShowPhoenixModal] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -564,6 +565,7 @@ export default function Index() {
               <p className="text-center text-lg font-semibold text-orange-300 mb-6">"Из пепла в пламя"</p>
 
               <Button 
+                onClick={() => setShowPhoenixModal(true)}
                 variant="outline"
                 className="w-full bg-orange-500/10 border-orange-500/30 hover:bg-orange-500/20 transition-all"
               >
@@ -1590,6 +1592,48 @@ export default function Index() {
                 className="bg-gradient-to-r from-emerald-600 to-purple-600 hover:from-emerald-700 hover:to-purple-700 border-none shadow-lg w-full"
               >
                 Выбрать пакет
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* МОДАЛЬНОЕ ОКНО ОГНЕННАЯ ФЕНИКС */}
+      {showPhoenixModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
+          <div className="relative max-w-lg w-full max-h-[90vh] flex flex-col rounded-3xl bg-gradient-to-br from-orange-900 to-red-900 border border-orange-500/30 shadow-2xl">
+            <button 
+              onClick={() => setShowPhoenixModal(false)}
+              className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all z-10"
+            >
+              <Icon name="X" size={16} />
+            </button>
+
+            <div className="flex-1 overflow-y-auto p-6 sm:p-10">
+              <div className="text-center">
+                <div className="text-7xl mb-6">🔥</div>
+                
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 text-orange-400">ОГНЕННАЯ ФЕНИКС</h3>
+                <p className="text-lg sm:text-xl italic text-orange-300/80 mb-6">"Из пепла в пламя"</p>
+                
+                <div className="text-left space-y-4 text-white/90 leading-relaxed text-sm sm:text-base">
+                  <p className="text-center text-white/60">
+                    Здесь скоро появится подробное описание архетипа...
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="p-4 sm:p-6 border-t border-white/10 bg-gradient-to-br from-orange-950/50 to-red-950/50">
+              <Button 
+                onClick={() => {
+                  setShowPhoenixModal(false);
+                  scrollToSection('packages');
+                }}
+                size="lg"
+                className="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 border-none shadow-lg w-full"
+              >
+                Выбрать этот архетип
               </Button>
             </div>
           </div>
