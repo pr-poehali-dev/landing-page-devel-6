@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 export default function Index() {
   const [scrollY, setScrollY] = useState(0);
@@ -684,36 +685,41 @@ export default function Index() {
               </span>
             </h3>
             
-            <div className="space-y-6 text-white/90 text-lg leading-relaxed">
-              <p className="text-2xl font-semibold text-amber-400 text-center">
-                Доверься первому порыву.
-              </p>
-              
-              <p className="text-center">
-                Смотри на описание и прислушивайся к интуиции. Какой аватар "говорит" с тобой? Какое описание заставило твоё сердце биться чаще?
-              </p>
-              
-              <div className="mt-8 space-y-4">
-                <p className="font-semibold text-purple-300 text-xl">Помни:</p>
-                <ul className="space-y-3">
-                  {[
-                    "Нет \"правильного\" или \"неправильного\" аватара",
-                    "Каждый архетип — это зеркало твоего пути",
-                    "Твой аватар будет прокачиваться ВМЕСТЕ с ТОБОЙ за эти 14 дней",
-                    "Выбор аватара — это выбор, какую версию себя ты хочешь встретить"
-                  ].map((item, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <Icon name="Sparkles" className="text-amber-400 flex-shrink-0 mt-1 animate-pulse-glow" size={20} />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              
-              <p className="text-2xl font-bold text-center mt-8 bg-gradient-to-r from-orange-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent">
-                Выбери аватара и начни свою трансформацию! 🔥👑✨
-              </p>
-            </div>
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="avatar-selection" className="border-purple-500/30">
+                <AccordionTrigger className="text-amber-400 hover:text-amber-300 text-xl font-semibold hover:no-underline">
+                  Доверься первому порыву
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-6 text-white/90 text-lg leading-relaxed pt-4">
+                    <p className="text-center">
+                      Смотри на описание и прислушивайся к интуиции. Какой аватар "говорит" с тобой? Какое описание заставило твоё сердце биться чаще?
+                    </p>
+                    
+                    <div className="mt-8 space-y-4">
+                      <p className="font-semibold text-purple-300 text-xl">Помни:</p>
+                      <ul className="space-y-3">
+                        {[
+                          "Нет \"правильного\" или \"неправильного\" аватара",
+                          "Каждый архетип — это зеркало твоего пути",
+                          "Твой аватар будет прокачиваться ВМЕСТЕ с ТОБОЙ за эти 14 дней",
+                          "Выбор аватара — это выбор, какую версию себя ты хочешь встретить"
+                        ].map((item, index) => (
+                          <li key={index} className="flex items-start gap-3">
+                            <Icon name="Sparkles" className="text-amber-400 flex-shrink-0 mt-1 animate-pulse-glow" size={20} />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    
+                    <p className="text-2xl font-bold text-center mt-8 bg-gradient-to-r from-orange-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent">
+                      Выбери аватара и начни свою трансформацию! 🔥👑✨
+                    </p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>
