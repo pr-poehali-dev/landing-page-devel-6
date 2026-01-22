@@ -18,6 +18,7 @@ export default function MainSections({
   setShowCheckResult 
 }: MainSectionsProps) {
   const [showModal, setShowModal] = useState(false);
+  const [showTestModal, setShowTestModal] = useState(false);
 
   const handleItemClick = (index: number) => {
     if (index === 0) {
@@ -26,6 +27,14 @@ export default function MainSections({
     const newChecked = [...checkedItems];
     newChecked[index] = !newChecked[index];
     setCheckedItems(newChecked);
+  };
+
+  const handleCheckClick = () => {
+    if (checkedItems[0]) {
+      setShowTestModal(true);
+    } else {
+      setShowCheckResult(true);
+    }
   };
 
   return (
@@ -76,7 +85,7 @@ export default function MainSections({
             {/* Кнопка Проверить */}
             <div className="flex justify-end mb-8">
               <Button
-                onClick={() => setShowCheckResult(true)}
+                onClick={handleCheckClick}
                 size="lg"
                 className="bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 border-none shadow-lg shadow-purple-500/30 transition-all duration-300 hover:scale-105"
               >
@@ -157,6 +166,37 @@ export default function MainSections({
               className="w-full bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 border-none shadow-lg"
             >
               Понятно
+            </Button>
+          </div>
+        </div>
+      )}
+
+      {/* ТЕСТОВОЕ МОДАЛЬНОЕ ОКНО */}
+      {showTestModal && (
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+          style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0 }}>
+          <div className="relative max-w-2xl w-full p-8 rounded-3xl bg-gradient-to-br from-slate-900 to-purple-900 border border-purple-500/30 shadow-2xl">
+            <button 
+              onClick={() => setShowTestModal(false)}
+              className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all"
+            >
+              <Icon name="X" size={16} />
+            </button>
+
+            <div className="mb-8 text-center">
+              <p className="text-3xl font-bold text-white leading-relaxed">
+                ТЕСТ ТЕСТ ТЕСТ ТЕСТ.
+              </p>
+            </div>
+
+            <Button 
+              onClick={() => {
+                setShowTestModal(false);
+                scrollToSection('pricing');
+              }}
+              className="w-full bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 border-none shadow-lg"
+            >
+              Перейти к выбору пакетов
             </Button>
           </div>
         </div>
