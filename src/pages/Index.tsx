@@ -1548,7 +1548,34 @@ export default function Index() {
               </div>
               
               <h3 className="text-2xl font-bold mb-4">Нужна ли тебе эта программа?</h3>
-              <p className="text-3xl font-bold text-emerald-400 mb-8">БЕЗ СОМНЕНИЙ — НУЖНА!</p>
+              <p className="text-3xl font-bold text-emerald-400 mb-6">БЕЗ СОМНЕНИЙ — НУЖНА!</p>
+              
+              <div className="text-left space-y-4 mb-8 text-white/90 leading-relaxed">
+                <p>
+                  Ты узнала себя в одном из этих пунктов — и это сигнал.
+                </p>
+                <p>
+                  Твоя энергия иссякает. Твоё тело тяжелеет. Твоя душа просит помощи.
+                </p>
+                <p className="font-semibold text-emerald-300">
+                  Апгрейд — это ответ на этот сигнал.
+                </p>
+                <p>
+                  За 14 дней ты не будешь слушать лекции. Ты будешь ПРАКТИКОВАТЬ. 40 минут в день — и твой аватар прокачивается вместе с тобой.
+                </p>
+                <p>
+                  Ты вернёшь лёгкость в теле, ясность в голове и главное — состояние "Горящий Глаз".
+                </p>
+                <p>
+                  Впервые за долгое время ты будешь делать что-то только для себя. Рядом с 30-50 женщинами, которые чувствуют то же самое.
+                </p>
+                <p className="font-semibold text-purple-300">
+                  Это не курс. Это перезагрузка.
+                </p>
+                <p className="text-xl font-bold text-center text-amber-400">
+                  Твоя перезагрузка.
+                </p>
+              </div>
               
               <Button 
                 onClick={() => {
