@@ -942,11 +942,11 @@ export default function Index() {
           <div className="mt-12 p-10 rounded-3xl bg-gradient-to-br from-purple-600/20 via-amber-600/20 to-turquoise-600/20 border border-purple-500/30 backdrop-blur-sm">
             <h4 className="text-2xl font-bold mb-6 text-center">МОЯ МИССИЯ</h4>
             <div className="space-y-4 text-white/90 leading-relaxed">
-              <p>"Поддерживать и направлять женщин в поднятии энергии, яркости и уникальности (состояние 'Горящий Глаз').</p>
+              <p>"Поддерживать и направлять женщин в поднятии энергии, яркости и уникальности (состояние 'Горящий Глаз')."</p>
               <p>Это не имеет возраста и стоимости.</p>
               <p>Это самое важное — чувствовать себя, жизнь и внутреннюю свободу. От этого напрямую зависят деньги, отношения и реализация.</p>
               <p>Я научилась быть сама себе психологом. Я легко и с улыбкой отношусь к жизни. И я знаю, что и тебе это по силам.</p>
-              <p className="text-xl font-semibold text-amber-400">Если ты дочитала до этого предложения, то ты точно на верном пути. Тебе точно сюда."</p>
+              <p className="text-xl font-semibold text-amber-400">"Если ты дочитала до этого предложения, то ты точно на верном пути. Тебе точно сюда."</p>
             </div>
             <div className="text-center mt-8">
               <Button 
