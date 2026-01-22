@@ -11,6 +11,9 @@ export default function Index() {
   const [showQueenModal, setShowQueenModal] = useState(false);
   const [showGoddessModal, setShowGoddessModal] = useState(false);
   const [showWarriorModal, setShowWarriorModal] = useState(false);
+  const [showStandardPackageModal, setShowStandardPackageModal] = useState(false);
+  const [showPremiumPackageModal, setShowPremiumPackageModal] = useState(false);
+  const [showVipPackageModal, setShowVipPackageModal] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -996,6 +999,7 @@ export default function Index() {
               </ul>
 
               <Button 
+                onClick={() => setShowStandardPackageModal(true)}
                 className="w-full bg-white/10 hover:bg-white/20 border border-white/20 transition-all"
                 size="lg"
               >
@@ -1037,6 +1041,7 @@ export default function Index() {
               </ul>
 
               <Button 
+                onClick={() => setShowPremiumPackageModal(true)}
                 className="w-full bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 border-none shadow-lg shadow-amber-500/30 transition-all"
                 size="lg"
               >
@@ -1044,7 +1049,7 @@ export default function Index() {
               </Button>
             </div>
 
-            {/* VIP */}
+            {/* VIP */
             <div className="p-8 rounded-3xl bg-gradient-to-br from-purple-600/20 via-pink-600/20 to-purple-600/20 border-2 border-purple-500/50 backdrop-blur-sm hover:border-purple-500/70 transition-all duration-500">
               <div className="text-center mb-6">
                 <div className="text-4xl mb-3">💎</div>
@@ -1074,6 +1079,7 @@ export default function Index() {
               </ul>
 
               <Button 
+                onClick={() => setShowVipPackageModal(true)}
                 className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 border-none shadow-lg shadow-purple-500/30 transition-all"
                 size="lg"
               >
@@ -1846,6 +1852,124 @@ export default function Index() {
                 className="bg-gradient-to-r from-amber-600 to-yellow-600 hover:from-amber-700 hover:to-yellow-700 border-none shadow-lg w-full"
               >
                 Выбрать этот архетип
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* МОДАЛЬНЫЕ ОКНА ПАКЕТОВ */}
+      {/* СТАНДАРТ */}
+      {showStandardPackageModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
+          <div className="relative max-w-lg w-full max-h-[90vh] flex flex-col rounded-3xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-500/30 shadow-2xl">
+            <button 
+              onClick={() => setShowStandardPackageModal(false)}
+              className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all z-10"
+            >
+              <Icon name="X" size={16} />
+            </button>
+
+            <div className="flex-1 overflow-y-auto p-6 sm:p-10">
+              <div className="text-center">
+                <div className="text-7xl mb-6">📦</div>
+                
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 text-slate-300">ПАКЕТ СТАНДАРТ</h3>
+                <p className="text-lg sm:text-xl text-slate-400 mb-6">4 900 ₽</p>
+                
+                <div className="text-left space-y-4 text-white/90 leading-relaxed text-sm sm:text-base">
+                  <p className="text-center text-white/60">
+                    Здесь скоро появится подробное описание пакета...
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="p-4 sm:p-6 border-t border-white/10 bg-gradient-to-br from-slate-900/50 to-slate-950/50">
+              <Button 
+                onClick={() => setShowStandardPackageModal(false)}
+                size="lg"
+                className="bg-white/10 hover:bg-white/20 border border-white/20 w-full"
+              >
+                Закрыть
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ПРЕМИУМ */}
+      {showPremiumPackageModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
+          <div className="relative max-w-lg w-full max-h-[90vh] flex flex-col rounded-3xl bg-gradient-to-br from-purple-900 to-amber-900 border border-amber-500/30 shadow-2xl">
+            <button 
+              onClick={() => setShowPremiumPackageModal(false)}
+              className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all z-10"
+            >
+              <Icon name="X" size={16} />
+            </button>
+
+            <div className="flex-1 overflow-y-auto p-6 sm:p-10">
+              <div className="text-center">
+                <div className="text-7xl mb-6">👑</div>
+                
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 text-amber-400">ПАКЕТ ПРЕМИУМ</h3>
+                <p className="text-lg sm:text-xl text-amber-300 mb-6">6 900 ₽</p>
+                
+                <div className="text-left space-y-4 text-white/90 leading-relaxed text-sm sm:text-base">
+                  <p className="text-center text-white/60">
+                    Здесь скоро появится подробное описание пакета...
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="p-4 sm:p-6 border-t border-white/10 bg-gradient-to-br from-purple-950/50 to-amber-950/50">
+              <Button 
+                onClick={() => setShowPremiumPackageModal(false)}
+                size="lg"
+                className="bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 border-none shadow-lg w-full"
+              >
+                Закрыть
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* VIP */}
+      {showVipPackageModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
+          <div className="relative max-w-lg w-full max-h-[90vh] flex flex-col rounded-3xl bg-gradient-to-br from-purple-900 to-pink-900 border border-purple-500/30 shadow-2xl">
+            <button 
+              onClick={() => setShowVipPackageModal(false)}
+              className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all z-10"
+            >
+              <Icon name="X" size={16} />
+            </button>
+
+            <div className="flex-1 overflow-y-auto p-6 sm:p-10">
+              <div className="text-center">
+                <div className="text-7xl mb-6">💎</div>
+                
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 text-purple-400">ПАКЕТ VIP</h3>
+                <p className="text-lg sm:text-xl text-purple-300 mb-6">9 900 ₽</p>
+                
+                <div className="text-left space-y-4 text-white/90 leading-relaxed text-sm sm:text-base">
+                  <p className="text-center text-white/60">
+                    Здесь скоро появится подробное описание пакета...
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="p-4 sm:p-6 border-t border-white/10 bg-gradient-to-br from-purple-950/50 to-pink-950/50">
+              <Button 
+                onClick={() => setShowVipPackageModal(false)}
+                size="lg"
+                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 border-none shadow-lg w-full"
+              >
+                Закрыть
               </Button>
             </div>
           </div>
