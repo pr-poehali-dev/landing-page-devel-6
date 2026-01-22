@@ -249,9 +249,12 @@ export default function Index() {
       <section id="program" className="relative py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-3">
               АПГРЕЙД 2026: <span className="bg-gradient-to-r from-amber-400 via-turquoise-400 to-white bg-clip-text text-transparent">Не курс. Не теория. ПРОЦЕСС.</span>
             </h2>
+            <p className="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-purple-400 to-amber-400 bg-clip-text text-transparent">
+              с 9—22 февраля
+            </p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
