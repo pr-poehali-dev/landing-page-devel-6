@@ -947,23 +947,33 @@ export default function Index() {
           {/* Миссия */}
           <div className="mt-12 p-10 rounded-3xl bg-gradient-to-br from-purple-600/20 via-amber-600/20 to-turquoise-600/20 border border-purple-500/30 backdrop-blur-sm">
             <h4 className="text-2xl font-bold mb-6 text-center">МОЯ МИССИЯ</h4>
-            <div className="space-y-4 text-white/90 leading-relaxed">
-              <p>"Поддерживать и направлять женщин в поднятии энергии, яркости и уникальности (состояние 'Горящий Глаз').</p>
-              <p>Это не имеет возраста и стоимости.</p>
-              <p>Это самое важное — чувствовать себя, жизнь и внутреннюю свободу. От этого напрямую зависят деньги, отношения и реализация.</p>
-              <p>Я научилась быть сама себе психологом. Я легко и с улыбкой отношусь к жизни. И я знаю, что и тебе это по силам.</p>
-              <p className="text-xl font-semibold text-amber-400">Если ты дочитала до этого предложения, то ты точно на верном пути. Тебе точно сюда."</p>
-            </div>
-            <div className="text-center mt-8">
-              <Button 
-                onClick={() => scrollToSection('packages')}
-                size="lg"
-                className="bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 text-lg px-12 py-6 shadow-2xl shadow-purple-500/40 transition-all duration-300 hover:scale-105 border-none"
-              >
-                Я ТУТ!
-                <Icon name="ArrowRight" size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </div>
+            
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value="mission" className="border-purple-500/30">
+                <AccordionTrigger className="text-amber-400 hover:text-amber-300 text-lg font-semibold hover:no-underline">
+                  Читать полностью
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="space-y-4 text-white/90 leading-relaxed pt-4">
+                    <p>"Поддерживать и направлять женщин в поднятии энергии, яркости и уникальности (состояние 'Горящий Глаз').</p>
+                    <p>Это не имеет возраста и стоимости.</p>
+                    <p>Это самое важное — чувствовать себя, жизнь и внутреннюю свободу. От этого напрямую зависят деньги, отношения и реализация.</p>
+                    <p>Я научилась быть сама себе психологом. Я легко и с улыбкой отношусь к жизни. И я знаю, что и тебе это по силам.</p>
+                    <p className="text-xl font-semibold text-amber-400">Если ты дочитала до этого предложения, то ты точно на верном пути. Тебе точно сюда."</p>
+                  </div>
+                  <div className="text-center mt-8">
+                    <Button 
+                      onClick={() => scrollToSection('packages')}
+                      size="lg"
+                      className="bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 text-lg px-12 py-6 shadow-2xl shadow-purple-500/40 transition-all duration-300 hover:scale-105 border-none"
+                    >
+                      Я ТУТ!
+                      <Icon name="ArrowRight" size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>
