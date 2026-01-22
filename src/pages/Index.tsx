@@ -8,6 +8,9 @@ export default function Index() {
   const [checkedItems, setCheckedItems] = useState<boolean[]>(Array(9).fill(false));
   const [showCheckResult, setShowCheckResult] = useState(false);
   const [showPhoenixModal, setShowPhoenixModal] = useState(false);
+  const [showQueenModal, setShowQueenModal] = useState(false);
+  const [showGoddessModal, setShowGoddessModal] = useState(false);
+  const [showWarriorModal, setShowWarriorModal] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -597,6 +600,7 @@ export default function Index() {
               <p className="text-center text-lg font-semibold text-purple-300 mb-6">"От замужества к королевству"</p>
 
               <Button 
+                onClick={() => setShowQueenModal(true)}
                 variant="outline"
                 className="w-full bg-purple-500/10 border-purple-500/30 hover:bg-purple-500/20 transition-all"
               >
@@ -628,6 +632,7 @@ export default function Index() {
               <p className="text-center text-lg font-semibold text-emerald-300 mb-6">"От рассеяния к целостности"</p>
 
               <Button 
+                onClick={() => setShowGoddessModal(true)}
                 variant="outline"
                 className="w-full bg-emerald-500/10 border-emerald-500/30 hover:bg-emerald-500/20 transition-all"
               >
@@ -659,6 +664,7 @@ export default function Index() {
               <p className="text-center text-lg font-semibold text-amber-300 mb-6">"От сомнений к уверенности"</p>
 
               <Button 
+                onClick={() => setShowWarriorModal(true)}
                 variant="outline"
                 className="w-full bg-amber-500/10 border-amber-500/30 hover:bg-amber-500/20 transition-all"
               >
@@ -1632,6 +1638,132 @@ export default function Index() {
                 }}
                 size="lg"
                 className="bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 border-none shadow-lg w-full"
+              >
+                Выбрать этот архетип
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* МОДАЛЬНОЕ ОКНО КОРОЛЕВА ПЕРЕМЕН */}
+      {showQueenModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
+          <div className="relative max-w-lg w-full max-h-[90vh] flex flex-col rounded-3xl bg-gradient-to-br from-purple-900 to-pink-900 border border-purple-500/30 shadow-2xl">
+            <button 
+              onClick={() => setShowQueenModal(false)}
+              className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all z-10"
+            >
+              <Icon name="X" size={16} />
+            </button>
+
+            <div className="flex-1 overflow-y-auto p-6 sm:p-10">
+              <div className="text-center">
+                <div className="text-7xl mb-6">👑</div>
+                
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 text-purple-400">КОРОЛЕВА ПЕРЕМЕН</h3>
+                <p className="text-lg sm:text-xl italic text-purple-300/80 mb-6">"От замужества к королевству"</p>
+                
+                <div className="text-left space-y-4 text-white/90 leading-relaxed text-sm sm:text-base">
+                  <p className="text-center text-white/60">
+                    Здесь скоро появится подробное описание архетипа...
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="p-4 sm:p-6 border-t border-white/10 bg-gradient-to-br from-purple-950/50 to-pink-950/50">
+              <Button 
+                onClick={() => {
+                  setShowQueenModal(false);
+                  scrollToSection('packages');
+                }}
+                size="lg"
+                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 border-none shadow-lg w-full"
+              >
+                Выбрать этот архетип
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* МОДАЛЬНОЕ ОКНО БОГИНЯ ВОССТАНОВЛЕНИЯ */}
+      {showGoddessModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
+          <div className="relative max-w-lg w-full max-h-[90vh] flex flex-col rounded-3xl bg-gradient-to-br from-emerald-900 to-teal-900 border border-emerald-500/30 shadow-2xl">
+            <button 
+              onClick={() => setShowGoddessModal(false)}
+              className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all z-10"
+            >
+              <Icon name="X" size={16} />
+            </button>
+
+            <div className="flex-1 overflow-y-auto p-6 sm:p-10">
+              <div className="text-center">
+                <div className="text-7xl mb-6">✨</div>
+                
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 text-emerald-400">БОГИНЯ ВОССТАНОВЛЕНИЯ</h3>
+                <p className="text-lg sm:text-xl italic text-emerald-300/80 mb-6">"От рассеяния к целостности"</p>
+                
+                <div className="text-left space-y-4 text-white/90 leading-relaxed text-sm sm:text-base">
+                  <p className="text-center text-white/60">
+                    Здесь скоро появится подробное описание архетипа...
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="p-4 sm:p-6 border-t border-white/10 bg-gradient-to-br from-emerald-950/50 to-teal-950/50">
+              <Button 
+                onClick={() => {
+                  setShowGoddessModal(false);
+                  scrollToSection('packages');
+                }}
+                size="lg"
+                className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 border-none shadow-lg w-full"
+              >
+                Выбрать этот архетип
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* МОДАЛЬНОЕ ОКНО ВОИТЕЛЬНИЦА СВЕТА */}
+      {showWarriorModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-fade-in">
+          <div className="relative max-w-lg w-full max-h-[90vh] flex flex-col rounded-3xl bg-gradient-to-br from-amber-900 to-yellow-900 border border-amber-500/30 shadow-2xl">
+            <button 
+              onClick={() => setShowWarriorModal(false)}
+              className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-all z-10"
+            >
+              <Icon name="X" size={16} />
+            </button>
+
+            <div className="flex-1 overflow-y-auto p-6 sm:p-10">
+              <div className="text-center">
+                <div className="text-7xl mb-6">🌟</div>
+                
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 text-amber-400">ВОИТЕЛЬНИЦА СВЕТА</h3>
+                <p className="text-lg sm:text-xl italic text-amber-300/80 mb-6">"От сомнений к уверенности"</p>
+                
+                <div className="text-left space-y-4 text-white/90 leading-relaxed text-sm sm:text-base">
+                  <p className="text-center text-white/60">
+                    Здесь скоро появится подробное описание архетипа...
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="p-4 sm:p-6 border-t border-white/10 bg-gradient-to-br from-amber-950/50 to-yellow-950/50">
+              <Button 
+                onClick={() => {
+                  setShowWarriorModal(false);
+                  scrollToSection('packages');
+                }}
+                size="lg"
+                className="bg-gradient-to-r from-amber-600 to-yellow-600 hover:from-amber-700 hover:to-yellow-700 border-none shadow-lg w-full"
               >
                 Выбрать этот архетип
               </Button>
