@@ -104,6 +104,12 @@ export default function Index() {
                 <br />
                 <span className="text-4xl sm:text-5xl lg:text-6xl">за 14 дней</span>
               </h1>
+              
+              <div className="text-2xl sm:text-3xl font-semibold">
+                <span className="bg-gradient-to-r from-purple-400 to-amber-400 bg-clip-text text-transparent">
+                  с 9—22 февраля
+                </span>
+              </div>
 
               <div className="space-y-4 text-lg text-white/80">
                 <div className="flex items-start gap-3">
