@@ -1076,6 +1076,172 @@ export default function Index() {
         </div>
       </section>
 
+      {/* PRIZES SECTION */}
+      <section className="py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-slate-950 to-slate-900"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-12 space-y-6">
+            <h1 className="text-4xl sm:text-5xl font-bold">
+              🏆 Три королевы. Три уровня признания.
+            </h1>
+            
+            <h3 className="text-2xl font-normal text-white/90">
+              Неважно, какое место ты займёшь. Важно, что ты ВЫБРАЛА СЕБЯ.
+            </h3>
+            
+            <div className="max-w-3xl mx-auto text-lg text-white/70 space-y-4">
+              <p>
+                За 14 дней квеста каждая участница получит признание. Одна станет королевой, 
+                вторая — её верной героиней, остальные — светом в сообществе.
+              </p>
+              <p>
+                Все получат награду. Все получат честное признание. Все станут частью чего-то большего.
+              </p>
+              <p className="font-semibold text-white/90">
+                Вот как это работает:
+              </p>
+            </div>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8 mb-16">
+            {/* 1st Place */}
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/20 to-amber-600/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+              <div className="relative p-8 rounded-3xl bg-gradient-to-br from-slate-900/90 to-slate-950/90 border-2 border-yellow-500/50 backdrop-blur-sm hover:border-yellow-400 transition-all duration-300">
+                <div className="text-6xl mb-4 text-center">🥇</div>
+                
+                <h2 className="text-2xl font-bold mb-2 text-center bg-gradient-to-r from-yellow-400 to-amber-500 bg-clip-text text-transparent">
+                  ПЕРВОЕ МЕСТО
+                </h2>
+                <h3 className="text-xl font-bold mb-4 text-center text-white">
+                  Манифест Королевы
+                </h3>
+                
+                <p className="text-lg italic text-amber-300/80 mb-6 text-center">
+                  "Ты стала королевой своей жизни"
+                </p>
+                
+                <div className="space-y-4 text-white/70">
+                  <p>
+                    Королева Апгрейда 2026 — это ты. Та, кто прошла все 14 дней честно, 
+                    выполнила каждое задание, и твой аватар светит на максимум.
+                  </p>
+                  <p>
+                    Манифест Королевы — это не просто диплом. Это твоё официальное признание. 
+                    Печать того, что ты больше не служанка в чужой жизни. Ты — королева своей.
+                  </p>
+                  <p className="text-white font-semibold">
+                    💎 Это твой трон. Заработай его.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 2nd Place */}
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-br from-slate-400/20 to-gray-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+              <div className="relative p-8 rounded-3xl bg-gradient-to-br from-slate-900/90 to-slate-950/90 border-2 border-slate-400/50 backdrop-blur-sm hover:border-slate-300 transition-all duration-300">
+                <div className="text-6xl mb-4 text-center">🥈</div>
+                
+                <h2 className="text-2xl font-bold mb-2 text-center bg-gradient-to-r from-slate-300 to-gray-400 bg-clip-text text-transparent">
+                  ВТОРОЕ МЕСТО
+                </h2>
+                <h3 className="text-xl font-bold mb-4 text-center text-white">
+                  Свидетельство о Героизме
+                </h3>
+                
+                <p className="text-lg italic text-slate-300/80 mb-6 text-center">
+                  "Ты прошла весь путь и вышла сильнее"
+                </p>
+                
+                <div className="space-y-4 text-white/70">
+                  <p>
+                    Героиня Апгрейда 2026 — это ты. Та, кто не сдалась, прошла полный путь трансформации, 
+                    и её аватар прокачался до максимума.
+                  </p>
+                  <p>
+                    Свидетельство Героини — это признание твоей силы. Доказательство того, 
+                    что ты — героиня, а не просто участница. Ты победила себя.
+                  </p>
+                  <p className="text-white font-semibold">
+                    ⭐ Ты светишь. И об этом узнают все.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 3rd Place */}
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
+              <div className="relative p-8 rounded-3xl bg-gradient-to-br from-slate-900/90 to-slate-950/90 border-2 border-cyan-500/50 backdrop-blur-sm hover:border-cyan-400 transition-all duration-300">
+                <div className="text-6xl mb-4 text-center">🥉</div>
+                
+                <h2 className="text-2xl font-bold mb-2 text-center bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                  ТРЕТЬЕ МЕСТО
+                </h2>
+                <h3 className="text-xl font-bold mb-4 text-center text-white">
+                  Сертификат Участия
+                </h3>
+                
+                <p className="text-lg italic text-cyan-300/80 mb-6 text-center">
+                  "Ты прошла до конца — ты уже победила"
+                </p>
+                
+                <div className="space-y-4 text-white/70">
+                  <p>
+                    Участница Апгрейда 2026 — это ты. Каждая, кто дошла до конца этих 14 дней. 
+                    Потому что дойти до конца — уже значит изменить себя.
+                  </p>
+                  <p>
+                    Сертификат Участия — это подтверждение того, что ты сделала выбор в пользу себя. 
+                    Что ты прошла полный путь. Что ты теперь часть нашего светлого сообщества.
+                  </p>
+                  <p className="text-white font-semibold">
+                    ✨ Твой путь продолжается. И ты не одна.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="max-w-3xl mx-auto p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm">
+            <h3 className="text-2xl font-bold mb-6 text-center text-purple-300">
+              Как определяются победители?
+            </h3>
+            
+            <p className="text-lg text-white/80 mb-6 text-center">
+              Мы смотрим на три критерия:
+            </p>
+            
+            <div className="space-y-4 text-white/70">
+              <div className="flex items-start gap-3">
+                <span className="text-2xl">✅</span>
+                <div>
+                  <span className="font-semibold text-white">ЧЕСТНОСТЬ</span> — ты честна с собой и с сообществом
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-2xl">✅</span>
+                <div>
+                  <span className="font-semibold text-white">ВОВЛЕЧЕНИЕ</span> — ты выполняешь задания и участвуешь активно
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-2xl">✅</span>
+                <div>
+                  <span className="font-semibold text-white">ТРАНСФОРМАЦИЯ</span> — твой аватар прокачивается, и это видно
+                </div>
+              </div>
+            </div>
+            
+            <p className="text-lg text-white/90 mt-6 text-center font-semibold">
+              Это не конкурс в привычном смысле. Это праздник того, что ты выбрала себя.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* БЛОК 10: FAQ */}
       <section id="faq" className="relative py-20 bg-gradient-to-b from-slate-950 to-slate-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
