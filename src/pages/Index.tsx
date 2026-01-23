@@ -56,7 +56,7 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Main Header */}
           <div className="flex items-center justify-between py-4">
-            <div className="text-2xl font-bold bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">
+            <div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">
               АПГРЕЙД 2026
             </div>
 
@@ -97,13 +97,13 @@ export default function Index() {
             {/* Mobile Menu Button */}
             <button 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg hover:bg-white/10 transition-colors"
+              className="md:hidden p-2.5 rounded-lg bg-white/5 hover:bg-white/10 transition-colors z-[70] relative border border-white/20"
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? (
-                <Icon name="X" size={24} className="text-white" />
+                <Icon name="X" size={28} className="text-white" />
               ) : (
-                <Icon name="Menu" size={24} className="text-white" />
+                <Icon name="Menu" size={28} className="text-white" />
               )}
             </button>
           </div>
@@ -112,7 +112,7 @@ export default function Index() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-slate-950 md:hidden overflow-y-auto">
+        <div className="fixed inset-0 z-[60] bg-slate-950 md:hidden overflow-y-auto">
           <div className="min-h-screen pt-20 pb-8 px-4">
             {/* Navigation Links */}
             <nav className="space-y-1 mb-6">
