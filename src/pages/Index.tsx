@@ -1337,23 +1337,28 @@ export default function Index() {
                   Сертификат Участия
                 </h3>
                 
-                <p className="text-lg italic text-cyan-300/80 mb-6 text-center">
-                  "Ты прошла до конца — ты уже победила"
-                </p>
-                
-                <div className="space-y-4 text-white/70">
-                  <p>
-                    Участница Апгрейда 2026 — это ты. Каждая, кто дошла до конца этих 14 дней. 
-                    Потому что дойти до конца — уже значит изменить себя.
-                  </p>
-                  <p>
-                    Сертификат Участия — это подтверждение того, что ты сделала выбор в пользу себя. 
-                    Что ты прошла полный путь. Что ты теперь часть нашего светлого сообщества.
-                  </p>
-                  <p className="text-white font-semibold">
-                    ✨ Твой путь продолжается. И ты не одна.
-                  </p>
-                </div>
+                <Accordion type="single" collapsible className="w-full">
+                  <AccordionItem value="participant-certificate" className="border-cyan-500/30">
+                    <AccordionTrigger className="text-cyan-300 hover:text-cyan-200 text-lg italic text-center justify-center hover:no-underline py-6">
+                      "Ты прошла до конца — ты уже победила"
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="space-y-4 text-white/70 pt-4">
+                        <p>
+                          Участница Апгрейда 2026 — это ты. Каждая, кто дошла до конца этих 14 дней. 
+                          Потому что дойти до конца — уже значит изменить себя.
+                        </p>
+                        <p>
+                          Сертификат Участия — это подтверждение того, что ты сделала выбор в пользу себя. 
+                          Что ты прошла полный путь. Что ты теперь часть нашего светлого сообщества.
+                        </p>
+                        <p className="text-white font-semibold">
+                          ✨ Твой путь продолжается. И ты не одна.
+                        </p>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
               </div>
             </div>
           </div>
