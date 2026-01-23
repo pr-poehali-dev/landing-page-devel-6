@@ -47,28 +47,28 @@ export default function Index() {
               АПГРЕЙД 2026
             </div>
 
-            <nav className="hidden md:flex items-center gap-8">
+            <nav className="hidden md:flex items-center gap-4 lg:gap-8">
               <button 
                 onClick={() => scrollToSection('about')} 
-                className="text-white/80 hover:text-white transition-colors"
+                className="text-white/80 hover:text-white transition-colors text-sm lg:text-base"
               >
                 Об АПГРЕЙДЕ
               </button>
               <button 
                 onClick={() => scrollToSection('avatars')} 
-                className="text-white/80 hover:text-white transition-colors"
+                className="text-white/80 hover:text-white transition-colors text-sm lg:text-base"
               >
                 Аватары
               </button>
               <button 
                 onClick={() => scrollToSection('packages')} 
-                className="text-white/80 hover:text-white transition-colors"
+                className="text-white/80 hover:text-white transition-colors text-sm lg:text-base"
               >
                 Пакеты
               </button>
               <button 
                 onClick={() => scrollToSection('faq')} 
-                className="text-white/80 hover:text-white transition-colors"
+                className="text-white/80 hover:text-white transition-colors text-sm lg:text-base"
               >
                 FAQ
               </button>
@@ -76,7 +76,7 @@ export default function Index() {
 
             <Button 
               onClick={() => scrollToSection('packages')} 
-              className="bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 border-none shadow-lg shadow-purple-500/30 transition-all duration-300 hover:scale-105"
+              className="bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 border-none shadow-lg shadow-purple-500/30 transition-all duration-300 hover:scale-105 text-xs sm:text-sm px-3 sm:px-4"
             >
               ВЫБРАТЬ ПАКЕТ
             </Button>
@@ -103,33 +103,33 @@ export default function Index() {
                 </span>
               </div>
 
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
                 Из <span className="text-slate-400 line-through">УСТАЛОСТИ</span>
                 <br />
                 <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-turquoise-400 bg-clip-text text-transparent animate-gradient">
                   в ГОРЯЩИЙ ГЛАЗ
                 </span>
                 <br />
-                <span className="text-4xl sm:text-5xl lg:text-6xl">за 14 дней</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">за 14 дней</span>
               </h1>
               
-              <div className="text-2xl sm:text-3xl font-semibold">
+              <div className="text-xl sm:text-2xl md:text-3xl font-semibold">
                 <span className="bg-gradient-to-r from-purple-400 to-amber-400 bg-clip-text text-transparent">
                   с 9—22 февраля
                 </span>
               </div>
 
-              <div className="space-y-4 text-lg text-white/80">
+              <div className="space-y-4 text-base sm:text-lg text-white/80">
                 <div className="flex items-start gap-3">
-                  <Icon name="Sparkles" className="text-purple-400 flex-shrink-0 mt-1 animate-pulse-glow" size={24} />
+                  <Icon name="Sparkles" className="text-purple-400 flex-shrink-0 mt-1 animate-pulse-glow" size={20} />
                   <span>Восстановление тела, разума, пространства</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Icon name="Users" className="text-amber-400 flex-shrink-0 mt-1 icon-hover" size={24} />
+                  <Icon name="Users" className="text-amber-400 flex-shrink-0 mt-1 icon-hover" size={20} />
                   <span>Игровой формат + живое сообщество</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Icon name="Zap" className="text-turquoise-400 flex-shrink-0 mt-1 animate-pulse-glow" size={24} />
+                  <Icon name="Zap" className="text-turquoise-400 flex-shrink-0 mt-1 animate-pulse-glow" size={20} />
                   <span>Твой персональный аватар трансформируется с тобой</span>
                 </div>
               </div>
@@ -153,13 +153,13 @@ export default function Index() {
                 </Button>
               </div>
 
-              <div className="flex items-center gap-6 pt-6 text-sm text-white/60">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 pt-6 text-xs sm:text-sm text-white/60">
                 <div className="flex items-center gap-2">
-                  <Icon name="Calendar" size={18} className="text-amber-400 animate-bounce-gentle" />
+                  <Icon name="Calendar" size={16} className="text-amber-400 animate-bounce-gentle" />
                   <span>Старт: 9 февраля 2026</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Icon name="Heart" size={18} className="text-purple-400 animate-float" />
+                  <Icon name="Heart" size={16} className="text-purple-400 animate-float" />
                   <span>500+ женщин трансформировались</span>
                 </div>
               </div>
@@ -191,15 +191,15 @@ export default function Index() {
       {/* ПРОБЛЕМА: ЗЕРКАЛО */}
       <section id="about" className="relative py-20 bg-gradient-to-b from-slate-900 to-slate-950">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+          <div className="text-center mb-12 md:mb-16 animate-fade-in">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
               Что тебе <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">знакомо?</span>
             </h2>
-            <p className="text-xl text-white/60">Пройди чек-лист</p>
+            <p className="text-lg md:text-xl text-white/60">Пройди чек-лист</p>
           </div>
 
           <div className="relative">
-            <div className="grid md:grid-cols-2 gap-4 mb-16">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 mb-12 md:mb-16">
               {[
                 "Энергетическая и психологическая усталость",
                 "Апатия, раздражение, \"ничего не хочется\"",
@@ -213,7 +213,7 @@ export default function Index() {
               ].map((problem, index) => (
                 <div 
                   key={index}
-                  className="flex items-start gap-4 p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-purple-500/30 transition-all duration-300 group cursor-pointer"
+                  className="flex items-start gap-3 md:gap-4 p-4 md:p-6 rounded-xl md:rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-purple-500/30 transition-all duration-300 group cursor-pointer"
                   style={{animationDelay: `${index * 0.1}s`}}
                   onClick={() => {
                     const newChecked = [...checkedItems];
@@ -221,16 +221,16 @@ export default function Index() {
                     setCheckedItems(newChecked);
                   }}
                 >
-                  <div className={`w-6 h-6 rounded border-2 flex-shrink-0 mt-0.5 transition-all flex items-center justify-center ${
+                  <div className={`w-5 h-5 md:w-6 md:h-6 rounded border-2 flex-shrink-0 mt-0.5 transition-all flex items-center justify-center ${
                     checkedItems[index] 
                       ? 'border-purple-400 bg-purple-600' 
                       : 'border-white/30 group-hover:border-purple-400'
                   }`}>
                     {checkedItems[index] && (
-                      <Icon name="Check" className="text-white" size={16} />
+                      <Icon name="Check" className="text-white" size={14} />
                     )}
                   </div>
-                  <p className="text-white/80 group-hover:text-white transition-colors">{problem}</p>
+                  <p className="text-sm md:text-base text-white/80 group-hover:text-white transition-colors">{problem}</p>
                 </div>
               ))}
             </div>
@@ -247,11 +247,11 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="max-w-3xl mx-auto text-center space-y-6 p-10 rounded-3xl bg-gradient-to-br from-purple-500/10 to-amber-500/10 border border-purple-500/20 backdrop-blur-sm">
-            <p className="text-3xl font-bold">
+          <div className="max-w-3xl mx-auto text-center space-y-4 md:space-y-6 p-6 md:p-10 rounded-2xl md:rounded-3xl bg-gradient-to-br from-purple-500/10 to-amber-500/10 border border-purple-500/20 backdrop-blur-sm">
+            <p className="text-2xl md:text-3xl font-bold">
               Это не депрессия. Это <span className="text-amber-400">СИГНАЛ.</span>
             </p>
-            <p className="text-xl text-white/80 leading-relaxed">
+            <p className="text-base md:text-xl text-white/80 leading-relaxed">
               Твоё тело, разум и душа говорят:<br />
               <span className="text-purple-400 font-semibold">'Пришло время по-новому взглянуть на себя.'</span>
             </p>
@@ -262,33 +262,33 @@ export default function Index() {
       {/* РЕШЕНИЕ */}
       <section id="program" className="relative py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-3">
+          <div className="text-center mb-12 md:mb-16 animate-fade-in">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 leading-tight">
               АПГРЕЙД 2026: <span className="bg-gradient-to-r from-amber-400 via-turquoise-400 to-white bg-clip-text text-transparent">Не курс. Не теория. ПРОЦЕСС.</span>
             </h2>
-            <p className="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-purple-400 to-amber-400 bg-clip-text text-transparent">
+            <p className="text-xl sm:text-2xl md:text-3xl font-semibold bg-gradient-to-r from-purple-400 to-amber-400 bg-clip-text text-transparent">
               с 9—22 февраля
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
             {/* ЧТО ЭТО НЕ ЯВЛЯЕТСЯ */}
-            <div className="p-8 rounded-3xl bg-gradient-to-br from-red-500/10 to-slate-800/50 border border-red-500/20 backdrop-blur-sm space-y-6">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-2xl bg-red-500/20 flex items-center justify-center">
-                  <Icon name="X" className="text-red-400" size={24} />
+            <div className="p-6 md:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-red-500/10 to-slate-800/50 border border-red-500/20 backdrop-blur-sm space-y-4 md:space-y-6">
+              <div className="flex items-center gap-3 mb-4 md:mb-6">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-red-500/20 flex items-center justify-center">
+                  <Icon name="X" className="text-red-400" size={20} />
                 </div>
-                <h3 className="text-3xl font-bold bg-gradient-to-r from-red-400 via-red-500 to-red-600 bg-clip-text text-transparent">ЭТО НЕ</h3>
+                <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-red-400 via-red-500 to-red-600 bg-clip-text text-transparent">ЭТО НЕ</h3>
               </div>
-              <ul className="space-y-4">
+              <ul className="space-y-3 md:space-y-4">
                 {[
                   "Не записанные лекции",
                   "Не стандартная избитая информация",
                   "Не ещё одна стеклотека знаний",
                   "Не соло-работа в одиночестве"
                 ].map((item, index) => (
-                  <li key={index} className="flex items-start gap-3 text-white/70">
-                    <Icon name="XCircle" className="text-red-400 flex-shrink-0 mt-0.5" size={20} />
+                  <li key={index} className="flex items-start gap-3 text-sm md:text-base text-white/70">
+                    <Icon name="XCircle" className="text-red-400 flex-shrink-0 mt-0.5" size={18} />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -296,14 +296,14 @@ export default function Index() {
             </div>
 
             {/* ЧТО ЭТО ЕСТЬ */}
-            <div className="p-8 rounded-3xl bg-gradient-to-br from-emerald-500/10 to-slate-800/50 border border-emerald-500/20 backdrop-blur-sm space-y-6">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-2xl bg-emerald-500/20 flex items-center justify-center">
-                  <Icon name="CheckCircle2" className="text-emerald-400" size={24} />
+            <div className="p-6 md:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-emerald-500/10 to-slate-800/50 border border-emerald-500/20 backdrop-blur-sm space-y-4 md:space-y-6">
+              <div className="flex items-center gap-3 mb-4 md:mb-6">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-emerald-500/20 flex items-center justify-center">
+                  <Icon name="CheckCircle2" className="text-emerald-400" size={20} />
                 </div>
-                <h3 className="text-3xl font-bold bg-gradient-to-r from-emerald-400 via-emerald-500 to-emerald-600 bg-clip-text text-transparent">ЭТО</h3>
+                <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-emerald-400 via-emerald-500 to-emerald-600 bg-clip-text text-transparent">ЭТО</h3>
               </div>
-              <ul className="space-y-4">
+              <ul className="space-y-3 md:space-y-4">
                 {[
                   "ТОЛЬКО ПРАКТИКА + ЖИВОЕ СООБЩЕСТВО",
                   "Ежедневные простые, но эффективные задания",
@@ -311,8 +311,8 @@ export default function Index() {
                   "Игровой формат с лидербордом и аватарами",
                   "Живое взаимодействие с Дарьей и участницами в чате"
                 ].map((item, index) => (
-                  <li key={index} className="flex items-start gap-3 text-white/90">
-                    <Icon name="Check" className="text-emerald-400 flex-shrink-0 mt-0.5" size={20} />
+                  <li key={index} className="flex items-start gap-3 text-sm md:text-base text-white/90">
+                    <Icon name="Check" className="text-emerald-400 flex-shrink-0 mt-0.5" size={18} />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -320,14 +320,14 @@ export default function Index() {
             </div>
 
             {/* КАК ЭТО РАБОТАЕТ */}
-            <div className="p-8 rounded-3xl bg-gradient-to-br from-purple-500/10 via-amber-500/10 to-turquoise-500/10 border border-purple-500/20 backdrop-blur-sm space-y-6">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-500/20 to-amber-500/20 flex items-center justify-center">
-                  <Icon name="Gamepad2" className="text-purple-400 animate-wiggle" size={24} />
+            <div className="p-6 md:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-purple-500/10 via-amber-500/10 to-turquoise-500/10 border border-purple-500/20 backdrop-blur-sm space-y-4 md:space-y-6">
+              <div className="flex items-center gap-3 mb-4 md:mb-6">
+                <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl md:rounded-2xl bg-gradient-to-br from-purple-500/20 to-amber-500/20 flex items-center justify-center">
+                  <Icon name="Gamepad2" className="text-purple-400 animate-wiggle" size={20} />
                 </div>
-                <h3 className="text-3xl font-bold bg-gradient-to-r from-purple-400 via-amber-400 to-turquoise-400 bg-clip-text text-transparent">КАК РАБОТАЕТ</h3>
+                <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-purple-400 via-amber-400 to-turquoise-400 bg-clip-text text-transparent">КАК РАБОТАЕТ</h3>
               </div>
-              <ul className="space-y-4">
+              <ul className="space-y-3 md:space-y-4">
                 {[
                   { icon: "User", text: "Выбираешь АВАТАР (по отклику)" },
                   { icon: "Target", text: "Ежедневные ЗАДАНИЯ (по теме дня)" },
@@ -336,7 +336,7 @@ export default function Index() {
                   { icon: "TrendingUp", text: "Ты видишь свой прогресс ВИЗУАЛЬНО" },
                   { icon: "Award", text: "Идешь к своей ПОБЕДЕ - получаешь ПРИЗ" }
                 ].map((item, index) => (
-                  <li key={index} className="flex items-start gap-3 text-white/90">
+                  <li key={index} className="flex items-start gap-3 text-sm md:text-base text-white/90">
                     <Icon 
                       name={item.icon} 
                       className={`text-amber-400 flex-shrink-0 mt-0.5 ${
@@ -345,7 +345,7 @@ export default function Index() {
                         item.icon === 'Trophy' || item.icon === 'Award' ? 'animate-float' :
                         item.icon === 'Sparkles' ? 'animate-pulse-glow' : ''
                       }`}
-                      size={20} 
+                      size={18} 
                     />
                     <span>{item.text}</span>
                   </li>
@@ -355,13 +355,13 @@ export default function Index() {
           </div>
 
           {/* ИТОГ */}
-          <div className="max-w-4xl mx-auto p-10 rounded-3xl bg-gradient-to-br from-purple-600/20 via-amber-600/20 to-turquoise-600/20 border border-purple-500/30 backdrop-blur-sm text-center space-y-4">
-            <h3 className="text-3xl font-bold">ИТОГ ЗА 14 ДНЕЙ</h3>
-            <p className="text-xl text-white/90 leading-relaxed">
+          <div className="max-w-4xl mx-auto p-6 md:p-10 rounded-2xl md:rounded-3xl bg-gradient-to-br from-purple-600/20 via-amber-600/20 to-turquoise-600/20 border border-purple-500/30 backdrop-blur-sm text-center space-y-3 md:space-y-4">
+            <h3 className="text-2xl md:text-3xl font-bold">ИТОГ ЗА 14 ДНЕЙ</h3>
+            <p className="text-lg md:text-xl text-white/90 leading-relaxed">
               Ты не просто пройдёшь программу.
             </p>
-            <p className="text-2xl font-semibold leading-relaxed">
-              Ты <span className="text-purple-400">ПРОЖИВЁШЬ</span> маленькую, но насыщенную <span className="text-amber-400">другую ЖИЗНЬ</span>,<br />
+            <p className="text-xl md:text-2xl font-semibold leading-relaxed">
+              Ты <span className="text-purple-400">ПРОЖИВЁШЬ</span> маленькую, но насыщенную <span className="text-amber-400">другую ЖИЗНЬ</span>,
               в которой поймёшь, что значит состояние <span className="text-turquoise-400">'Горящий Глаз'</span>.
             </p>
           </div>
@@ -371,30 +371,30 @@ export default function Index() {
       {/* ТАЙМЛАЙН КВЕСТА */}
       <section className="relative py-20 bg-gradient-to-b from-slate-950 to-slate-900">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
               <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">Таймлайн квеста</span>
             </h2>
-            <p className="text-xl text-white/60">Две недели — два этапа трансформации</p>
+            <p className="text-lg md:text-xl text-white/60">Две недели — два этапа трансформации</p>
           </div>
 
           <div className="space-y-8">
             {/* НЕДЕЛЯ 1: ОЧИЩЕНИЕ */}
-            <div className="relative p-8 rounded-3xl bg-gradient-to-br from-purple-500/10 to-slate-800/50 border border-purple-500/20 backdrop-blur-sm hover:border-purple-500/40 transition-all duration-500 group">
-              <div className="absolute -left-4 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-purple-600 border-4 border-slate-900 flex items-center justify-center text-xs font-bold">
+            <div className="relative p-4 md:p-6 lg:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-purple-500/10 to-slate-800/50 border border-purple-500/20 backdrop-blur-sm hover:border-purple-500/40 transition-all duration-500 group">
+              <div className="absolute -left-3 md:-left-4 top-6 md:top-1/2 md:-translate-y-1/2 w-6 h-6 md:w-8 md:h-8 rounded-full bg-purple-600 border-2 md:border-4 border-slate-900 flex items-center justify-center text-xs font-bold">
                 1
               </div>
               
-              <div className="grid lg:grid-cols-3 gap-8 items-center">
+              <div className="grid lg:grid-cols-3 gap-6 md:gap-8 items-center">
                 <div>
-                  <div className="inline-block px-4 py-2 rounded-full bg-purple-600/20 border border-purple-500/30 text-sm font-semibold mb-4">
+                  <div className="inline-block px-3 md:px-4 py-1.5 md:py-2 rounded-full bg-purple-600/20 border border-purple-500/30 text-xs md:text-sm font-semibold mb-3 md:mb-4">
                     НЕДЕЛЯ 1: ОЧИЩЕНИЕ
                   </div>
-                  <div className="flex items-center gap-2 text-white/60 mb-6">
-                    <Icon name="Calendar" size={18} className="animate-bounce-gentle" />
+                  <div className="flex items-center gap-2 text-sm md:text-base text-white/60 mb-4 md:mb-6">
+                    <Icon name="Calendar" size={16} className="animate-bounce-gentle" />
                     <span>9-15 февраля</span>
                   </div>
-                  <div className="space-y-2 mb-6">
+                  <div className="space-y-2 mb-4 md:mb-6">
                     <div className="flex items-center gap-2">
                       <Icon name="Search" className="text-purple-400 icon-hover" size={18} />
                       <span className="text-sm">Самоанализ</span>
@@ -414,45 +414,45 @@ export default function Index() {
                   </div>
                 </div>
 
-                <div className="lg:col-span-2 space-y-4">
-                  <div className="p-6 rounded-2xl bg-slate-800/50 border border-white/10">
-                    <div className="flex items-center gap-3 mb-2">
-                      <Icon name="User" className="text-purple-400 icon-hover" size={20} />
-                      <span className="font-semibold">Твой аватар:</span>
+                <div className="lg:col-span-2 space-y-3 md:space-y-4">
+                  <div className="p-4 md:p-6 rounded-xl md:rounded-2xl bg-slate-800/50 border border-white/10">
+                    <div className="flex items-center gap-2 md:gap-3 mb-2">
+                      <Icon name="User" className="text-purple-400 icon-hover" size={18} />
+                      <span className="text-sm md:text-base font-semibold">Твой аватар:</span>
                     </div>
-                    <div className="flex items-center gap-3 text-white/80">
-                      <span className="px-3 py-1 bg-slate-700 rounded-full text-sm">Level 1</span>
-                      <Icon name="ArrowRight" className="text-purple-400 group-hover:translate-x-1 transition-transform" size={16} />
-                      <span className="px-3 py-1 bg-purple-600 rounded-full text-sm">Level 2</span>
+                    <div className="flex items-center gap-2 md:gap-3 text-white/80 flex-wrap">
+                      <span className="px-2 md:px-3 py-1 bg-slate-700 rounded-full text-xs md:text-sm">Level 1</span>
+                      <Icon name="ArrowRight" className="text-purple-400 group-hover:translate-x-1 transition-transform" size={14} />
+                      <span className="px-2 md:px-3 py-1 bg-purple-600 rounded-full text-xs md:text-sm">Level 2</span>
                     </div>
                   </div>
-                  <div className="p-6 rounded-2xl bg-slate-800/50 border border-white/10">
-                    <div className="flex items-center gap-3 mb-2">
-                      <Icon name="Heart" className="text-amber-400 animate-float" size={20} />
-                      <span className="font-semibold">Твоё состояние:</span>
+                  <div className="p-4 md:p-6 rounded-xl md:rounded-2xl bg-slate-800/50 border border-white/10">
+                    <div className="flex items-center gap-2 md:gap-3 mb-2">
+                      <Icon name="Heart" className="text-amber-400 animate-float" size={18} />
+                      <span className="text-sm md:text-base font-semibold">Твоё состояние:</span>
                     </div>
-                    <p className="text-white/80">От усталости к лёгкости</p>
+                    <p className="text-sm md:text-base text-white/80">От усталости к лёгкости</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* НЕДЕЛЯ 2: ПРОБУЖДЕНИЕ */}
-            <div className="relative p-8 rounded-3xl bg-gradient-to-br from-amber-500/10 via-turquoise-500/10 to-slate-800/50 border border-amber-500/20 backdrop-blur-sm hover:border-amber-500/40 transition-all duration-500 group">
-              <div className="absolute -left-4 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-amber-600 border-4 border-slate-900 flex items-center justify-center text-xs font-bold">
+            <div className="relative p-4 md:p-6 lg:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-amber-500/10 via-turquoise-500/10 to-slate-800/50 border border-amber-500/20 backdrop-blur-sm hover:border-amber-500/40 transition-all duration-500 group">
+              <div className="absolute -left-3 md:-left-4 top-6 md:top-1/2 md:-translate-y-1/2 w-6 h-6 md:w-8 md:h-8 rounded-full bg-amber-600 border-2 md:border-4 border-slate-900 flex items-center justify-center text-xs font-bold">
                 2
               </div>
               
-              <div className="grid lg:grid-cols-3 gap-8 items-center">
+              <div className="grid lg:grid-cols-3 gap-6 md:gap-8 items-center">
                 <div>
-                  <div className="inline-block px-4 py-2 rounded-full bg-amber-600/20 border border-amber-500/30 text-sm font-semibold mb-4">
+                  <div className="inline-block px-3 md:px-4 py-1.5 md:py-2 rounded-full bg-amber-600/20 border border-amber-500/30 text-xs md:text-sm font-semibold mb-3 md:mb-4">
                     НЕДЕЛЯ 2: ПРОБУЖДЕНИЕ
                   </div>
-                  <div className="flex items-center gap-2 text-white/60 mb-6">
-                    <Icon name="Calendar" size={18} className="animate-bounce-gentle" />
+                  <div className="flex items-center gap-2 text-sm md:text-base text-white/60 mb-4 md:mb-6">
+                    <Icon name="Calendar" size={16} className="animate-bounce-gentle" />
                     <span>16-22 февраля</span>
                   </div>
-                  <div className="space-y-2 mb-6">
+                  <div className="space-y-2 mb-4 md:mb-6">
                     <div className="flex items-center gap-2">
                       <Icon name="Zap" className="text-amber-400 animate-pulse-glow" size={18} />
                       <span className="text-sm">Пробуждение интуиции и энергии</span>
@@ -498,25 +498,25 @@ export default function Index() {
             </div>
 
             {/* ФИНАЛ */}
-            <div className="relative p-8 rounded-3xl bg-gradient-to-br from-turquoise-500/10 to-slate-800/50 border border-turquoise-500/20 backdrop-blur-sm">
-              <div className="absolute -left-4 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-turquoise-600 border-4 border-slate-900 flex items-center justify-center">
-                <Icon name="Star" size={16} className="animate-pulse-glow" />
+            <div className="relative p-4 md:p-6 lg:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-turquoise-500/10 to-slate-800/50 border border-turquoise-500/20 backdrop-blur-sm">
+              <div className="absolute -left-3 md:-left-4 top-6 md:top-1/2 md:-translate-y-1/2 w-6 h-6 md:w-8 md:h-8 rounded-full bg-turquoise-600 border-2 md:border-4 border-slate-900 flex items-center justify-center">
+                <Icon name="Star" size={14} className="animate-pulse-glow" />
               </div>
               
               <div>
-                <div className="inline-block px-4 py-2 rounded-full bg-turquoise-600/20 border border-turquoise-500/30 text-sm font-semibold mb-6">
+                <div className="inline-block px-3 md:px-4 py-1.5 md:py-2 rounded-full bg-turquoise-600/20 border border-turquoise-500/30 text-xs md:text-sm font-semibold mb-4 md:mb-6">
                   ФИНАЛ: ВСТРЕЧА И НАГРАДЫ
                 </div>
                 
-                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
                   {[
                     { icon: "Video", text: "Онлайн-встреча всех участниц в ZOOM" },
                     { icon: "Trophy", text: "Награждение победительниц" },
                     { icon: "Sunrise", text: "Завершающая встреча на рассвете у \"Двери Возможностей\" (о.Русский)" },
                     { icon: "Sparkles", text: "Переход в новый цикл жизни" }
                   ].map((item, index) => (
-                    <div key={index} className="p-4 rounded-2xl bg-slate-800/50 border border-white/10 flex flex-col items-center text-center gap-3">
-                      <div className="w-12 h-12 rounded-full bg-turquoise-600/20 flex items-center justify-center">
+                    <div key={index} className="p-3 md:p-4 rounded-xl md:rounded-2xl bg-slate-800/50 border border-white/10 flex flex-col items-center text-center gap-2 md:gap-3">
+                      <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-turquoise-600/20 flex items-center justify-center">
                         <Icon 
                           name={item.icon} 
                           className={`text-turquoise-400 ${
@@ -524,10 +524,10 @@ export default function Index() {
                             item.icon === 'Sparkles' ? 'animate-pulse-glow' :
                             item.icon === 'Sunrise' ? 'animate-float' : ''
                           }`}
-                          size={20} 
+                          size={18} 
                         />
                       </div>
-                      <p className="text-sm text-white/80">{item.text}</p>
+                      <p className="text-xs md:text-sm text-white/80">{item.text}</p>
                     </div>
                   ))}
                 </div>
@@ -540,137 +540,137 @@ export default function Index() {
       {/* БЛОК 5: ЧЕТЫРЕ АВАТАРА */}
       <section id="avatars" className="relative py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
               Выбери <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">своего аватара</span>
             </h2>
-            <p className="text-xl text-white/60">Твой персональный путь трансформации за 14 дней</p>
+            <p className="text-lg md:text-xl text-white/60">Твой персональный путь трансформации за 14 дней</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             {/* Аватар 1: Огненная Феникс */}
-            <div className="group p-8 rounded-3xl bg-gradient-to-br from-orange-500/10 via-red-500/10 to-slate-800/50 border border-orange-500/20 backdrop-blur-sm hover:border-orange-500/40 transition-all duration-500">
-              <div className="text-center mb-6">
-                <div className="text-6xl mb-4">🔥</div>
-                <h3 className="text-2xl font-bold mb-3 text-orange-400">ОГНЕННАЯ ФЕНИКС</h3>
-                <p className="text-white/80 italic">"Для тех, кто прошёл выгорание и готов воскреситься."</p>
+            <div className="group p-5 md:p-6 lg:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-orange-500/10 via-red-500/10 to-slate-800/50 border border-orange-500/20 backdrop-blur-sm hover:border-orange-500/40 transition-all duration-500">
+              <div className="text-center mb-5 md:mb-6">
+                <div className="text-5xl md:text-6xl mb-3 md:mb-4">🔥</div>
+                <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3 text-orange-400">ОГНЕННАЯ ФЕНИКС</h3>
+                <p className="text-sm md:text-base text-white/80 italic">"Для тех, кто прошёл выгорание и готов воскреситься."</p>
               </div>
               
-              <div className="mb-6">
-                <p className="text-sm text-white/60 mb-3">Трансформация за 14 дней:</p>
-                <div className="flex items-center justify-center gap-2 flex-wrap">
-                  <span className="px-3 py-1 bg-slate-700 rounded-full text-xs">L1</span>
-                  <Icon name="ArrowRight" size={14} className="text-orange-400 group-hover:translate-x-1 transition-transform" />
-                  <span className="px-3 py-1 bg-orange-600/50 rounded-full text-xs">L2</span>
-                  <Icon name="ArrowRight" size={14} className="text-orange-400 group-hover:translate-x-1 transition-transform" />
-                  <span className="px-3 py-1 bg-orange-600 rounded-full text-xs">L3</span>
-                  <Icon name="ArrowRight" size={14} className="text-orange-400 group-hover:translate-x-1 transition-transform" />
-                  <span className="px-3 py-1 bg-gradient-to-r from-orange-600 to-red-600 rounded-full text-xs font-bold">L4 ЛЕГЕНДАРНЫЙ</span>
+              <div className="mb-5 md:mb-6">
+                <p className="text-xs md:text-sm text-white/60 mb-2 md:mb-3">Трансформация за 14 дней:</p>
+                <div className="flex items-center justify-center gap-1.5 md:gap-2 flex-wrap">
+                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-slate-700 rounded-full text-xs">L1</span>
+                  <Icon name="ArrowRight" size={12} className="text-orange-400 group-hover:translate-x-1 transition-transform" />
+                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-orange-600/50 rounded-full text-xs">L2</span>
+                  <Icon name="ArrowRight" size={12} className="text-orange-400 group-hover:translate-x-1 transition-transform" />
+                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-orange-600 rounded-full text-xs">L3</span>
+                  <Icon name="ArrowRight" size={12} className="text-orange-400 group-hover:translate-x-1 transition-transform" />
+                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-gradient-to-r from-orange-600 to-red-600 rounded-full text-xs font-bold">L4 ЛЕГЕНДАРНЫЙ</span>
                 </div>
               </div>
 
-              <p className="text-center text-lg font-semibold text-orange-300 mb-6">"Из пепла в пламя"</p>
+              <p className="text-center text-base md:text-lg font-semibold text-orange-300 mb-5 md:mb-6">"Из пепла в пламя"</p>
 
               <Button 
                 onClick={() => setShowPhoenixModal(true)}
                 variant="outline"
-                className="w-full bg-orange-500/10 border-orange-500/30 hover:bg-orange-500/20 transition-all"
+                className="w-full bg-orange-500/10 border-orange-500/30 hover:bg-orange-500/20 transition-all text-sm md:text-base"
               >
                 Узнать больше об этом архетипе
               </Button>
             </div>
 
             {/* Аватар 2: Королева Перемен */}
-            <div className="group p-8 rounded-3xl bg-gradient-to-br from-purple-500/10 via-pink-500/10 to-slate-800/50 border border-purple-500/20 backdrop-blur-sm hover:border-purple-500/40 transition-all duration-500">
-              <div className="text-center mb-6">
-                <div className="text-6xl mb-4">👑</div>
-                <h3 className="text-2xl font-bold mb-3 text-purple-400">КОРОЛЕВА ПЕРЕМЕН</h3>
-                <p className="text-white/80 italic">"Для тех, кто готов стать главной героиней своей жизни."</p>
+            <div className="group p-5 md:p-6 lg:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-purple-500/10 via-pink-500/10 to-slate-800/50 border border-purple-500/20 backdrop-blur-sm hover:border-purple-500/40 transition-all duration-500">
+              <div className="text-center mb-5 md:mb-6">
+                <div className="text-5xl md:text-6xl mb-3 md:mb-4">👑</div>
+                <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3 text-purple-400">КОРОЛЕВА ПЕРЕМЕН</h3>
+                <p className="text-sm md:text-base text-white/80 italic">"Для тех, кто готов стать главной героиней своей жизни."</p>
               </div>
               
-              <div className="mb-6">
-                <p className="text-sm text-white/60 mb-3">Трансформация за 14 дней:</p>
-                <div className="flex items-center justify-center gap-2 flex-wrap">
-                  <span className="px-3 py-1 bg-slate-700 rounded-full text-xs">L1</span>
-                  <Icon name="ArrowRight" size={14} className="text-purple-400 group-hover:translate-x-1 transition-transform" />
-                  <span className="px-3 py-1 bg-purple-600/50 rounded-full text-xs">L2</span>
-                  <Icon name="ArrowRight" size={14} className="text-purple-400 group-hover:translate-x-1 transition-transform" />
-                  <span className="px-3 py-1 bg-purple-600 rounded-full text-xs">L3</span>
-                  <Icon name="ArrowRight" size={14} className="text-purple-400 group-hover:translate-x-1 transition-transform" />
-                  <span className="px-3 py-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-xs font-bold">L4 ЛЕГЕНДАРНЫЙ</span>
+              <div className="mb-5 md:mb-6">
+                <p className="text-xs md:text-sm text-white/60 mb-2 md:mb-3">Трансформация за 14 дней:</p>
+                <div className="flex items-center justify-center gap-1.5 md:gap-2 flex-wrap">
+                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-slate-700 rounded-full text-xs">L1</span>
+                  <Icon name="ArrowRight" size={12} className="text-purple-400 group-hover:translate-x-1 transition-transform" />
+                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-purple-600/50 rounded-full text-xs">L2</span>
+                  <Icon name="ArrowRight" size={12} className="text-purple-400 group-hover:translate-x-1 transition-transform" />
+                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-purple-600 rounded-full text-xs">L3</span>
+                  <Icon name="ArrowRight" size={12} className="text-purple-400 group-hover:translate-x-1 transition-transform" />
+                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-xs font-bold">L4 ЛЕГЕНДАРНЫЙ</span>
                 </div>
               </div>
 
-              <p className="text-center text-lg font-semibold text-purple-300 mb-6">"От замужества к королевству"</p>
+              <p className="text-center text-base md:text-lg font-semibold text-purple-300 mb-5 md:mb-6">"От замужества к королевству"</p>
 
               <Button 
                 onClick={() => setShowQueenModal(true)}
                 variant="outline"
-                className="w-full bg-purple-500/10 border-purple-500/30 hover:bg-purple-500/20 transition-all"
+                className="w-full bg-purple-500/10 border-purple-500/30 hover:bg-purple-500/20 transition-all text-sm md:text-base"
               >
                 Узнать больше об этом архетипе
               </Button>
             </div>
 
             {/* Аватар 3: Богиня Восстановления */}
-            <div className="group p-8 rounded-3xl bg-gradient-to-br from-emerald-500/10 via-teal-500/10 to-slate-800/50 border border-emerald-500/20 backdrop-blur-sm hover:border-emerald-500/40 transition-all duration-500">
-              <div className="text-center mb-6">
-                <div className="text-6xl mb-4">✨</div>
-                <h3 className="text-2xl font-bold mb-3 text-emerald-400">БОГИНЯ ВОССТАНОВЛЕНИЯ</h3>
-                <p className="text-white/80 italic">"Для тех, кто ищет гармонию между материальным и духовным."</p>
+            <div className="group p-5 md:p-6 lg:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-emerald-500/10 via-teal-500/10 to-slate-800/50 border border-emerald-500/20 backdrop-blur-sm hover:border-emerald-500/40 transition-all duration-500">
+              <div className="text-center mb-5 md:mb-6">
+                <div className="text-5xl md:text-6xl mb-3 md:mb-4">✨</div>
+                <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3 text-emerald-400">БОГИНЯ ВОССТАНОВЛЕНИЯ</h3>
+                <p className="text-sm md:text-base text-white/80 italic">"Для тех, кто ищет гармонию между материальным и духовным."</p>
               </div>
               
-              <div className="mb-6">
-                <p className="text-sm text-white/60 mb-3">Трансформация за 14 дней:</p>
-                <div className="flex items-center justify-center gap-2 flex-wrap">
-                  <span className="px-3 py-1 bg-slate-700 rounded-full text-xs">L1</span>
-                  <Icon name="ArrowRight" size={14} className="text-emerald-400 group-hover:translate-x-1 transition-transform" />
-                  <span className="px-3 py-1 bg-emerald-600/50 rounded-full text-xs">L2</span>
-                  <Icon name="ArrowRight" size={14} className="text-emerald-400 group-hover:translate-x-1 transition-transform" />
-                  <span className="px-3 py-1 bg-emerald-600 rounded-full text-xs">L3</span>
-                  <Icon name="ArrowRight" size={14} className="text-emerald-400 group-hover:translate-x-1 transition-transform" />
-                  <span className="px-3 py-1 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full text-xs font-bold">L4 ЛЕГЕНДАРНЫЙ</span>
+              <div className="mb-5 md:mb-6">
+                <p className="text-xs md:text-sm text-white/60 mb-2 md:mb-3">Трансформация за 14 дней:</p>
+                <div className="flex items-center justify-center gap-1.5 md:gap-2 flex-wrap">
+                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-slate-700 rounded-full text-xs">L1</span>
+                  <Icon name="ArrowRight" size={12} className="text-emerald-400 group-hover:translate-x-1 transition-transform" />
+                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-emerald-600/50 rounded-full text-xs">L2</span>
+                  <Icon name="ArrowRight" size={12} className="text-emerald-400 group-hover:translate-x-1 transition-transform" />
+                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-emerald-600 rounded-full text-xs">L3</span>
+                  <Icon name="ArrowRight" size={12} className="text-emerald-400 group-hover:translate-x-1 transition-transform" />
+                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full text-xs font-bold">L4 ЛЕГЕНДАРНЫЙ</span>
                 </div>
               </div>
 
-              <p className="text-center text-lg font-semibold text-emerald-300 mb-6">"От рассеяния к целостности"</p>
+              <p className="text-center text-base md:text-lg font-semibold text-emerald-300 mb-5 md:mb-6">"От рассеяния к целостности"</p>
 
               <Button 
                 onClick={() => setShowGoddessModal(true)}
                 variant="outline"
-                className="w-full bg-emerald-500/10 border-emerald-500/30 hover:bg-emerald-500/20 transition-all"
+                className="w-full bg-emerald-500/10 border-emerald-500/30 hover:bg-emerald-500/20 transition-all text-sm md:text-base"
               >
                 Узнать больше об этом архетипе
               </Button>
             </div>
 
             {/* Аватар 4: Воительница Света */}
-            <div className="group p-8 rounded-3xl bg-gradient-to-br from-amber-500/10 via-yellow-500/10 to-slate-800/50 border border-amber-500/20 backdrop-blur-sm hover:border-amber-500/40 transition-all duration-500">
-              <div className="text-center mb-6">
-                <div className="text-6xl mb-4">🌟</div>
-                <h3 className="text-2xl font-bold mb-3 text-amber-400">ВОИТЕЛЬНИЦА СВЕТА</h3>
-                <p className="text-white/80 italic">"Для тех, кто готов встать и действовать."</p>
+            <div className="group p-5 md:p-6 lg:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-amber-500/10 via-yellow-500/10 to-slate-800/50 border border-amber-500/20 backdrop-blur-sm hover:border-amber-500/40 transition-all duration-500">
+              <div className="text-center mb-5 md:mb-6">
+                <div className="text-5xl md:text-6xl mb-3 md:mb-4">🌟</div>
+                <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3 text-amber-400">ВОИТЕЛЬНИЦА СВЕТА</h3>
+                <p className="text-sm md:text-base text-white/80 italic">"Для тех, кто готов встать и действовать."</p>
               </div>
               
-              <div className="mb-6">
-                <p className="text-sm text-white/60 mb-3">Трансформация за 14 дней:</p>
-                <div className="flex items-center justify-center gap-2 flex-wrap">
-                  <span className="px-3 py-1 bg-slate-700 rounded-full text-xs">L1</span>
-                  <Icon name="ArrowRight" size={14} className="text-amber-400 group-hover:translate-x-1 transition-transform" />
-                  <span className="px-3 py-1 bg-amber-600/50 rounded-full text-xs">L2</span>
-                  <Icon name="ArrowRight" size={14} className="text-amber-400 group-hover:translate-x-1 transition-transform" />
-                  <span className="px-3 py-1 bg-amber-600 rounded-full text-xs">L3</span>
-                  <Icon name="ArrowRight" size={14} className="text-amber-400 group-hover:translate-x-1 transition-transform" />
-                  <span className="px-3 py-1 bg-gradient-to-r from-amber-600 to-yellow-600 rounded-full text-xs font-bold">L4 ЛЕГЕНДАРНЫЙ</span>
+              <div className="mb-5 md:mb-6">
+                <p className="text-xs md:text-sm text-white/60 mb-2 md:mb-3">Трансформация за 14 дней:</p>
+                <div className="flex items-center justify-center gap-1.5 md:gap-2 flex-wrap">
+                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-slate-700 rounded-full text-xs">L1</span>
+                  <Icon name="ArrowRight" size={12} className="text-amber-400 group-hover:translate-x-1 transition-transform" />
+                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-amber-600/50 rounded-full text-xs">L2</span>
+                  <Icon name="ArrowRight" size={12} className="text-amber-400 group-hover:translate-x-1 transition-transform" />
+                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-amber-600 rounded-full text-xs">L3</span>
+                  <Icon name="ArrowRight" size={12} className="text-amber-400 group-hover:translate-x-1 transition-transform" />
+                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-gradient-to-r from-amber-600 to-yellow-600 rounded-full text-xs font-bold">L4 ЛЕГЕНДАРНЫЙ</span>
                 </div>
               </div>
 
-              <p className="text-center text-lg font-semibold text-amber-300 mb-6">"От сомнений к уверенности"</p>
+              <p className="text-center text-base md:text-lg font-semibold text-amber-300 mb-5 md:mb-6">"От сомнений к уверенности"</p>
 
               <Button 
                 onClick={() => setShowWarriorModal(true)}
                 variant="outline"
-                className="w-full bg-amber-500/10 border-amber-500/30 hover:bg-amber-500/20 transition-all"
+                className="w-full bg-amber-500/10 border-amber-500/30 hover:bg-amber-500/20 transition-all text-sm md:text-base"
               >
                 Узнать больше об этом архетипе
               </Button>
@@ -678,8 +678,8 @@ export default function Index() {
           </div>
 
           {/* КАК ВЫБРАТЬ АВАТАРА */}
-          <div className="mt-16 max-w-4xl mx-auto p-10 rounded-3xl bg-gradient-to-br from-purple-600/20 via-amber-600/20 to-turquoise-600/20 border border-purple-500/30 backdrop-blur-sm">
-            <h3 className="text-3xl font-bold text-center mb-8">
+          <div className="mt-12 md:mt-16 max-w-4xl mx-auto p-6 md:p-10 rounded-2xl md:rounded-3xl bg-gradient-to-br from-purple-600/20 via-amber-600/20 to-turquoise-600/20 border border-purple-500/30 backdrop-blur-sm">
+            <h3 className="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-8">
               <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">
                 КАК ВЫБРАТЬ СВОЙ АВАТАР?
               </span>
@@ -687,33 +687,33 @@ export default function Index() {
             
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="avatar-selection" className="border-purple-500/30">
-                <AccordionTrigger className="text-amber-400 hover:text-amber-300 text-xl font-semibold hover:no-underline">
+                <AccordionTrigger className="text-amber-400 hover:text-amber-300 text-lg md:text-xl font-semibold hover:no-underline">
                   Доверься первому порыву
                 </AccordionTrigger>
                 <AccordionContent>
-                  <div className="space-y-6 text-white/90 text-lg leading-relaxed pt-4">
+                  <div className="space-y-4 md:space-y-6 text-white/90 text-base md:text-lg leading-relaxed pt-4">
                     <p className="text-center">
                       Смотри на описание и прислушивайся к интуиции. Какой аватар "говорит" с тобой? Какое описание заставило твоё сердце биться чаще?
                     </p>
                     
-                    <div className="mt-8 space-y-4">
-                      <p className="font-semibold text-purple-300 text-xl">Помни:</p>
-                      <ul className="space-y-3">
+                    <div className="mt-6 md:mt-8 space-y-3 md:space-y-4">
+                      <p className="font-semibold text-purple-300 text-lg md:text-xl">Помни:</p>
+                      <ul className="space-y-2 md:space-y-3">
                         {[
                           "Нет \"правильного\" или \"неправильного\" аватара",
                           "Каждый архетип — это зеркало твоего пути",
                           "Твой аватар будет прокачиваться ВМЕСТЕ с ТОБОЙ за эти 14 дней",
                           "Выбор аватара — это выбор, какую версию себя ты хочешь встретить"
                         ].map((item, index) => (
-                          <li key={index} className="flex items-start gap-3">
-                            <Icon name="Sparkles" className="text-amber-400 flex-shrink-0 mt-1 animate-pulse-glow" size={20} />
-                            <span>{item}</span>
+                          <li key={index} className="flex items-start gap-2 md:gap-3">
+                            <Icon name="Sparkles" className="text-amber-400 flex-shrink-0 mt-1 animate-pulse-glow" size={18} />
+                            <span className="text-sm md:text-base">{item}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
                     
-                    <p className="text-2xl font-bold text-center mt-8 bg-gradient-to-r from-orange-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent">
+                    <p className="text-xl md:text-2xl font-bold text-center mt-6 md:mt-8 bg-gradient-to-r from-orange-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent">
                       Выбери аватара и начни свою трансформацию! 🔥👑✨
                     </p>
                   </div>
@@ -727,26 +727,26 @@ export default function Index() {
       {/* БЛОК 6: ПОЧЕМУ ИМЕННО СЕЙЧАС */}
       <section className="relative py-20 bg-gradient-to-b from-slate-900 to-slate-950">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
               Почему именно <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">9 февраля?</span>
             </h2>
-            <p className="text-xl text-white/60">(Это не просто дата — это МОМЕНТ)</p>
+            <p className="text-lg md:text-xl text-white/60">(Это не просто дата — это МОМЕНТ)</p>
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8">
             {/* Убывающая луна */}
-            <div className="p-8 rounded-3xl bg-gradient-to-br from-indigo-500/10 to-slate-800/50 border border-indigo-500/20 backdrop-blur-sm">
-              <div className="flex items-start gap-6">
-                <div className="text-5xl">🌙</div>
+            <div className="p-5 md:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-indigo-500/10 to-slate-800/50 border border-indigo-500/20 backdrop-blur-sm">
+              <div className="flex flex-col sm:flex-row items-start gap-4 md:gap-6">
+                <div className="text-4xl md:text-5xl">🌙</div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-4 text-indigo-300">4-я четверть убывающей луны (9-16 февраля)</h3>
-                  <p className="text-white/80 mb-4">→ ЛУЧШЕЕ время для:</p>
-                  <ul className="space-y-2">
+                  <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-indigo-300">4-я четверть убывающей луны (9-16 февраля)</h3>
+                  <p className="text-sm md:text-base text-white/80 mb-3 md:mb-4">→ ЛУЧШЕЕ время для:</p>
+                  <ul className="space-y-1.5 md:space-y-2">
                     {["Самоанализа", "Очищения тела и ума", "Освобождения от старого"].map((item, index) => (
-                      <li key={index} className="flex items-center gap-3">
-                        <Icon name="Check" className="text-indigo-400 flex-shrink-0" size={20} />
-                        <span className="text-white/80">{item}</span>
+                      <li key={index} className="flex items-center gap-2 md:gap-3">
+                        <Icon name="Check" className="text-indigo-400 flex-shrink-0" size={18} />
+                        <span className="text-sm md:text-base text-white/80">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -755,19 +755,19 @@ export default function Index() {
             </div>
 
             {/* Новолуние */}
-            <div className="p-8 rounded-3xl bg-gradient-to-br from-slate-600/10 to-slate-800/50 border border-slate-500/20 backdrop-blur-sm">
-              <div className="flex items-start gap-6">
-                <div className="text-5xl">🌑</div>
+            <div className="p-5 md:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-slate-600/10 to-slate-800/50 border border-slate-500/20 backdrop-blur-sm">
+              <div className="flex flex-col sm:flex-row items-start gap-4 md:gap-6">
+                <div className="text-4xl md:text-5xl">🌑</div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-4 text-slate-300">НОВОЛУНИЕ 17 февраля</h3>
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-3">
-                      <Icon name="ArrowRight" className="text-slate-400 flex-shrink-0" size={20} />
-                      <span className="text-white/80">Новый лунный год начинается</span>
+                  <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-slate-300">НОВОЛУНИЕ 17 февраля</h3>
+                  <div className="space-y-1.5 md:space-y-2">
+                    <div className="flex items-center gap-2 md:gap-3">
+                      <Icon name="ArrowRight" className="text-slate-400 flex-shrink-0" size={18} />
+                      <span className="text-sm md:text-base text-white/80">Новый лунный год начинается</span>
                     </div>
-                    <div className="flex items-center gap-3">
-                      <Icon name="ArrowRight" className="text-slate-400 flex-shrink-0" size={20} />
-                      <span className="text-white/80">Новая энергия, новый цикл</span>
+                    <div className="flex items-center gap-2 md:gap-3">
+                      <Icon name="ArrowRight" className="text-slate-400 flex-shrink-0" size={18} />
+                      <span className="text-sm md:text-base text-white/80">Новая энергия, новый цикл</span>
                     </div>
                   </div>
                 </div>
@@ -775,8 +775,8 @@ export default function Index() {
             </div>
 
             {/* Год Лошади */}
-            <div className="p-8 rounded-3xl bg-gradient-to-br from-red-500/10 via-orange-500/10 to-slate-800/50 border border-red-500/20 backdrop-blur-sm">
-              <div className="flex items-start gap-6">
+            <div className="p-5 md:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-red-500/10 via-orange-500/10 to-slate-800/50 border border-red-500/20 backdrop-blur-sm">
+              <div className="flex flex-col sm:flex-row items-start gap-4 md:gap-6">
                 <div className="text-5xl">🐴</div>
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold mb-4 text-red-400">ГОД КРАСНОЙ ОГНЕННОЙ ЛОШАДИ (2026)</h3>
@@ -804,10 +804,10 @@ export default function Index() {
           </div>
 
           {/* Вывод */}
-          <div className="mt-12 p-10 rounded-3xl bg-gradient-to-br from-purple-600/20 via-amber-600/20 to-red-600/20 border border-purple-500/30 backdrop-blur-sm text-center">
-            <p className="text-2xl font-bold mb-4">Это уникальное время. Оно не вернётся.</p>
-            <p className="text-xl text-white/90 leading-relaxed">
-              И именно сейчас твоё тело, луна и год синхронизируются<br />
+          <div className="mt-10 md:mt-12 p-6 md:p-10 rounded-2xl md:rounded-3xl bg-gradient-to-br from-purple-600/20 via-amber-600/20 to-red-600/20 border border-purple-500/30 backdrop-blur-sm text-center">
+            <p className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Это уникальное время. Оно не вернётся.</p>
+            <p className="text-base md:text-xl text-white/90 leading-relaxed">
+              И именно сейчас твоё тело, луна и год синхронизируются
               для твоего <span className="text-amber-400 font-semibold">АПГРЕЙДА</span>.
             </p>
           </div>
@@ -817,13 +817,13 @@ export default function Index() {
       {/* БЛОК 7: ЧТО ТЫ ПОЛУЧИШЬ */}
       <section className="relative py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
               За 14 дней <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">ты получишь</span>
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {[
               { icon: "Flame", color: "text-orange-400", title: "СОСТОЯНИЕ \"ГОРЯЩИЙ ГЛАЗ\"", desc: "Вернётся ощущение ЖИВОСТИ, вкус к жизни, искра в глазах, которую ты потеряла." },
               { icon: "Zap", color: "text-purple-400", title: "ФИЗИЧЕСКОЕ ВОССТАНОВЛЕНИЕ", desc: "Лёгкость в теле, энергию, избавление от физической тяжести и усталости." },
@@ -838,20 +838,20 @@ export default function Index() {
             ].map((item, index) => (
               <div 
                 key={index}
-                className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-purple-500/30 transition-all duration-300 group"
+                className="p-4 md:p-6 rounded-xl md:rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-purple-500/30 transition-all duration-300 group"
               >
                 <Icon 
                   name={item.icon} 
-                  className={`${item.color} mb-4 ${
+                  className={`${item.color} mb-3 md:mb-4 ${
                     item.icon === 'Flame' || item.icon === 'Zap' || item.icon === 'Sparkles' ? 'animate-pulse-glow' :
                     item.icon === 'Heart' || item.icon === 'Award' || item.icon === 'Crown' || item.icon === 'Gift' ? 'animate-float' :
                     item.icon === 'Users' ? 'icon-hover' :
                     item.icon === 'Target' ? 'animate-wiggle' : ''
                   }`} 
-                  size={32} 
+                  size={28} 
                 />
-                <h3 className="text-lg font-bold mb-3">{item.title}</h3>
-                <p className="text-white/70 text-sm leading-relaxed">{item.desc}</p>
+                <h3 className="text-base md:text-lg font-bold mb-2 md:mb-3">{item.title}</h3>
+                <p className="text-white/70 text-xs md:text-sm leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -861,17 +861,17 @@ export default function Index() {
       {/* БЛОК 8: АВТОРИТЕТ (История Дарьи) */}
       <section className="relative py-20 bg-gradient-to-b from-slate-950 to-slate-900">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
               Я прошла этот путь <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">сама</span>
             </h2>
-            <p className="text-xl text-white/60">Теперь помогаю другим</p>
+            <p className="text-lg md:text-xl text-white/60">Теперь помогаю другим</p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-start">
             {/* Фото Дарьи */}
             <div className="relative">
-              <div className="rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+              <div className="rounded-2xl md:rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
                 <img 
                   src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/7bb4cf62-980a-4732-bc77-0398b3258b4c.jpg"
                   alt="Дарья Цыбульская"
