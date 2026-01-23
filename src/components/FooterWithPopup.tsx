@@ -216,11 +216,13 @@ export default function FooterWithPopup({ scrollToSection, showPopup, setShowPop
             </button>
 
             <div className="text-center">
-              <div className="text-5xl mb-4">👋</div>
-              <h3 className="text-2xl font-bold mb-4">Привет!</h3>
-              <p className="text-white/80 mb-2">Я Дарья. За 14 дней ты изменишь своё состояние.</p>
-              <p className="text-xl font-semibold text-amber-400 mb-6">Не верить не можешь? 🔥</p>
-              <p className="text-white/70 mb-8">Выбери свой аватар и давай начнём?</p>
+              <h3 className="text-2xl font-bold mb-3">Привет, Дорогая! 👑</h3>
+              <p className="text-white/90 mb-3 leading-relaxed">Я Дарья. Рада Тебе! 💐</p>
+              <p className="text-white/80 mb-4 leading-relaxed">Ты пришла и читаешь Это не просто Так! ✨</p>
+              <p className="text-white/80 mb-4 leading-relaxed">Чувствуй Свой Отклик и исходи при решении из него, не от ума — это ВАЖНО! 🤗</p>
+              <p className="text-white/80 mb-4 leading-relaxed">Позволь Себе эту игру для Себя Любимой… 💝 и Ты увидишь, как Жизнь вознаградит Тебя за это 🎁</p>
+              <p className="text-xl font-semibold text-amber-400 mb-6">Выбери своего Аватара и вперед!</p>
+              <p className="text-white/70 mb-8 italic">Буду рада Вместе с Тобой пройти этот квест во благо для Нас обоих ♥️</p>
               
               <div className="flex flex-col gap-3">
                 <Button 
