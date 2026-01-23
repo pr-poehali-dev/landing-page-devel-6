@@ -1299,23 +1299,28 @@ export default function Index() {
                   Свидетельство Героини
                 </h3>
                 
-                <p className="text-lg italic text-slate-300/80 mb-6 text-center">
-                  "Ты прошла весь путь и стала смелее"
-                </p>
-                
-                <div className="space-y-4 text-white/70">
-                  <p>
-                    Героиня Апгрейда 2026 — это ты. Та, кто не сдалась, прошла полный путь трансформации, 
-                    и её аватар прокачался до максимума.
-                  </p>
-                  <p>
-                    Свидетельство Героини — это признание твоей силы. Доказательство того, 
-                    что ты — героиня, а не просто участница. Ты победила себя.
-                  </p>
-                  <p className="text-white font-semibold">
-                    ⭐ Ты светишь. И об этом узнают все.
-                  </p>
-                </div>
+                <Accordion type="single" collapsible className="w-full">
+                  <AccordionItem value="heroine-certificate" className="border-slate-400/30">
+                    <AccordionTrigger className="text-slate-300 hover:text-slate-200 text-lg italic text-center justify-center hover:no-underline py-6">
+                      "Ты прошла весь путь и стала смелее"
+                    </AccordionTrigger>
+                    <AccordionContent>
+                      <div className="space-y-4 text-white/70 pt-4">
+                        <p>
+                          Героиня Апгрейда 2026 — это ты. Та, кто не сдалась, прошла полный путь трансформации, 
+                          и её аватар прокачался до максимума.
+                        </p>
+                        <p>
+                          Свидетельство Героини — это признание твоей силы. Доказательство того, 
+                          что ты — героиня, а не просто участница. Ты победила себя.
+                        </p>
+                        <p className="text-white font-semibold">
+                          ⭐ Ты светишь. И об этом узнают все.
+                        </p>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
               </div>
             </div>
 
