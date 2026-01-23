@@ -87,27 +87,26 @@ export default function Index() {
               </button>
             </nav>
 
-            <div className="flex items-center gap-2">
-              <Button 
-                onClick={() => scrollToSection('packages')} 
-                className="hidden md:flex bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 border-none shadow-lg shadow-purple-500/30 transition-all duration-300 hover:scale-105 text-xs sm:text-sm px-3 sm:px-4"
-              >
-                ВЫБРАТЬ ПАКЕТ
-              </Button>
+            {/* Mobile Menu Button */}
+            <button 
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="md:hidden p-2.5 rounded-lg bg-white/5 hover:bg-white/10 transition-colors z-[70] relative border border-white/20"
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? (
+                <Icon name="X" size={28} className="text-white" />
+              ) : (
+                <Icon name="Menu" size={28} className="text-white" />
+              )}
+            </button>
 
-              {/* Mobile Menu Button */}
-              <button 
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="md:hidden p-2.5 rounded-lg bg-white/5 hover:bg-white/10 transition-colors z-[70] relative border border-white/20"
-                aria-label="Toggle menu"
-              >
-                {mobileMenuOpen ? (
-                  <Icon name="X" size={28} className="text-white" />
-                ) : (
-                  <Icon name="Menu" size={28} className="text-white" />
-                )}
-              </button>
-            </div>
+            {/* Desktop CTA Button */}
+            <Button 
+              onClick={() => scrollToSection('packages')} 
+              className="hidden md:inline-flex bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 border-none shadow-lg shadow-purple-500/30 transition-all duration-300 hover:scale-105 text-xs sm:text-sm px-3 sm:px-4"
+            >
+              ВЫБРАТЬ ПАКЕТ
+            </Button>
           </div>
         </div>
       </header>
