@@ -15,6 +15,7 @@ export default function Index() {
   const [showStandardPackageModal, setShowStandardPackageModal] = useState(false);
   const [showPremiumPackageModal, setShowPremiumPackageModal] = useState(false);
   const [showVipPackageModal, setShowVipPackageModal] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -29,10 +30,22 @@ export default function Index() {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [mobileMenuOpen]);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setMobileMenuOpen(false);
     }
   };
 
@@ -76,13 +89,112 @@ export default function Index() {
 
             <Button 
               onClick={() => scrollToSection('packages')} 
-              className="bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 border-none shadow-lg shadow-purple-500/30 transition-all duration-300 hover:scale-105 text-xs sm:text-sm px-3 sm:px-4"
+              className="hidden md:flex bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 border-none shadow-lg shadow-purple-500/30 transition-all duration-300 hover:scale-105 text-xs sm:text-sm px-3 sm:px-4"
             >
               ВЫБРАТЬ ПАКЕТ
             </Button>
+
+            {/* Mobile Menu Button */}
+            <button 
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="md:hidden p-2 rounded-lg hover:bg-white/10 transition-colors"
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? (
+                <Icon name="X" size={24} className="text-white" />
+              ) : (
+                <Icon name="Menu" size={24} className="text-white" />
+              )}
+            </button>
           </div>
         </div>
       </header>
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <div className="fixed inset-0 z-40 bg-slate-950 md:hidden overflow-y-auto">
+          <div className="min-h-screen pt-20 pb-8 px-4">
+            {/* Navigation Links */}
+            <nav className="space-y-1 mb-6">
+              <button 
+                onClick={() => scrollToSection('about')} 
+                className="w-full text-left px-4 py-3 text-lg text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-colors"
+              >
+                Об АПГРЕЙДЕ
+              </button>
+              <button 
+                onClick={() => scrollToSection('avatars')} 
+                className="w-full text-left px-4 py-3 text-lg text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-colors"
+              >
+                Аватары
+              </button>
+              <button 
+                onClick={() => scrollToSection('packages')} 
+                className="w-full text-left px-4 py-3 text-lg text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-colors"
+              >
+                Пакеты
+              </button>
+              <button 
+                onClick={() => scrollToSection('faq')} 
+                className="w-full text-left px-4 py-3 text-lg text-white/80 hover:text-white hover:bg-white/5 rounded-lg transition-colors"
+              >
+                FAQ
+              </button>
+            </nav>
+
+            {/* CTA Button */}
+            <div className="mb-6">
+              <Button 
+                onClick={() => scrollToSection('packages')} 
+                className="w-full bg-gradient-to-r from-purple-600 to-amber-600 hover:from-purple-700 hover:to-amber-700 border-none shadow-lg shadow-purple-500/30 py-6 text-lg font-bold"
+              >
+                ВЫБРАТЬ ПАКЕТ
+              </Button>
+            </div>
+
+            <div className="border-t border-white/10 pt-6">
+              <h4 className="text-lg font-bold mb-4 text-white">Контакты:</h4>
+              <div className="space-y-3">
+                <a 
+                  href="tel:+79147047392" 
+                  className="flex items-center gap-3 px-4 py-3 text-white/80 hover:text-emerald-400 hover:bg-white/5 rounded-lg transition-colors"
+                >
+                  <Icon name="Phone" size={20} className="flex-shrink-0" />
+                  <span className="text-base">+7 914 704 7392</span>
+                </a>
+                
+                <a 
+                  href="https://t.me/darya_tsybulskaya22" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 px-4 py-3 text-white/80 hover:text-sky-400 hover:bg-white/5 rounded-lg transition-colors"
+                >
+                  <Icon name="Send" size={20} className="flex-shrink-0" />
+                  <span className="text-base">Телеграм</span>
+                </a>
+                
+                <a 
+                  href="mailto:offic1978@mail.ru" 
+                  className="flex items-center gap-3 px-4 py-3 text-white/80 hover:text-purple-400 hover:bg-white/5 rounded-lg transition-colors"
+                >
+                  <Icon name="Mail" size={20} className="flex-shrink-0" />
+                  <span className="text-base">offic1978@mail.ru</span>
+                </a>
+                
+                <a 
+                  href="https://instagram.com/darya_tsybulskaya22" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 px-4 py-3 text-white/80 hover:text-pink-400 hover:bg-white/5 rounded-lg transition-colors"
+                >
+                  <Icon name="Instagram" size={20} className="flex-shrink-0" />
+                  <span className="text-base">Instagram</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* HERO SECTION */}
       <section className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">

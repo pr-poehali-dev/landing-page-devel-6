@@ -151,6 +151,10 @@ export default function FooterWithPopup({ scrollToSection, showPopup, setShowPop
                   <Icon name="Send" size={16} className="icon-hover" />
                   <span>@darya_tsybulskaya22</span>
                 </a>
+                <a href="mailto:offic1978@mail.ru" className="flex items-center gap-2 text-white/60 hover:text-purple-400 transition-colors">
+                  <Icon name="Mail" size={16} className="icon-hover" />
+                  <span>offic1978@mail.ru</span>
+                </a>
                 <a href="https://instagram.com/darya_tsybulskaya22" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white/60 hover:text-pink-400 transition-colors">
                   <Icon name="Instagram" size={16} className="icon-hover" />
                   <span>darya_tsybulskaya22</span>
