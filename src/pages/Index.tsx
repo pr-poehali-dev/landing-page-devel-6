@@ -760,7 +760,13 @@ export default function Index() {
             {/* Аватар 4: Воительница Света */}
             <div className="group p-5 md:p-6 lg:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-amber-500/10 via-yellow-500/10 to-slate-800/50 border border-amber-500/20 backdrop-blur-sm hover:border-amber-500/40 transition-all duration-500">
               <div className="text-center mb-5 md:mb-6">
-                <div className="text-5xl md:text-6xl mb-3 md:mb-4">🌟</div>
+                <div className="mb-3 md:mb-4 flex justify-center">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/3c76767c-9237-4805-8e1e-68367a8cd34b.png"
+                    alt="Воительница Света"
+                    className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-2xl border-2 border-amber-400/30 shadow-lg shadow-amber-500/20"
+                  />
+                </div>
                 <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3 text-amber-400">ВОИТЕЛЬНИЦА СВЕТА</h3>
                 <p className="text-sm md:text-base text-white/80 italic">"Для тех, кто готов встать и действовать."</p>
               </div>
