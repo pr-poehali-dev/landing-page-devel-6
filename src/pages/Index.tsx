@@ -282,7 +282,7 @@ export default function Index() {
             <div className="relative animate-scale-in">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-purple-500/30 border border-white/10">
                 <img 
-                  src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/666011a1-845b-4364-b55b-98181d1026af.jpg" 
+                  src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/d5024f79-2a1f-441e-bcf9-566da9b608a4.png" 
                   alt="Эволюция аватара: Level 1 → Level 4"
                   className="w-full h-full object-cover"
                 />
