@@ -663,34 +663,26 @@ export default function Index() {
           <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             {/* Аватар 1: Огненная Феникс */}
             <div className="group p-5 md:p-6 lg:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-orange-500/10 via-red-500/10 to-slate-800/50 border border-orange-500/20 backdrop-blur-sm hover:border-orange-500/40 transition-all duration-500">
-              <div className="text-center mb-5 md:mb-6">
-                <div className="text-5xl md:text-6xl mb-3 md:mb-4">🔥</div>
-                <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3 text-orange-400">ОГНЕННАЯ ФЕНИКС</h3>
-                <p className="text-sm md:text-base text-white/80 italic">"Для тех, кто прошёл выгорание и готов воскреситься."</p>
+              <div className="mb-4 md:mb-6 flex justify-center">
+                <img 
+                  src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/10368a0e-cdce-4178-8c9a-c00ea3d1781a.png"
+                  alt="Огненная Феникс"
+                  className="w-full h-auto object-contain rounded-2xl border-2 border-orange-400/30 shadow-lg shadow-orange-500/20"
+                />
               </div>
               
-              <div className="mb-5 md:mb-6">
-                <p className="text-xs md:text-sm text-white/60 mb-2 md:mb-3">Трансформация за 14 дней:</p>
-                <div className="flex items-center justify-center gap-1.5 md:gap-2 flex-wrap">
-                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-slate-700 rounded-full text-xs">L1</span>
-                  <Icon name="ArrowRight" size={12} className="text-orange-400 group-hover:translate-x-1 transition-transform" />
-                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-orange-600/50 rounded-full text-xs">L2</span>
-                  <Icon name="ArrowRight" size={12} className="text-orange-400 group-hover:translate-x-1 transition-transform" />
-                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-orange-600 rounded-full text-xs">L3</span>
-                  <Icon name="ArrowRight" size={12} className="text-orange-400 group-hover:translate-x-1 transition-transform" />
-                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-gradient-to-r from-orange-600 to-red-600 rounded-full text-xs font-bold">L4 ЛЕГЕНДАРНЫЙ</span>
-                </div>
+              <div className="text-center space-y-4">
+                <h3 className="text-xl md:text-2xl font-bold text-orange-400">ОГНЕННАЯ ФЕНИКС</h3>
+                <p className="text-base md:text-lg font-semibold text-orange-300">"Из пепла в пламя"</p>
+                
+                <Button 
+                  onClick={() => setShowPhoenixModal(true)}
+                  variant="outline"
+                  className="w-full bg-orange-500/10 border-orange-500/30 hover:bg-orange-500/20 transition-all text-sm md:text-base"
+                >
+                  Узнать больше об этом архетипе
+                </Button>
               </div>
-
-              <p className="text-center text-base md:text-lg font-semibold text-orange-300 mb-5 md:mb-6">"Из пепла в пламя"</p>
-
-              <Button 
-                onClick={() => setShowPhoenixModal(true)}
-                variant="outline"
-                className="w-full bg-orange-500/10 border-orange-500/30 hover:bg-orange-500/20 transition-all text-sm md:text-base"
-              >
-                Узнать больше об этом архетипе
-              </Button>
             </div>
 
             {/* Аватар 2: Королева Перемен */}
