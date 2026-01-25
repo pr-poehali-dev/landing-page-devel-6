@@ -665,7 +665,7 @@ export default function Index() {
             <div className="group p-5 md:p-6 lg:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-orange-500/10 via-red-500/10 to-slate-800/50 border border-orange-500/20 backdrop-blur-sm hover:border-orange-500/40 transition-all duration-500">
               <div className="mb-4 md:mb-6 flex justify-center">
                 <img 
-                  src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/10368a0e-cdce-4178-8c9a-c00ea3d1781a.png"
+                  src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/b83fafa7-5a89-4d54-938c-861e5383e79b.png"
                   alt="Огненная Феникс"
                   className="w-full h-auto object-contain rounded-2xl border-2 border-orange-400/30 shadow-lg shadow-orange-500/20"
                 />
