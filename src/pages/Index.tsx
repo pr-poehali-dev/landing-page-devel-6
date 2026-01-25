@@ -695,34 +695,26 @@ export default function Index() {
 
             {/* Аватар 2: Королева Перемен */}
             <div className="group p-5 md:p-6 lg:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-purple-500/10 via-pink-500/10 to-slate-800/50 border border-purple-500/20 backdrop-blur-sm hover:border-purple-500/40 transition-all duration-500">
-              <div className="text-center mb-5 md:mb-6">
-                <div className="text-5xl md:text-6xl mb-3 md:mb-4">👑</div>
-                <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3 text-purple-400">КОРОЛЕВА ПЕРЕМЕН</h3>
-                <p className="text-sm md:text-base text-white/80 italic">"Для тех, кто готов стать главной героиней своей жизни."</p>
+              <div className="mb-4 md:mb-6 flex justify-center">
+                <img 
+                  src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/893cf94e-b6c8-4637-a050-df6ff6af7551.png"
+                  alt="Королева Перемен"
+                  className="w-full h-auto object-contain rounded-2xl border-2 border-purple-400/30 shadow-lg shadow-purple-500/20"
+                />
               </div>
               
-              <div className="mb-5 md:mb-6">
-                <p className="text-xs md:text-sm text-white/60 mb-2 md:mb-3">Трансформация за 14 дней:</p>
-                <div className="flex items-center justify-center gap-1.5 md:gap-2 flex-wrap">
-                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-slate-700 rounded-full text-xs">L1</span>
-                  <Icon name="ArrowRight" size={12} className="text-purple-400 group-hover:translate-x-1 transition-transform" />
-                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-purple-600/50 rounded-full text-xs">L2</span>
-                  <Icon name="ArrowRight" size={12} className="text-purple-400 group-hover:translate-x-1 transition-transform" />
-                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-purple-600 rounded-full text-xs">L3</span>
-                  <Icon name="ArrowRight" size={12} className="text-purple-400 group-hover:translate-x-1 transition-transform" />
-                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-xs font-bold">L4 ЛЕГЕНДАРНЫЙ</span>
-                </div>
+              <div className="text-center space-y-4">
+                <h3 className="text-xl md:text-2xl font-bold text-purple-400">КОРОЛЕВА ПЕРЕМЕН</h3>
+                <p className="text-base md:text-lg font-semibold text-purple-300">"От замужества к королевству"</p>
+                
+                <Button 
+                  onClick={() => setShowQueenModal(true)}
+                  variant="outline"
+                  className="w-full bg-purple-500/10 border-purple-500/30 hover:bg-purple-500/20 transition-all text-sm md:text-base"
+                >
+                  Узнать больше об этом архетипе
+                </Button>
               </div>
-
-              <p className="text-center text-base md:text-lg font-semibold text-purple-300 mb-5 md:mb-6">"От замужества к королевству"</p>
-
-              <Button 
-                onClick={() => setShowQueenModal(true)}
-                variant="outline"
-                className="w-full bg-purple-500/10 border-purple-500/30 hover:bg-purple-500/20 transition-all text-sm md:text-base"
-              >
-                Узнать больше об этом архетипе
-              </Button>
             </div>
 
             {/* Аватар 3: Богиня Восстановления */}
