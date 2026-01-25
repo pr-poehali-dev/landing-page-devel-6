@@ -759,40 +759,26 @@ export default function Index() {
 
             {/* Аватар 4: Воительница Света */}
             <div className="group p-5 md:p-6 lg:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-amber-500/10 via-yellow-500/10 to-slate-800/50 border border-amber-500/20 backdrop-blur-sm hover:border-amber-500/40 transition-all duration-500">
-              <div className="text-center mb-5 md:mb-6">
-                <div className="mb-3 md:mb-4 flex justify-center">
-                  <img 
-                    src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/3c76767c-9237-4805-8e1e-68367a8cd34b.png"
-                    alt="Воительница Света"
-                    className="w-32 h-32 md:w-40 md:h-40 object-cover rounded-2xl border-2 border-amber-400/30 shadow-lg shadow-amber-500/20"
-                  />
-                </div>
-                <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3 text-amber-400">ВОИТЕЛЬНИЦА СВЕТА</h3>
-                <p className="text-sm md:text-base text-white/80 italic">"Для тех, кто готов встать и действовать."</p>
+              <div className="mb-4 md:mb-6 flex justify-center">
+                <img 
+                  src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/3c76767c-9237-4805-8e1e-68367a8cd34b.png"
+                  alt="Воительница Света"
+                  className="w-full h-auto object-contain rounded-2xl border-2 border-amber-400/30 shadow-lg shadow-amber-500/20"
+                />
               </div>
               
-              <div className="mb-5 md:mb-6">
-                <p className="text-xs md:text-sm text-white/60 mb-2 md:mb-3">Трансформация за 14 дней:</p>
-                <div className="flex items-center justify-center gap-1.5 md:gap-2 flex-wrap">
-                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-slate-700 rounded-full text-xs">L1</span>
-                  <Icon name="ArrowRight" size={12} className="text-amber-400 group-hover:translate-x-1 transition-transform" />
-                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-amber-600/50 rounded-full text-xs">L2</span>
-                  <Icon name="ArrowRight" size={12} className="text-amber-400 group-hover:translate-x-1 transition-transform" />
-                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-amber-600 rounded-full text-xs">L3</span>
-                  <Icon name="ArrowRight" size={12} className="text-amber-400 group-hover:translate-x-1 transition-transform" />
-                  <span className="px-2 md:px-3 py-0.5 md:py-1 bg-gradient-to-r from-amber-600 to-yellow-600 rounded-full text-xs font-bold">L4 ЛЕГЕНДАРНЫЙ</span>
-                </div>
+              <div className="text-center space-y-4">
+                <h3 className="text-xl md:text-2xl font-bold text-amber-400">ВОИТЕЛЬНИЦА СВЕТА</h3>
+                <p className="text-base md:text-lg font-semibold text-amber-300">"От сомнений к уверенности"</p>
+                
+                <Button 
+                  onClick={() => setShowWarriorModal(true)}
+                  variant="outline"
+                  className="w-full bg-amber-500/10 border-amber-500/30 hover:bg-amber-500/20 transition-all text-sm md:text-base"
+                >
+                  Узнать больше об этом архетипе
+                </Button>
               </div>
-
-              <p className="text-center text-base md:text-lg font-semibold text-amber-300 mb-5 md:mb-6">"От сомнений к уверенности"</p>
-
-              <Button 
-                onClick={() => setShowWarriorModal(true)}
-                variant="outline"
-                className="w-full bg-amber-500/10 border-amber-500/30 hover:bg-amber-500/20 transition-all text-sm md:text-base"
-              >
-                Узнать больше об этом архетипе
-              </Button>
             </div>
           </div>
 
