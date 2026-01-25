@@ -954,7 +954,7 @@ export default function Index() {
             <div className="relative">
               <div className="rounded-2xl md:rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
                 <img 
-                  src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/7bb4cf62-980a-4732-bc77-0398b3258b4c.jpg"
+                  src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/a662e271-dff4-4165-9d8a-5a068854b09c.png"
                   alt="Дарья Цыбульская"
                   className="w-full h-full object-cover"
                 />
