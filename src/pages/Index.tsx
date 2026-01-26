@@ -374,11 +374,10 @@ export default function Index() {
               </div>
 
               {/* Пустой блок с кнопкой */}
-              <div className="relative flex items-end justify-end p-3 sm:p-4 md:p-6 rounded-lg sm:rounded-xl md:rounded-2xl bg-gradient-to-br from-fuchsia-500/10 to-amber-500/10 border border-fuchsia-500/20 backdrop-blur-sm">
+              <div className="relative flex items-end justify-end p-3 sm:p-4 md:p-6 rounded-lg sm:rounded-xl md:rounded-2xl bg-gradient-to-br from-fuchsia-500/10 to-amber-500/10 border border-fuchsia-500/20 backdrop-blur-sm min-h-[80px] sm:min-h-[100px]">
                 <Button
                   onClick={() => setShowCheckResult(true)}
-                  size="lg"
-                  className="bg-gradient-to-r from-fuchsia-600 to-amber-600 hover:from-fuchsia-700 hover:to-amber-700 border-none shadow-lg shadow-amber-500/30 transition-all duration-300 hover:scale-105 text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4"
+                  className="bg-gradient-to-r from-fuchsia-600 to-amber-600 hover:from-fuchsia-700 hover:to-amber-700 border-none shadow-lg shadow-amber-500/30 transition-all duration-300 hover:scale-105 text-base sm:text-lg font-semibold px-8 py-4 sm:px-10 sm:py-5 rounded-xl"
                 >
                   Проверить
                 </Button>
