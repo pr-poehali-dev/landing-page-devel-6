@@ -823,13 +823,11 @@ export default function Index() {
             {/* Убывающая луна */}
             <div className="p-5 md:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-indigo-500/10 to-slate-800/50 border border-indigo-500/20 backdrop-blur-sm">
               <div className="flex flex-col sm:flex-row items-start gap-4 md:gap-6">
-                <div className="w-20 h-20 md:w-24 md:h-24 flex-shrink-0">
-                  <img 
-                    src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/c2b63ebd-bd38-4c94-910f-228816d2b2f5.png" 
-                    alt="Убывающая луна"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+                <img 
+                  src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/c2b63ebd-bd38-4c94-910f-228816d2b2f5.png" 
+                  alt="Убывающая луна"
+                  className="w-28 h-28 md:w-32 md:h-32 flex-shrink-0 object-contain"
+                />
                 <div className="flex-1">
                   <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-indigo-300">4-я четверть убывающей луны (9-16 февраля)</h3>
                   <p className="text-sm md:text-base text-white/80 mb-3 md:mb-4">→ ЛУЧШЕЕ время для:</p>
@@ -848,13 +846,11 @@ export default function Index() {
             {/* Новолуние */}
             <div className="p-5 md:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-slate-600/10 to-slate-800/50 border border-slate-500/20 backdrop-blur-sm">
               <div className="flex flex-col sm:flex-row items-start gap-4 md:gap-6">
-                <div className="w-20 h-20 md:w-24 md:h-24 flex-shrink-0">
-                  <img 
-                    src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/1539a62c-39d8-4b2f-8346-0a94d2159d83.png" 
-                    alt="Новолуние"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+                <img 
+                  src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/1539a62c-39d8-4b2f-8346-0a94d2159d83.png" 
+                  alt="Новолуние"
+                  className="w-28 h-28 md:w-32 md:h-32 flex-shrink-0 object-contain"
+                />
                 <div className="flex-1">
                   <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-slate-300">НОВОЛУНИЕ 17 февраля</h3>
                   <div className="space-y-1.5 md:space-y-2">
@@ -874,13 +870,11 @@ export default function Index() {
             {/* Год Лошади */}
             <div className="p-5 md:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-red-500/10 via-orange-500/10 to-slate-800/50 border border-red-500/20 backdrop-blur-sm">
               <div className="flex flex-col sm:flex-row items-start gap-4 md:gap-6">
-                <div className="w-20 h-20 md:w-24 md:h-24 flex-shrink-0">
-                  <img 
-                    src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/ea90913b-c1c7-4ce7-aa66-601b4fed9177.png" 
-                    alt="Год Лошади"
-                    className="w-full h-full object-contain"
-                  />
-                </div>
+                <img 
+                  src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/ea90913b-c1c7-4ce7-aa66-601b4fed9177.png" 
+                  alt="Год Лошади"
+                  className="w-28 h-28 md:w-32 md:h-32 flex-shrink-0 object-contain"
+                />
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold mb-4 text-red-400">ГОД КРАСНОЙ ОГНЕННОЙ ЛОШАДИ (2026)</h3>
                   <div className="space-y-3">
