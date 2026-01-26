@@ -1238,7 +1238,7 @@ export default function Index() {
               <div className="relative p-8 rounded-3xl bg-gradient-to-br from-slate-900/90 to-slate-950/90 border-2 border-yellow-500/50 backdrop-blur-sm hover:border-yellow-400 transition-all duration-300">
                 <div className="flex justify-center mb-4">
                   <img 
-                    src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/395488e5-f905-4f3f-831c-40059223384c.jpg" 
+                    src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/7d1da4ec-9d45-405d-bd3b-d97da9137318.jpg" 
                     alt="Золотая корона"
                     className="w-24 h-24 object-contain animate-bounce"
                   />
@@ -1282,7 +1282,7 @@ export default function Index() {
               <div className="relative p-8 rounded-3xl bg-gradient-to-br from-slate-900/90 to-slate-950/90 border-2 border-slate-400/50 backdrop-blur-sm hover:border-slate-300 transition-all duration-300">
                 <div className="flex justify-center mb-4">
                   <img 
-                    src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/b1f7dc74-02ab-48dd-a4a3-2062a44ed7b1.jpg" 
+                    src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/46f24e4b-36f7-413f-b4f0-f0828585094a.jpg" 
                     alt="Серебряная корона"
                     className="w-24 h-24 object-contain animate-pulse"
                   />
@@ -1326,7 +1326,7 @@ export default function Index() {
               <div className="relative p-8 rounded-3xl bg-gradient-to-br from-slate-900/90 to-slate-950/90 border-2 border-cyan-500/50 backdrop-blur-sm hover:border-cyan-400 transition-all duration-300">
                 <div className="flex justify-center mb-4">
                   <img 
-                    src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/9c6bffeb-d8ef-4504-895d-b9d2b9ca80f4.jpg" 
+                    src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/8c05b7be-44c2-4357-ad88-4e95a8fad3b1.jpg" 
                     alt="Бронзовая корона"
                     className="w-24 h-24 object-contain animate-pulse"
                   />
