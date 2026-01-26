@@ -280,13 +280,13 @@ export default function Index() {
 
             {/* Visual - Avatar Evolution */}
             <div className="relative animate-scale-in">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-purple-500/30 border border-white/10">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-purple-500/30 border border-white/10 min-h-[600px] md:min-h-[700px]">
                 <img 
                   src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/d5024f79-2a1f-441e-bcf9-566da9b608a4.png" 
                   alt="Эволюция аватара: Level 1 → Level 4"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none"></div>
                 <div className="absolute bottom-6 left-6 right-6">
                   <p className="text-sm text-white/80 mb-2">Трансформация твоего аватара:</p>
                   <div className="flex items-center gap-3">
