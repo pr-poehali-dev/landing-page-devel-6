@@ -220,13 +220,9 @@ export default function Index() {
                 </span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-tight uppercase" style={{letterSpacing: '0.12em', fontFamily: 'Poppins, sans-serif', fontWeight: 900}}>
-                <div className="premium-gold-text strikethrough-line mb-2 sm:mb-4">
-                  ИЗ УСТАЛОСТИ
-                </div>
-                <div className="premium-gold-text">
-                  В ГОРЯЩИЙ ГЛАЗ
-                </div>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-wider uppercase">
+                <div className="text-glow-gold" style={{letterSpacing: '0.15em'}}>Из усталости</div>
+                <div className="text-glow-gold" style={{letterSpacing: '0.15em'}}>в горящий глаз</div>
               </h1>
               
               <div className="text-xl sm:text-2xl md:text-3xl font-semibold">
