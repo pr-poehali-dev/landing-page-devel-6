@@ -525,7 +525,11 @@ export default function Index() {
                       <span className="text-sm">Избавление от ненужного хлама</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Icon name="Moon" className="text-fuchsia-300 animate-float" size={18} />
+                      <img 
+                        src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/0c5b3447-d425-45c6-b6d6-102489fd8c7a.png" 
+                        alt="Убывающая луна" 
+                        className="w-[18px] h-[18px] object-contain animate-float" 
+                      />
                       <span className="text-sm">Убывающая луна помогает отпустить</span>
                     </div>
                   </div>
