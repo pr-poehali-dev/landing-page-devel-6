@@ -1236,7 +1236,13 @@ export default function Index() {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/20 to-amber-600/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
               <div className="relative p-8 rounded-3xl bg-gradient-to-br from-slate-900/90 to-slate-950/90 border-2 border-yellow-500/50 backdrop-blur-sm hover:border-yellow-400 transition-all duration-300">
-                <div className="text-7xl mb-4 text-center animate-bounce">👑</div>
+                <div className="flex justify-center mb-4">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/395488e5-f905-4f3f-831c-40059223384c.jpg" 
+                    alt="Золотая корона"
+                    className="w-24 h-24 object-contain animate-bounce"
+                  />
+                </div>
                 
                 <h2 className="text-2xl font-bold mb-2 text-center text-warm-gold">
                   ПЕРВОЕ МЕСТО
@@ -1274,7 +1280,13 @@ export default function Index() {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-slate-400/20 to-gray-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
               <div className="relative p-8 rounded-3xl bg-gradient-to-br from-slate-900/90 to-slate-950/90 border-2 border-slate-400/50 backdrop-blur-sm hover:border-slate-300 transition-all duration-300">
-                <div className="text-7xl mb-4 text-center animate-pulse">👑</div>
+                <div className="flex justify-center mb-4">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/b1f7dc74-02ab-48dd-a4a3-2062a44ed7b1.jpg" 
+                    alt="Серебряная корона"
+                    className="w-24 h-24 object-contain animate-pulse"
+                  />
+                </div>
                 
                 <h2 className="text-2xl font-bold mb-2 text-center text-warm-gold">
                   ВТОРОЕ МЕСТО
@@ -1312,7 +1324,13 @@ export default function Index() {
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-300"></div>
               <div className="relative p-8 rounded-3xl bg-gradient-to-br from-slate-900/90 to-slate-950/90 border-2 border-cyan-500/50 backdrop-blur-sm hover:border-cyan-400 transition-all duration-300">
-                <div className="text-7xl mb-4 text-center animate-pulse">👑</div>
+                <div className="flex justify-center mb-4">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/9c6bffeb-d8ef-4504-895d-b9d2b9ca80f4.jpg" 
+                    alt="Бронзовая корона"
+                    className="w-24 h-24 object-contain animate-pulse"
+                  />
+                </div>
                 
                 <h2 className="text-2xl font-bold mb-2 text-center text-warm-gold">
                   ТРЕТЬЕ МЕСТО
