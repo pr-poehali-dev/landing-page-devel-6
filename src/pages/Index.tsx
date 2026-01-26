@@ -526,7 +526,7 @@ export default function Index() {
                     </div>
                     <div className="flex items-center gap-2">
                       <img 
-                        src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/0c5b3447-d425-45c6-b6d6-102489fd8c7a.png" 
+                        src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/5ffb9da6-d6bb-4ca6-8c4f-55fe67710ce3.png" 
                         alt="Убывающая луна" 
                         className="w-[18px] h-[18px] object-contain animate-float" 
                       />
