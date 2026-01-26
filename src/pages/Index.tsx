@@ -2007,21 +2007,29 @@ export default function Index() {
                 <p className="text-lg sm:text-xl text-slate-400 mb-6">4 900 ₽</p>
                 
                 <div className="text-left space-y-4 text-amber-50/95 leading-relaxed text-sm sm:text-base">
-                  <p className="text-center text-amber-50/65">
-                    Здесь скоро появится подробное описание пакета...
+                  <p className="text-center text-lg">
+                    Перейди по кнопке и отправь мне сообщение:<br />
+                    <span className="font-bold text-amber-400">СТАНДАРТ</span> и свое ФИО
                   </p>
                 </div>
               </div>
             </div>
             
             <div className="p-4 sm:p-6 border-t border-white/10 bg-gradient-to-br from-slate-900/50 to-slate-950/50">
-              <Button 
-                onClick={() => setShowStandardPackageModal(false)}
-                size="lg"
-                className="bg-white/10 hover:bg-white/20 border border-white/20 w-full"
+              <a 
+                href="https://t.me/darya_tsybulskaya22"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
               >
-                Закрыть
-              </Button>
+                <Button 
+                  size="lg"
+                  className="bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-700 hover:to-blue-700 border-none shadow-lg w-full"
+                >
+                  <Icon name="Send" size={20} className="mr-2" />
+                  Написать в Telegram
+                </Button>
+              </a>
             </div>
           </div>
         </div>
