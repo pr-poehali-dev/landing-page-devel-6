@@ -826,7 +826,7 @@ export default function Index() {
                 <img 
                   src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/c2b63ebd-bd38-4c94-910f-228816d2b2f5.png" 
                   alt="Убывающая луна"
-                  className="w-28 h-28 md:w-32 md:h-32 flex-shrink-0 object-contain"
+                  className="w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 flex-shrink-0 object-contain"
                 />
                 <div className="flex-1">
                   <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-indigo-300">4-я четверть убывающей луны (9-16 февраля)</h3>
@@ -849,7 +849,7 @@ export default function Index() {
                 <img 
                   src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/1539a62c-39d8-4b2f-8346-0a94d2159d83.png" 
                   alt="Новолуние"
-                  className="w-28 h-28 md:w-32 md:h-32 flex-shrink-0 object-contain"
+                  className="w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 flex-shrink-0 object-contain"
                 />
                 <div className="flex-1">
                   <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-slate-300">НОВОЛУНИЕ 17 февраля</h3>
@@ -873,7 +873,7 @@ export default function Index() {
                 <img 
                   src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/ea90913b-c1c7-4ce7-aa66-601b4fed9177.png" 
                   alt="Год Лошади"
-                  className="w-28 h-28 md:w-32 md:h-32 flex-shrink-0 object-contain"
+                  className="w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 flex-shrink-0 object-contain"
                 />
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold mb-4 text-red-400">ГОД КРАСНОЙ ОГНЕННОЙ ЛОШАДИ (2026)</h3>
