@@ -221,17 +221,17 @@ export default function Index() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                <span className="text-warm-gold">Из</span> <span className="text-slate-400 line-through">УСТАЛОСТИ</span>
+                <span className="text-purple-300/70 line-through">Из УСТАЛОСТИ</span>
                 <br />
-                <span className="text-glow-gold">
+                <span className="bg-gradient-to-r from-fuchsia-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">
                   в ГОРЯЩИЙ ГЛАЗ
                 </span>
                 <br />
-                <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-warm-gold">за 14 дней</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-amber-400">за 14 дней</span>
               </h1>
               
               <div className="text-xl sm:text-2xl md:text-3xl font-semibold">
-                <span className="text-warm-gold">
+                <span className="text-warm-gold/80">
                   с 9—22 февраля
                 </span>
               </div>
