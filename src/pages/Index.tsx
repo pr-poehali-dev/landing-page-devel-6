@@ -2054,21 +2054,29 @@ export default function Index() {
                 <p className="text-lg sm:text-xl text-amber-300 mb-6">6 900 ₽</p>
                 
                 <div className="text-left space-y-4 text-amber-50/95 leading-relaxed text-sm sm:text-base">
-                  <p className="text-center text-amber-50/65">
-                    Здесь скоро появится подробное описание пакета...
+                  <p className="text-center text-lg">
+                    Перейди по кнопке и отправь мне сообщение:<br />
+                    <span className="font-bold text-amber-400">ПРЕМИУМ</span> и свое ФИО
                   </p>
                 </div>
               </div>
             </div>
             
             <div className="p-4 sm:p-6 border-t border-white/10 bg-gradient-to-br from-fuchsia-950/50 to-amber-950/50">
-              <Button 
-                onClick={() => setShowPremiumPackageModal(false)}
-                size="lg"
-                className="bg-gradient-to-r from-fuchsia-600 to-amber-600 hover:from-fuchsia-700 hover:to-amber-700 border-none shadow-lg w-full"
+              <a 
+                href="https://t.me/darya_tsybulskaya22"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
               >
-                Закрыть
-              </Button>
+                <Button 
+                  size="lg"
+                  className="bg-gradient-to-r from-fuchsia-600 to-amber-600 hover:from-fuchsia-700 hover:to-amber-700 border-none shadow-lg w-full"
+                >
+                  <Icon name="Send" size={20} className="mr-2" />
+                  Написать в Telegram
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -2093,21 +2101,29 @@ export default function Index() {
                 <p className="text-lg sm:text-xl text-purple-300 mb-6">9 900 ₽</p>
                 
                 <div className="text-left space-y-4 text-amber-50/95 leading-relaxed text-sm sm:text-base">
-                  <p className="text-center text-amber-50/65">
-                    Здесь скоро появится подробное описание пакета...
+                  <p className="text-center text-lg">
+                    Перейди по кнопке и отправь мне сообщение:<br />
+                    <span className="font-bold text-amber-400">VIP</span> и свое ФИО
                   </p>
                 </div>
               </div>
             </div>
             
             <div className="p-4 sm:p-6 border-t border-white/10 bg-gradient-to-br from-fuchsia-950/50 to-pink-950/50">
-              <Button 
-                onClick={() => setShowVipPackageModal(false)}
-                size="lg"
-                className="bg-gradient-to-r from-fuchsia-600 to-pink-600 hover:from-fuchsia-700 hover:to-pink-700 border-none shadow-lg w-full"
+              <a 
+                href="https://t.me/darya_tsybulskaya22"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
               >
-                Закрыть
-              </Button>
+                <Button 
+                  size="lg"
+                  className="bg-gradient-to-r from-fuchsia-600 to-pink-600 hover:from-fuchsia-700 hover:to-pink-700 border-none shadow-lg w-full"
+                >
+                  <Icon name="Send" size={20} className="mr-2" />
+                  Написать в Telegram
+                </Button>
+              </a>
             </div>
           </div>
         </div>
