@@ -1089,7 +1089,9 @@ export default function Index() {
             {/* СТАНДАРТ */}
             <div className="p-8 rounded-3xl bg-gradient-to-br from-slate-700/20 to-slate-800/50 border border-white/20 backdrop-blur-sm hover:border-white/40 transition-all duration-500">
               <div className="text-center mb-6">
-                <div className="text-4xl mb-3">📦</div>
+                <div className="flex justify-center mb-3">
+                  <Icon name="Star" className="text-amber-400 animate-pulse-glow" size={48} />
+                </div>
                 <h3 className="text-2xl font-bold mb-2 text-warm-gold">СТАНДАРТ</h3>
                 <div className="text-4xl font-bold text-white mb-2">4 900 ₽</div>
               </div>
