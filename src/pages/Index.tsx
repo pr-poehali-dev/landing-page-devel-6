@@ -309,10 +309,10 @@ export default function Index() {
       <section id="about" className="relative py-20 bg-gradient-to-b from-slate-900 to-slate-950">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16 animate-fade-in">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-glow-gold">
-              Что тебе <span className="bg-gradient-to-r from-fuchsia-400 via-amber-400 to-white bg-clip-text text-transparent">знакомо?</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6">
+              <span className="text-purple-300/70">Что тебе</span> <span className="bg-gradient-to-r from-fuchsia-500 via-pink-500 to-purple-400 bg-clip-text text-transparent">знакомо?</span>
             </h2>
-            <p className="text-lg md:text-xl text-amber-50/65">Пройди чек-лист</p>
+            <p className="text-lg md:text-xl text-warm-gold/70">Пройди чек-лист</p>
           </div>
 
           <div className="relative">
