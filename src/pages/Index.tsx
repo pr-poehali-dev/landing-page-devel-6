@@ -525,11 +525,6 @@ export default function Index() {
                       <span className="text-sm">Избавление от ненужного хлама</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <img 
-                        src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/5ffb9da6-d6bb-4ca6-8c4f-55fe67710ce3.png" 
-                        alt="Убывающая луна" 
-                        className="w-[18px] h-[18px] object-contain animate-float" 
-                      />
                       <span className="text-sm">Убывающая луна помогает отпустить</span>
                     </div>
                   </div>
@@ -587,7 +582,6 @@ export default function Index() {
                       <span className="text-sm">Намерения и вектор на 2026 год</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Icon name="Sparkles" className="text-amber-400 animate-pulse-glow" size={18} />
                       <span className="text-sm">Энергия Года Красной Огненной Лошади</span>
                     </div>
                   </div>
