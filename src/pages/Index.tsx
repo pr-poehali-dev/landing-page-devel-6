@@ -316,7 +316,7 @@ export default function Index() {
           </div>
 
           <div className="relative">
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 mb-12 md:mb-16">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 mb-4">
               {[
                 "Энергетическая и психологическая усталость",
                 "Апатия, раздражение, \"ничего не хочется\"",
@@ -325,12 +325,11 @@ export default function Index() {
                 "Физическая тяжесть, потеря лёгкости в теле",
                 "\"Спасательный круг\" после праздников",
                 "Нет ощущения собственной ценности",
-                "Чувство внутренней опасности и неуверенности",
-                "Потеря смысла в том, что раньше вдохновляло"
+                "Чувство внутренней опасности и неуверенности"
               ].map((problem, index) => (
                 <div 
                   key={index}
-                  className="flex items-start gap-3 md:gap-4 p-4 md:p-6 rounded-xl md:rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-fuchsia-500/30 transition-all duration-300 group cursor-pointer"
+                  className="flex items-start gap-2 sm:gap-3 md:gap-4 p-3 sm:p-4 md:p-6 rounded-lg sm:rounded-xl md:rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-fuchsia-500/30 transition-all duration-300 group cursor-pointer"
                   style={{animationDelay: `${index * 0.1}s`}}
                   onClick={() => {
                     const newChecked = [...checkedItems];
@@ -347,20 +346,43 @@ export default function Index() {
                       <Icon name="Check" className="text-white" size={14} />
                     )}
                   </div>
-                  <p className="text-sm md:text-base text-amber-50/85 group-hover:text-white transition-colors">{problem}</p>
+                  <p className="text-xs sm:text-sm md:text-base text-amber-50/85 group-hover:text-white transition-colors leading-relaxed">{problem}</p>
                 </div>
               ))}
             </div>
 
-            {/* Кнопка Проверить */}
-            <div className="flex justify-end mb-8">
-              <Button
-                onClick={() => setShowCheckResult(true)}
-                size="lg"
-                className="bg-gradient-to-r from-fuchsia-600 to-amber-600 hover:from-fuchsia-700 hover:to-amber-700 border-none shadow-lg shadow-amber-500/30 transition-all duration-300 hover:scale-105"
+            {/* Последний блок с кнопкой */}
+            <div className="relative grid sm:grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 mb-12 md:mb-16">
+              <div 
+                className="flex items-start gap-2 sm:gap-3 md:gap-4 p-3 sm:p-4 md:p-6 rounded-lg sm:rounded-xl md:rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 hover:border-fuchsia-500/30 transition-all duration-300 group cursor-pointer"
+                onClick={() => {
+                  const newChecked = [...checkedItems];
+                  newChecked[8] = !newChecked[8];
+                  setCheckedItems(newChecked);
+                }}
               >
-                Проверить
-              </Button>
+                <div className={`w-5 h-5 md:w-6 md:h-6 rounded border-2 flex-shrink-0 mt-0.5 transition-all flex items-center justify-center ${
+                  checkedItems[8] 
+                    ? 'border-fuchsia-400 bg-fuchsia-600' 
+                    : 'border-white/30 group-hover:border-fuchsia-400'
+                }`}>
+                  {checkedItems[8] && (
+                    <Icon name="Check" className="text-white" size={14} />
+                  )}
+                </div>
+                <p className="text-xs sm:text-sm md:text-base text-amber-50/85 group-hover:text-white transition-colors leading-relaxed">Потеря смысла в том, что раньше вдохновляло</p>
+              </div>
+
+              {/* Пустой блок с кнопкой */}
+              <div className="relative flex items-end justify-end p-3 sm:p-4 md:p-6 rounded-lg sm:rounded-xl md:rounded-2xl bg-gradient-to-br from-fuchsia-500/10 to-amber-500/10 border border-fuchsia-500/20 backdrop-blur-sm">
+                <Button
+                  onClick={() => setShowCheckResult(true)}
+                  size="lg"
+                  className="bg-gradient-to-r from-fuchsia-600 to-amber-600 hover:from-fuchsia-700 hover:to-amber-700 border-none shadow-lg shadow-amber-500/30 transition-all duration-300 hover:scale-105 text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4"
+                >
+                  Проверить
+                </Button>
+              </div>
             </div>
           </div>
 
