@@ -24,10 +24,14 @@ export default function Index() {
   }, []);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowPopup(true);
-    }, 15000);
-    return () => clearTimeout(timer);
+    const hasSeenPopup = sessionStorage.getItem('hasSeenPopup');
+    if (!hasSeenPopup) {
+      const timer = setTimeout(() => {
+        setShowPopup(true);
+        sessionStorage.setItem('hasSeenPopup', 'true');
+      }, 15000);
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   useEffect(() => {
