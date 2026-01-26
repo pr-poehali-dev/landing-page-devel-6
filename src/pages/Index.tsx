@@ -852,9 +852,8 @@ export default function Index() {
                   <p className="text-sm md:text-base text-amber-50/85 mb-3 md:mb-4">→ ЛУЧШЕЕ время для:</p>
                   <ul className="space-y-1.5 md:space-y-2">
                     {["Самоанализа", "Очищения тела и ума", "Освобождения от старого"].map((item, index) => (
-                      <li key={index} className="flex items-center gap-2 md:gap-3">
-                        <Icon name="Check" className="text-fuchsia-400 flex-shrink-0" size={18} />
-                        <span className="text-sm md:text-base text-amber-50/85">{item}</span>
+                      <li key={index} className="text-sm md:text-base text-amber-50/85">
+                        • {item}
                       </li>
                     ))}
                   </ul>
@@ -873,14 +872,8 @@ export default function Index() {
                 <div className="flex-1">
                   <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-warm-gold">НОВОЛУНИЕ 17 февраля</h3>
                   <div className="space-y-1.5 md:space-y-2">
-                    <div className="flex items-center gap-2 md:gap-3">
-                      <Icon name="ArrowRight" className="text-slate-400 flex-shrink-0" size={18} />
-                      <span className="text-sm md:text-base text-amber-50/85">Новый лунный год начинается</span>
-                    </div>
-                    <div className="flex items-center gap-2 md:gap-3">
-                      <Icon name="ArrowRight" className="text-slate-400 flex-shrink-0" size={18} />
-                      <span className="text-sm md:text-base text-amber-50/85">Новая энергия, новый цикл</span>
-                    </div>
+                    <p className="text-sm md:text-base text-amber-50/85">• Новый лунный год начинается</p>
+                    <p className="text-sm md:text-base text-amber-50/85">• Новая энергия, новый цикл</p>
                   </div>
                 </div>
               </div>
@@ -897,22 +890,10 @@ export default function Index() {
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold mb-4 text-warm-gold">ГОД КРАСНОЙ ОГНЕННОЙ ЛОШАДИ (2026)</h3>
                   <div className="space-y-3">
-                    <div className="flex items-start gap-3">
-                      <Icon name="Flame" className="text-red-400 flex-shrink-0 mt-1 animate-pulse-glow" size={20} />
-                      <span className="text-amber-50/85">Происходит раз в 60 лет (следующий в 2086)</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <Icon name="Zap" className="text-orange-400 flex-shrink-0 mt-1 animate-pulse-glow" size={20} />
-                      <span className="text-amber-50/85">Энергия стартов, новых начинаний</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <Icon name="Heart" className="text-pink-400 flex-shrink-0 mt-1 animate-float" size={20} />
-                      <span className="text-amber-50/85">ОСОБЕННО мощно для женщин</span>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <Icon name="Sparkles" className="text-amber-400 flex-shrink-0 mt-1 animate-pulse-glow" size={20} />
-                      <span className="text-amber-50/85">Идеальное время переосмыслить себя и свою жизнь</span>
-                    </div>
+                    <p className="text-amber-50/85">• Происходит раз в 60 лет (следующий в 2086)</p>
+                    <p className="text-amber-50/85">• Энергия стартов, новых начинаний</p>
+                    <p className="text-amber-50/85">• ОСОБЕННО мощно для женщин</p>
+                    <p className="text-amber-50/85">• Идеальное время переосмыслить себя и свою жизнь</p>
                   </div>
                 </div>
               </div>
