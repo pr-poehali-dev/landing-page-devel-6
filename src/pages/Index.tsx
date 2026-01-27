@@ -2050,7 +2050,13 @@ export default function Index() {
 
             <div className="flex-1 overflow-y-auto p-6 sm:p-10">
               <div className="text-center">
-                <div className="text-7xl mb-6">📦</div>
+                <div className="flex justify-center mb-6">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/bfca9eb8-4131-462c-80d5-cebde3d6162b.jpg"
+                    alt="Стандарт"
+                    className="w-20 h-20 object-contain"
+                  />
+                </div>
                 
                 <h3 className="text-xl sm:text-2xl font-bold mb-4 text-warm-gold">ПАКЕТ СТАНДАРТ</h3>
                 <p className="text-lg sm:text-xl text-slate-400 mb-6">4 900 ₽</p>
@@ -2097,7 +2103,13 @@ export default function Index() {
 
             <div className="flex-1 overflow-y-auto p-6 sm:p-10">
               <div className="text-center">
-                <div className="text-7xl mb-6">👑</div>
+                <div className="flex justify-center mb-6">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/6a25d76e-6165-4749-9061-24561759b39f.jpg"
+                    alt="Премиум"
+                    className="w-20 h-20 object-contain"
+                  />
+                </div>
                 
                 <h3 className="text-xl sm:text-2xl font-bold mb-4 text-warm-gold">ПАКЕТ ПРЕМИУМ</h3>
                 <p className="text-lg sm:text-xl text-amber-300 mb-6">6 900 ₽</p>
@@ -2144,7 +2156,13 @@ export default function Index() {
 
             <div className="flex-1 overflow-y-auto p-6 sm:p-10">
               <div className="text-center">
-                <div className="text-7xl mb-6">💎</div>
+                <div className="flex justify-center mb-6">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/13b3cf95-5a88-4410-9274-a9df7724552e.jpg"
+                    alt="VIP"
+                    className="w-20 h-20 object-contain"
+                  />
+                </div>
                 
                 <h3 className="text-xl sm:text-2xl font-bold mb-4 text-warm-gold">ПАКЕТ VIP</h3>
                 <p className="text-lg sm:text-xl text-purple-300 mb-6">9 900 ₽</p>
