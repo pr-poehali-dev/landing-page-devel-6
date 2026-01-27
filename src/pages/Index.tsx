@@ -66,8 +66,9 @@ export default function Index() {
                 alt="Горящий глаз"
                 className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
               />
-              <div className="text-xl sm:text-2xl font-bold text-glow-gold">
-                АПГРЕЙД 2026
+              <div className="text-xl sm:text-2xl font-bold">
+                <span className="text-purple-300">АПГРЕЙД</span>{" "}
+                <span className="text-amber-400">2026</span>
               </div>
             </div>
 
