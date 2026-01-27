@@ -60,8 +60,15 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Main Header */}
           <div className="flex items-center justify-between py-4">
-            <div className="text-xl sm:text-2xl font-bold text-glow-gold">
-              АПГРЕЙД 2026
+            <div className="flex items-center gap-3">
+              <img 
+                src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/e14f5f9b-7113-4707-9411-d0c9017c3b23.png"
+                alt="Горящий глаз"
+                className="w-10 h-10 sm:w-12 sm:h-12 object-contain"
+              />
+              <div className="text-xl sm:text-2xl font-bold text-glow-gold">
+                АПГРЕЙД 2026
+              </div>
             </div>
 
             <nav className="hidden md:flex items-center gap-4 lg:gap-8">
