@@ -1090,11 +1090,13 @@ export default function Index() {
             <div className="p-8 rounded-3xl bg-gradient-to-br from-slate-700/20 to-slate-800/50 border border-white/20 backdrop-blur-sm hover:border-white/40 transition-all duration-500">
               <div className="text-center mb-6">
                 <div className="flex justify-center mb-3">
-                  <img 
-                    src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/bfca9eb8-4131-462c-80d5-cebde3d6162b.jpg" 
-                    alt="Стандарт"
-                    className="w-16 h-16 object-contain animate-pulse-glow"
-                  />
+                  <div className="p-4 rounded-2xl bg-slate-700/40">
+                    <img 
+                      src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/bfca9eb8-4131-462c-80d5-cebde3d6162b.jpg" 
+                      alt="Стандарт"
+                      className="w-16 h-16 object-contain animate-pulse-glow"
+                    />
+                  </div>
                 </div>
                 <h3 className="text-2xl font-bold mb-2 text-warm-gold">СТАНДАРТ</h3>
                 <div className="text-4xl font-bold text-white mb-2">4 900 ₽</div>
@@ -1134,11 +1136,13 @@ export default function Index() {
               
               <div className="text-center mb-6">
                 <div className="flex justify-center mb-3">
-                  <img 
-                    src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/6a25d76e-6165-4749-9061-24561759b39f.jpg" 
-                    alt="Премиум"
-                    className="w-16 h-16 object-contain animate-float"
-                  />
+                  <div className="p-4 rounded-2xl bg-gradient-to-br from-fuchsia-600/30 to-amber-600/30">
+                    <img 
+                      src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/6a25d76e-6165-4749-9061-24561759b39f.jpg" 
+                      alt="Премиум"
+                      className="w-16 h-16 object-contain animate-float"
+                    />
+                  </div>
                 </div>
                 <h3 className="text-2xl font-bold mb-2 text-warm-gold">ПРЕМИУМ</h3>
                 <div className="text-4xl font-bold text-amber-400 mb-2">6 900 ₽</div>
@@ -1178,11 +1182,13 @@ export default function Index() {
             <div className="p-8 rounded-3xl bg-gradient-to-br from-fuchsia-600/20 via-pink-600/20 to-violet-600/20 border-2 border-fuchsia-500/50 backdrop-blur-sm hover:border-fuchsia-500/70 transition-all duration-500">
               <div className="text-center mb-6">
                 <div className="flex justify-center mb-3">
-                  <img 
-                    src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/13b3cf95-5a88-4410-9274-a9df7724552e.jpg" 
-                    alt="VIP"
-                    className="w-16 h-16 object-contain animate-pulse"
-                  />
+                  <div className="p-4 rounded-2xl bg-gradient-to-br from-fuchsia-600/30 to-pink-600/30">
+                    <img 
+                      src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/13b3cf95-5a88-4410-9274-a9df7724552e.jpg" 
+                      alt="VIP"
+                      className="w-16 h-16 object-contain animate-pulse"
+                    />
+                  </div>
                 </div>
                 <h3 className="text-2xl font-bold mb-2 text-warm-gold">VIP</h3>
                 <div className="text-sm text-amber-50/65 mb-2">ВСЁ ВКЛЮЧЕНО</div>
