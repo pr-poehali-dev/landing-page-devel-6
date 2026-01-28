@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Icon from '@/components/ui/icon';
 import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { HeroTimer, StickyTimer } from '@/components/CountdownTimer';
 
 export default function Index() {
   const [scrollY, setScrollY] = useState(0);
@@ -257,6 +258,9 @@ export default function Index() {
                   <span>Твой персональный аватар трансформируется с тобой</span>
                 </div>
               </div>
+
+              {/* COUNTDOWN TIMER AND SPOTS */}
+              <HeroTimer />
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button 
@@ -2213,6 +2217,9 @@ export default function Index() {
           <span className="absolute -top-2 -right-2 w-5 h-5 bg-amber-400 rounded-full border-2 border-slate-950 animate-pulse"></span>
         </a>
       </div>
+
+      {/* STICKY TIMER */}
+      <StickyTimer />
     </div>
   );
 }
