@@ -224,7 +224,7 @@ export default function Index() {
             <div className="space-y-8 animate-fade-in">
               <div className="inline-block">
                 <span className="px-4 py-2 rounded-full bg-gradient-to-r from-fuchsia-500/20 to-amber-400/20 border border-amber-400/40 text-sm font-medium backdrop-blur-sm text-warm-gold">
-                  Квест-челлендж для женщин 35+
+                  Квест-челлендж для женщин
                 </span>
               </div>
 
