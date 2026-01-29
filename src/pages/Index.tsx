@@ -1540,7 +1540,7 @@ export default function Index() {
                     Это не просто программа. <span className="text-fuchsia-300">Это ИГРА твоей трансформации.</span>
                   </p>
                   <p className="text-xl text-amber-50/85">
-                    А ты уже пришла сюда с отклик — значит, ты уже на старте.
+                    А ты уже пришла сюда с откликом — значит, ты уже на старте.
                   </p>
                   <p className="text-2xl font-bold text-amber-400">
                     Выбери свой пакет и присоединяйся.
