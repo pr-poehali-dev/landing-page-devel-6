@@ -458,7 +458,7 @@ export default function Index() {
                   "Ежедневные простые, но эффективные задания",
                   "20 мин утром + 20 мин вечером — это всё",
                   "Игровой формат с лидербордом и аватарами",
-                  "Живое взаимодействие с Дарьей и участницами в чате"
+                  "Живое взаимодействие со мной и участницами в чате"
                 ].map((item, index) => (
                   <li key={index} className="flex items-start gap-3 text-sm md:text-base text-amber-50/95">
                     <Icon name="Check" className="text-emerald-400 flex-shrink-0 mt-0.5" size={18} />
