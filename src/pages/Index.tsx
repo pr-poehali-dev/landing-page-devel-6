@@ -1551,7 +1551,7 @@ export default function Index() {
                   <Button 
                     onClick={() => scrollToSection('packages')}
                     size="lg"
-                    className="bg-gradient-to-r from-fuchsia-600 to-amber-600 hover:from-fuchsia-700 hover:to-amber-700 text-xl px-12 py-8 shadow-2xl shadow-amber-500/40 transition-all duration-300 hover:scale-105 border-none"
+                    className="bg-gradient-to-r from-fuchsia-600 to-amber-600 hover:from-fuchsia-700 hover:to-amber-700 text-base sm:text-xl px-8 sm:px-12 py-8 shadow-2xl shadow-amber-500/40 transition-all duration-300 hover:scale-105 border-none"
                   >
                     🚀 Я ГОТОВА. ВЫБИРАЮ ПАКЕТ
                   </Button>
@@ -1559,7 +1559,7 @@ export default function Index() {
                     onClick={() => scrollToSection('avatars')}
                     size="lg"
                     variant="outline"
-                    className="bg-white/5 border-white/20 hover:bg-white/10 text-lg px-8 py-8 backdrop-blur-sm transition-all duration-300 hover:scale-105"
+                    className="bg-white/5 border-white/20 hover:bg-white/10 text-sm sm:text-lg px-6 sm:px-8 py-8 backdrop-blur-sm transition-all duration-300 hover:scale-105"
                   >
                     💬 Хочу узнать больше об аватарах
                   </Button>
