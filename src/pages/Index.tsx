@@ -1698,8 +1698,8 @@ export default function Index() {
               <h3 className="text-2xl font-bold mb-3 text-glow-gold">Привет, Дорогая! 👑</h3>
               <p className="text-amber-50/95 mb-3 leading-relaxed">Я Дарья. Рада Тебе! 💐</p>
               <p className="text-amber-50/85 mb-4 leading-relaxed">Ты пришла и читаешь Это не просто Так! ✨</p>
-              <p className="text-amber-50/85 mb-4 leading-relaxed">Чувствуй Свой Отклик и исходи при решении из него, не от ума — это ВАЖНО! 🤗</p>
-              <p className="text-amber-50/85 mb-4 leading-relaxed">Позволь Себе эту игру для Себя Любимой… 💝 и Ты увидишь, как Жизнь вознаградит Тебя за это 🎁</p>
+              <p className="text-amber-50/85 mb-4 leading-relaxed">Чувствуй Свой Отклик и исходи при решении из него, не от ума — это ВАЖНО!</p>
+              <p className="text-amber-50/85 mb-4 leading-relaxed">Позволь Себе эту игру для Себя Любимой… и Ты увидишь, как Жизнь вознаградит Тебя за это 🎁</p>
               <p className="text-xl font-semibold text-amber-400 mb-6">Выбери своего Аватара и вперед!</p>
               <p className="text-amber-50/75 mb-8 italic">Буду рада Вместе с Тобой пройти этот квест во благо для Нас обоих ♥️</p>
               
