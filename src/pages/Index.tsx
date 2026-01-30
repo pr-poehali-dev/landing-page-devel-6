@@ -221,7 +221,7 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Text Content */}
-            <div className="space-y-8 animate-fade-in flex flex-col items-center lg:items-start text-center lg:text-left">
+            <div className="space-y-8 animate-fade-in">
               <div className="inline-block">
                 <span className="px-4 py-2 rounded-full bg-gradient-to-r from-fuchsia-500/20 to-amber-400/20 border border-amber-400/40 text-sm font-medium backdrop-blur-sm text-warm-gold">
                   Квест-челлендж для женщин
@@ -262,11 +262,11 @@ export default function Index() {
               {/* COUNTDOWN TIMER AND SPOTS */}
               <HeroTimer />
 
-              <div className="flex flex-col sm:flex-row gap-4 pt-4 w-full lg:w-auto">
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button 
                   onClick={() => scrollToSection('packages')} 
                   size="lg"
-                  className="bg-gradient-to-r from-fuchsia-600 to-amber-500 hover:from-fuchsia-700 hover:to-amber-600 text-lg px-8 py-6 shadow-2xl shadow-amber-500/40 transition-all duration-300 hover:scale-105 border-none font-bold w-full sm:w-auto"
+                  className="bg-gradient-to-r from-fuchsia-600 to-amber-500 hover:from-fuchsia-700 hover:to-amber-600 text-lg px-8 py-6 shadow-2xl shadow-amber-500/40 transition-all duration-300 hover:scale-105 border-none font-bold"
                 >
                   ВЫБРАТЬ СВОЙ ПАКЕТ
                   <Icon name="ArrowRight" size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
@@ -275,7 +275,7 @@ export default function Index() {
                   onClick={() => scrollToSection('about')} 
                   size="lg"
                   variant="outline"
-                  className="bg-amber-500/10 border-amber-400/30 hover:bg-amber-500/20 text-warm-gold text-lg px-8 py-6 backdrop-blur-sm transition-all duration-300 hover:scale-105 w-full sm:w-auto"
+                  className="bg-amber-500/10 border-amber-400/30 hover:bg-amber-500/20 text-warm-gold text-lg px-8 py-6 backdrop-blur-sm transition-all duration-300 hover:scale-105"
                 >
                   Узнать больше
                 </Button>
@@ -295,7 +295,7 @@ export default function Index() {
 
             {/* Visual - Avatar Evolution */}
             <div className="relative animate-scale-in">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-amber-500/30 border border-amber-400/20 min-h-[500px] lg:min-h-[700px]">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-amber-500/30 border border-amber-400/20 min-h-[600px] md:min-h-[700px]">
                 <img 
                   src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/dcd3d481-4757-4df9-bf9e-02aaade6081b.png" 
                   alt="Эволюция аватара: Level 1 → Level 4"
@@ -1540,7 +1540,7 @@ export default function Index() {
                     Это не просто программа. <span className="text-fuchsia-300">Это ИГРА твоей трансформации.</span>
                   </p>
                   <p className="text-xl text-amber-50/85">
-                    А ты уже пришла сюда с откликом — значит, ты уже на старте.
+                    А ты уже пришла сюда с отклик — значит, ты уже на старте.
                   </p>
                   <p className="text-2xl font-bold text-amber-400">
                     Выбери свой пакет и присоединяйся.
