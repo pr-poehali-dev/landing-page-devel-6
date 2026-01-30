@@ -229,10 +229,10 @@ export default function Index() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                <span className="text-purple-300/70 line-through">Из УСТАЛОСТИ</span>
+                <span className="text-purple-300/70 line-through">Из усталости</span>
                 <br />
                 <span className="bg-gradient-to-r from-fuchsia-500 via-pink-500 to-purple-500 bg-clip-text text-transparent">
-                  в ГОРЯЩИЙ ГЛАЗ
+                  в Горящие Глаза
                 </span>
                 <br />
                 <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-amber-400">за 14 дней</span>
