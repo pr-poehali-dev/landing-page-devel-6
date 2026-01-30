@@ -1275,7 +1275,7 @@ export default function Index() {
                   <img 
                     src="https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/files/7d1da4ec-9d45-405d-bd3b-d97da9137318.jpg" 
                     alt="Золотая корона"
-                    className="w-24 h-24 object-contain animate-bounce"
+                    className="w-24 h-24 object-contain"
                   />
                 </div>
                 
