@@ -1135,7 +1135,7 @@ export default function Index() {
                 className="w-full bg-white/10 hover:bg-white/20 border border-white/20 transition-all"
                 size="lg"
               >
-                ВЫБРАТЬ ПАКЕТ
+                РЕГИСТРАЦИЯ
               </Button>
             </div>
 
@@ -1185,7 +1185,7 @@ export default function Index() {
                 className="w-full bg-gradient-to-r from-fuchsia-600 to-amber-600 hover:from-fuchsia-700 hover:to-amber-700 border-none shadow-lg shadow-amber-500/30 transition-all"
                 size="lg"
               >
-                ВЫБРАТЬ ПАКЕТ
+                РЕГИСТРАЦИЯ
               </Button>
             </div>
 
@@ -1231,7 +1231,7 @@ export default function Index() {
                 className="w-full bg-gradient-to-r from-fuchsia-600 to-pink-600 hover:from-fuchsia-700 hover:to-pink-700 border-none shadow-lg shadow-amber-500/30 transition-all"
                 size="lg"
               >
-                ВЫБРАТЬ ПАКЕТ
+                РЕГИСТРАЦИЯ
               </Button>
             </div>
           </div>
