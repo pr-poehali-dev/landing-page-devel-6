@@ -92,6 +92,12 @@ export default function Index() {
                 Пакеты
               </button>
               <button 
+                onClick={() => scrollToSection('testimonials')} 
+                className="text-warm-gold hover:text-amber-300 transition-colors text-sm lg:text-base"
+              >
+                Отзывы
+              </button>
+              <button 
                 onClick={() => scrollToSection('faq')} 
                 className="text-warm-gold hover:text-amber-300 transition-colors text-sm lg:text-base"
               >
@@ -146,6 +152,12 @@ export default function Index() {
                 className="w-full text-left px-4 py-3 text-lg text-amber-50/85 hover:text-white hover:bg-white/5 rounded-lg transition-colors"
               >
                 Пакеты
+              </button>
+              <button 
+                onClick={() => scrollToSection('testimonials')} 
+                className="w-full text-left px-4 py-3 text-lg text-amber-50/85 hover:text-white hover:bg-white/5 rounded-lg transition-colors"
+              >
+                Отзывы
               </button>
               <button 
                 onClick={() => scrollToSection('faq')} 
