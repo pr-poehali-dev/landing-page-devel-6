@@ -240,7 +240,7 @@ export default function Index() {
               
               <div className="text-xl sm:text-2xl md:text-3xl font-semibold">
                 <span className="text-warm-gold/80">
-                  с 9—22 февраля
+                  с 12 по 26 марта
                 </span>
               </div>
 
@@ -284,7 +284,7 @@ export default function Index() {
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 pt-6 text-xs sm:text-sm text-amber-100/60">
                 <div className="flex items-center gap-2">
                   <Icon name="Calendar" size={16} className="text-amber-300 animate-bounce-gentle" />
-                  <span>Старт: 9 февраля 2026</span>
+                  <span>Старт: 12 марта 2026</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Icon name="Heart" size={16} className="text-rose-300 animate-float" />
