@@ -1108,7 +1108,7 @@ export default function Index() {
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold mb-2 text-warm-gold">СТАНДАРТ</h3>
-                <div className="text-4xl font-bold text-white mb-2">4 900 ₽</div>
+                <div className="text-4xl font-bold text-white mb-2">6 490 ₽</div>
               </div>
 
               <ul className="space-y-3 mb-8">
@@ -1154,7 +1154,7 @@ export default function Index() {
                   </div>
                 </div>
                 <h3 className="text-2xl font-bold mb-2 text-warm-gold">ПРЕМИУМ</h3>
-                <div className="text-4xl font-bold text-amber-400 mb-2">6 900 ₽</div>
+                <div className="text-4xl font-bold text-amber-400 mb-2">8 900 ₽</div>
                 <p className="text-sm text-emerald-400">💰 Экономия: 2000 ₽</p>
               </div>
 
@@ -1201,7 +1201,7 @@ export default function Index() {
                 </div>
                 <h3 className="text-2xl font-bold mb-2 text-warm-gold">VIP</h3>
                 <div className="text-sm text-amber-50/65 mb-2">ВСЁ ВКЛЮЧЕНО</div>
-                <div className="text-4xl font-bold text-fuchsia-300 mb-2">9 900 ₽</div>
+                <div className="text-4xl font-bold text-fuchsia-300 mb-2">12 490 ₽</div>
                 <p className="text-sm text-emerald-400">💰 Экономия: 3000 ₽</p>
               </div>
 
