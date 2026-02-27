@@ -1455,6 +1455,7 @@ export default function Index() {
                 role: "Бизнес Трекер, владелица стройкомпании",
                 text: "Даша, благодарю тебя за апгрейд! Несмотря на то, что задания затрагивают глубинные слои и заставляют смотреть на привычные ситуации под совершенно другим углом, он так легко встроился в обычный ритм жизни. Не нужно искать кучу времени, специально готовиться. Апгрейд сам запускает сильные изменения в мышлении и мировоззрении. Главное — теперь я часто ловлю себя на мысли: «А что же сегодня было самым важным и решающим?». Это работает как классный анализ всего, что меня окружает: я будто отшлифовываю реальность, убираю ненужный шум и декор, чтобы разглядеть, на чём действительно стоит фокусироваться, где спрятано настоящее ценное.",
                 color: "fuchsia",
+                photo: "https://cdn.poehali.dev/projects/fb27df1f-1dc0-4f97-b6bf-b3c9eb7cbc02/bucket/50c7476f-e792-4c2a-87e1-efe217755a02.JPG",
               },
               {
                 name: "Катерина Лисиенко",
@@ -1508,9 +1509,18 @@ export default function Index() {
                 >
                   <div className="text-2xl text-warm-gold mb-3">"</div>
                   <p className="text-amber-50/85 text-sm leading-relaxed mb-4">{review.text}</p>
-                  <div className="border-t border-white/10 pt-3 mt-3">
-                    <div className={`font-semibold text-sm ${nameColorMap[review.color]}`}>{review.name}</div>
-                    <div className="text-amber-50/50 text-xs mt-0.5">{review.role}</div>
+                  <div className="border-t border-white/10 pt-3 mt-3 flex items-center gap-3">
+                    {"photo" in review && review.photo && (
+                      <img
+                        src={review.photo as string}
+                        alt={review.name}
+                        className="w-10 h-10 rounded-full object-cover object-top flex-shrink-0 border border-white/20"
+                      />
+                    )}
+                    <div>
+                      <div className={`font-semibold text-sm ${nameColorMap[review.color]}`}>{review.name}</div>
+                      <div className="text-amber-50/50 text-xs mt-0.5">{review.role}</div>
+                    </div>
                   </div>
                 </div>
               );
