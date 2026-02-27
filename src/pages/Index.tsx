@@ -415,9 +415,7 @@ export default function Index() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 leading-tight">
               <span className="text-purple-300/70">АПГРЕЙД 2026:</span> <span className="bg-gradient-to-r from-fuchsia-500 via-pink-500 to-purple-400 bg-clip-text text-transparent">Не курс. Не теория. ПРОЦЕСС.</span>
             </h2>
-            <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-warm-gold/80">
-              с 9—22 февраля
-            </p>
+
           </div>
 
           <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
