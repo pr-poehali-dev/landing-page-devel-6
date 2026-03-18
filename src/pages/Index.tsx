@@ -1136,14 +1136,14 @@ export default function Index() {
                 <h2 className="text-2xl font-bold mb-2 text-center text-warm-gold">
                   ПЕРВОЕ МЕСТО
                 </h2>
-                <div className="flex justify-center mb-3">
-                  <div className="px-4 py-2 rounded-full bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/40 text-center">
-                    <span className="text-yellow-300 font-bold text-lg">🏆 Призовой фонд: 10 000 ₽</span>
-                  </div>
-                </div>
-                <h3 className="text-xl font-bold mb-4 text-center text-warm-gold">
+                <h3 className="text-xl font-bold mb-2 text-center text-warm-gold">
                   Манифест Королевы
                 </h3>
+                <div className="flex justify-center mb-2">
+                  <div className="px-3 py-1 rounded-full bg-gradient-to-r from-yellow-500/20 to-amber-500/20 border border-yellow-500/40 text-center">
+                    <span className="text-yellow-300 font-semibold text-sm">🏆 Призовой фонд: 10 000 ₽</span>
+                  </div>
+                </div>
                 
                 <Accordion type="single" collapsible className="w-full">
                   <AccordionItem value="queen-manifesto" className="border-yellow-500/30">
