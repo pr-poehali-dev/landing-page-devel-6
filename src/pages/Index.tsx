@@ -735,7 +735,7 @@ export default function Index() {
                   className="w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 flex-shrink-0 object-cover rounded-xl"
                 />
                 <div className="flex-1">
-                  <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-warm-gold">НОВОЛУНИЕ 19 марта</h3>
+                  <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-warm-gold">НОВОЛУНИЕ 17 апреля</h3>
                   <div className="space-y-1.5 md:space-y-2">
                     <p className="text-sm md:text-base text-amber-50/85">• Новый лунный год начинается</p>
                     <p className="text-sm md:text-base text-amber-50/85">• Новая энергия, новый цикл</p>
