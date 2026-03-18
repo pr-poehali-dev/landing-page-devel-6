@@ -72,7 +72,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
             <div className="flex items-center gap-6 pt-6 text-sm text-white/60">
               <div className="flex items-center gap-2">
                 <Icon name="Calendar" size={18} className="text-amber-400 animate-bounce-gentle" />
-                <span>12 — 26 марта 2026</span>
+                <span>9 — 23 апреля 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <Icon name="Heart" size={18} className="text-purple-400 animate-float" />
