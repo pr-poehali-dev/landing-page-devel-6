@@ -12,7 +12,7 @@ export function HeroTimer() {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
 
   function calculateTimeLeft(): TimeLeft {
-    const targetDate = new Date('2026-03-12T00:00:00').getTime();
+    const targetDate = new Date('2026-04-09T00:00:00').getTime();
     const now = new Date().getTime();
     const difference = targetDate - now;
 
@@ -96,7 +96,7 @@ export function StickyTimer() {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
 
   function calculateTimeLeft(): TimeLeft {
-    const targetDate = new Date('2026-03-12T00:00:00').getTime();
+    const targetDate = new Date('2026-04-09T00:00:00').getTime();
     const now = new Date().getTime();
     const difference = targetDate - now;
 
