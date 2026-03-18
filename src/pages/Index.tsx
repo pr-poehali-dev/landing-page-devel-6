@@ -395,7 +395,7 @@ export default function Index() {
                   </div>
                   <div className="flex items-center gap-2 text-sm md:text-base text-amber-50/65 mb-4 md:mb-6">
                     <Icon name="Calendar" size={16} className="animate-bounce-gentle" />
-                    <span>с 9 по 15 апреля</span>
+                    <span>с 9 по 16 апреля</span>
                   </div>
                   <div className="space-y-2 mb-4 md:mb-6">
                     <div className="flex items-center gap-2">
@@ -452,7 +452,7 @@ export default function Index() {
                   </div>
                   <div className="flex items-center gap-2 text-sm md:text-base text-amber-50/65 mb-4 md:mb-6">
                     <Icon name="Calendar" size={16} className="animate-bounce-gentle" />
-                    <span>с 16 по 23 апреля</span>
+                    <span>с 17 по 23 апреля</span>
                   </div>
                   <div className="space-y-2 mb-4 md:mb-6">
                     <div className="flex items-center gap-2">
