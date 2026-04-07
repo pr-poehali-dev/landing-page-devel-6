@@ -302,7 +302,7 @@ export default function MainSections({
                   </div>
                   <div className="flex items-center gap-2 text-white/60 mb-6">
                     <Icon name="Calendar" size={18} className="animate-bounce-gentle" />
-                    <span>9-15 февраля</span>
+                    <span>9-15 мая</span>
                   </div>
                   <div className="space-y-2 mb-6">
                     <div className="flex items-center gap-2">
@@ -360,7 +360,7 @@ export default function MainSections({
                   </div>
                   <div className="flex items-center gap-2 text-white/60 mb-6">
                     <Icon name="Calendar" size={18} className="animate-bounce-gentle" />
-                    <span>16-22 февраля</span>
+                    <span>16-22 мая</span>
                   </div>
                   <div className="space-y-2 mb-6">
                     <div className="flex items-center gap-2">
@@ -586,7 +586,7 @@ export default function MainSections({
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-              Почему именно <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">9 февраля?</span>
+              Почему именно <span className="bg-gradient-to-r from-purple-400 via-amber-400 to-white bg-clip-text text-transparent">9 мая?</span>
             </h2>
             <p className="text-xl text-white/60">(Это не просто дата — это МОМЕНТ)</p>
           </div>
@@ -597,7 +597,7 @@ export default function MainSections({
               <div className="flex items-start gap-6">
                 <div className="text-5xl">🌙</div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-4 text-indigo-300">4-я четверть убывающей луны (9-16 февраля)</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-indigo-300">4-я четверть убывающей луны (9-16 мая)</h3>
                   <p className="text-white/80 mb-4">→ ЛУЧШЕЕ время для:</p>
                   <ul className="space-y-2">
                     {["Самоанализа", "Очищения тела и ума", "Освобождения от старого"].map((item, index) => (
@@ -616,7 +616,7 @@ export default function MainSections({
               <div className="flex items-start gap-6">
                 <div className="text-5xl">🌑</div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-4 text-slate-300">НОВОЛУНИЕ 17 февраля</h3>
+                  <h3 className="text-2xl font-bold mb-4 text-slate-300">НОВОЛУНИЕ 17 мая</h3>
                   <div className="space-y-2">
                     <div className="flex items-center gap-3">
                       <Icon name="ArrowRight" className="text-slate-400 flex-shrink-0" size={20} />
