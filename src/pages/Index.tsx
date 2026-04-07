@@ -96,7 +96,7 @@ export default function Index() {
               
               <div className="text-xl sm:text-2xl md:text-3xl font-semibold">
                 <span className="text-warm-gold/80">
-                  с 9 по 23 апреля
+                  с 9 по 23 мая
                 </span>
               </div>
 
