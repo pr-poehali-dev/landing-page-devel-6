@@ -737,8 +737,8 @@ export default function Index() {
                 <div className="flex-1">
                   <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-warm-gold">НОВОЛУНИЕ 16 мая</h3>
                   <div className="space-y-1.5 md:space-y-2">
-                    <p className="text-sm md:text-base text-amber-50/85">• Новый лунный год начинается</p>
-                    <p className="text-sm md:text-base text-amber-50/85">• Новая энергия, новый цикл</p>
+                    <p className="text-sm md:text-base text-amber-50/85">• Новый лунный цикл начинается</p>
+                    <p className="text-sm md:text-base text-amber-50/85">• Новая энергия, новый этап</p>
                   </div>
                 </div>
               </div>
