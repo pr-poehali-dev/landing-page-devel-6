@@ -698,7 +698,7 @@ export default function Index() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-glow-gold">
-              Почему именно <span className="bg-gradient-to-r from-fuchsia-400 via-amber-400 to-white bg-clip-text text-transparent">9 апреля?</span>
+              Почему именно <span className="bg-gradient-to-r from-fuchsia-400 via-amber-400 to-white bg-clip-text text-transparent">9 мая?</span>
             </h2>
             <p className="text-lg md:text-xl text-amber-50/65">(Это не просто дата — это МОМЕНТ)</p>
           </div>
@@ -713,7 +713,7 @@ export default function Index() {
                   className="w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 flex-shrink-0 object-cover rounded-xl"
                 />
                 <div className="flex-1">
-                  <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-warm-gold">4-я четверть убывающей луны (9-15 апреля)</h3>
+                  <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-warm-gold">4-я четверть убывающей луны (9-15 мая)</h3>
                   <p className="text-sm md:text-base text-amber-50/85 mb-3 md:mb-4">→ ЛУЧШЕЕ время для:</p>
                   <ul className="space-y-1.5 md:space-y-2">
                     {["Самоанализа", "Очищения тела и ума", "Освобождения от старого"].map((item, index) => (
@@ -735,7 +735,7 @@ export default function Index() {
                   className="w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 flex-shrink-0 object-cover rounded-xl"
                 />
                 <div className="flex-1">
-                  <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-warm-gold">НОВОЛУНИЕ 17 апреля</h3>
+                  <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-warm-gold">НОВОЛУНИЕ 16 мая</h3>
                   <div className="space-y-1.5 md:space-y-2">
                     <p className="text-sm md:text-base text-amber-50/85">• Новый лунный год начинается</p>
                     <p className="text-sm md:text-base text-amber-50/85">• Новая энергия, новый цикл</p>
